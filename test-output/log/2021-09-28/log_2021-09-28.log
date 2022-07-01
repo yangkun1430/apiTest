@@ -1,0 +1,588 @@
+[2021-09-28 15:32:20,965] INFO  com.eden.cases.Test >>>>>>>>开始测试API(登录)：
+[2021-09-28 15:32:20,966] INFO  com.eden.cases.Base URL：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 15:32:20,966] INFO  com.eden.cases.Base 参数：{"serverName":"General Management","imgCode":"s","pwd":"BA3253876AED6BC22D4A6FF53D8406C6AD864195ED144AB5C87621B6C233B548BAEAE6956DF346EC8C17F5EA10F35EE3CBC514797ED7DDD3145464E2A0BAB413","email":"admin@tvunetworks.com","key":"6f280da79c0641a7b3c631db30eed847","url":"https://newuserservice.tvunetworks.com/userGroup/callback"}
+[2021-09-28 15:32:20,966] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 15:32:23,621] INFO  com.eden.cases.Test 返回结果：{"result":{"tagList":[{"tagValue":"432","targetClient":"a","tagKey":"43"},{"tagValue":"test","tagKey":"test"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"1","targetClient":"QQQQQQ","tagKey":"43232"},{"tagValue":"52","targetClient":"qwrwqaaa","tagKey":"14"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"}],"firstName":"","redirectUrl":"https://newuserservice.tvunetworks.com/userGroup/callback?session=311F2A0F754543CE90F03BA5AD2E7F93","session":"311F2A0F754543CE90F03BA5AD2E7F93","loginWelcome":"0","userName":"admin@tvunetworks.com","userId":"8a8c96cf3cf0de22013cf0e06ead0002","email":"admin@tvunetworks.com"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 15:32:23,621] INFO  com.eden.cases.Base 验证通过！返回结果包含："tagValue":"432"
+[2021-09-28 15:32:23,622] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 15:32:23,622] INFO  com.eden.cases.Test 测试通过--API:https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 15:32:23,622] INFO  com.eden.cases.Test 已经临时储存的key：{session=311F2A0F754543CE90F03BA5AD2E7F93, tagValue=432}
+[2021-09-28 15:32:23,622] INFO  com.eden.cases.Base <<<<<<<<线程等待:1秒后将测试下一个请求
+[2021-09-28 15:33:47,978] INFO  com.eden.cases.Test >>>>>>>>开始测试API(登录)：
+[2021-09-28 15:33:47,979] INFO  com.eden.cases.Base URL：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 15:33:47,979] INFO  com.eden.cases.Base 参数：{"serverName":"General Management","imgCode":"s","pwd":"BA3253876AED6BC22D4A6FF53D8406C6AD864195ED144AB5C87621B6C233B548BAEAE6956DF346EC8C17F5EA10F35EE3CBC514797ED7DDD3145464E2A0BAB413","email":"admin@tvunetworks.com","key":"6f280da79c0641a7b3c631db30eed847","url":"https://newuserservice.tvunetworks.com/userGroup/callback"}
+[2021-09-28 15:33:47,979] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 15:33:48,372] INFO  com.eden.cases.Test 返回结果：{"result":{"tagList":[{"tagValue":"432","targetClient":"a","tagKey":"43"},{"tagValue":"test","tagKey":"test"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"1","targetClient":"QQQQQQ","tagKey":"43232"},{"tagValue":"52","targetClient":"qwrwqaaa","tagKey":"14"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"}],"firstName":"","redirectUrl":"https://newuserservice.tvunetworks.com/userGroup/callback?session=A5CAF20B2FEC4BBD8DA0372C069337A1","session":"A5CAF20B2FEC4BBD8DA0372C069337A1","loginWelcome":"0","userName":"admin@tvunetworks.com","userId":"8a8c96cf3cf0de22013cf0e06ead0002","email":"admin@tvunetworks.com"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 15:33:48,374] INFO  com.eden.cases.Base 验证通过！返回结果包含："tagValue":"432"
+[2021-09-28 15:33:48,375] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 15:33:48,375] INFO  com.eden.cases.Test 测试通过--API:https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 15:33:48,375] INFO  com.eden.cases.Test 已经临时储存的key：{session=A5CAF20B2FEC4BBD8DA0372C069337A1, tagValue=432}
+[2021-09-28 15:33:48,375] INFO  com.eden.cases.Base <<<<<<<<线程等待:1秒后将测试下一个请求
+[2021-09-28 15:36:28,480] INFO  com.eden.cases.Test >>>>>>>>开始测试API(登录)：
+[2021-09-28 15:36:28,480] INFO  com.eden.cases.Base URL：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 15:36:28,480] INFO  com.eden.cases.Base 参数：{"serverName":"General Management","imgCode":"s","pwd":"BA3253876AED6BC22D4A6FF53D8406C6AD864195ED144AB5C87621B6C233B548BAEAE6956DF346EC8C17F5EA10F35EE3CBC514797ED7DDD3145464E2A0BAB413","email":"admin@tvunetworks.com","key":"6f280da79c0641a7b3c631db30eed847","url":"https://newuserservice.tvunetworks.com/userGroup/callback"}
+[2021-09-28 15:36:28,480] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 15:36:28,938] INFO  com.eden.cases.Test 返回结果：{"result":{"tagList":[{"tagValue":"432","targetClient":"a","tagKey":"43"},{"tagValue":"test","tagKey":"test"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"1","targetClient":"QQQQQQ","tagKey":"43232"},{"tagValue":"52","targetClient":"qwrwqaaa","tagKey":"14"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"}],"firstName":"","redirectUrl":"https://newuserservice.tvunetworks.com/userGroup/callback?session=26FC5A6A223541A38123C4DBF8639095","session":"26FC5A6A223541A38123C4DBF8639095","loginWelcome":"0","userName":"admin@tvunetworks.com","userId":"8a8c96cf3cf0de22013cf0e06ead0002","email":"admin@tvunetworks.com"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 15:36:28,939] INFO  com.eden.cases.Base 验证通过！返回结果包含："tagValue":"432"
+[2021-09-28 15:36:28,940] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 15:36:28,940] INFO  com.eden.cases.Test 测试通过--API:https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 15:36:28,940] INFO  com.eden.cases.Test 已经临时储存的key：{session=26FC5A6A223541A38123C4DBF8639095, tagValue=432}
+[2021-09-28 15:36:28,940] INFO  com.eden.cases.Base <<<<<<<<线程等待:1秒后将测试下一个请求
+[2021-09-28 15:36:29,953] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetRole)：
+[2021-09-28 15:36:29,953] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 15:38:46,002] INFO  com.eden.cases.Test >>>>>>>>开始测试API(登录)：
+[2021-09-28 15:38:46,002] INFO  com.eden.cases.Base URL：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 15:38:46,003] INFO  com.eden.cases.Base 参数：{"serverName":"General Management","imgCode":"s","pwd":"BA3253876AED6BC22D4A6FF53D8406C6AD864195ED144AB5C87621B6C233B548BAEAE6956DF346EC8C17F5EA10F35EE3CBC514797ED7DDD3145464E2A0BAB413","email":"admin@tvunetworks.com","key":"6f280da79c0641a7b3c631db30eed847","url":"https://newuserservice.tvunetworks.com/userGroup/callback"}
+[2021-09-28 15:38:46,003] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 15:38:46,343] INFO  com.eden.cases.Test 返回结果：{"result":{"tagList":[{"tagValue":"432","targetClient":"a","tagKey":"43"},{"tagValue":"test","tagKey":"test"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"1","targetClient":"QQQQQQ","tagKey":"43232"},{"tagValue":"52","targetClient":"qwrwqaaa","tagKey":"14"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"}],"firstName":"","redirectUrl":"https://newuserservice.tvunetworks.com/userGroup/callback?session=3E26233FBAA249D28803312CB11A9A07","session":"3E26233FBAA249D28803312CB11A9A07","loginWelcome":"0","userName":"admin@tvunetworks.com","userId":"8a8c96cf3cf0de22013cf0e06ead0002","email":"admin@tvunetworks.com"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 15:38:46,344] INFO  com.eden.cases.Base 验证通过！返回结果包含："tagValue":"432"
+[2021-09-28 15:38:46,344] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 15:38:46,344] INFO  com.eden.cases.Test 测试通过--API:https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 15:38:46,345] INFO  com.eden.cases.Test 已经临时储存的key：{session=3E26233FBAA249D28803312CB11A9A07, tagValue=432}
+[2021-09-28 15:38:46,345] INFO  com.eden.cases.Base <<<<<<<<线程等待:1秒后将测试下一个请求
+[2021-09-28 15:38:47,353] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetRole)：
+[2021-09-28 15:38:47,354] INFO  com.eden.cases.Base URL：http://10.12.128.228/userAuth/main/GetRole?session=3E26233FBAA249D28803312CB11A9A07
+[2021-09-28 15:38:47,355] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 15:38:47,368] INFO  com.eden.cases.Test 返回结果：{"role":2,"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 15:38:47,368] INFO  com.eden.cases.Base 验证通过！返回结果包含："role":2
+[2021-09-28 15:38:47,369] INFO  com.eden.cases.Test 测试通过--API:http://10.12.128.228/userAuth/main/GetRole?session=${session}
+[2021-09-28 15:38:47,369] INFO  com.eden.cases.Test 已经临时储存的key：{session=3E26233FBAA249D28803312CB11A9A07, tagValue=432}
+[2021-09-28 15:38:47,369] INFO  com.eden.cases.Base <<<<<<<<线程等待:1秒后将测试下一个请求
+[2021-09-28 15:38:48,369] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken)：
+[2021-09-28 15:38:48,370] INFO  com.eden.cases.Base URL：http://10.12.22.101/userAuth/token/getToken
+[2021-09-28 15:38:48,371] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 15:38:48,384] INFO  com.eden.cases.Base 请求头：{"Authorization":"3E26233FBAA249D28803312CB11A9A07","Content-Type":"application/json"}
+[2021-09-28 15:40:10,032] INFO  com.eden.cases.Test >>>>>>>>开始测试API(登录)：
+[2021-09-28 15:40:10,033] INFO  com.eden.cases.Base URL：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 15:40:10,033] INFO  com.eden.cases.Base 参数：{"serverName":"General Management","imgCode":"s","pwd":"BA3253876AED6BC22D4A6FF53D8406C6AD864195ED144AB5C87621B6C233B548BAEAE6956DF346EC8C17F5EA10F35EE3CBC514797ED7DDD3145464E2A0BAB413","email":"admin@tvunetworks.com","key":"6f280da79c0641a7b3c631db30eed847","url":"https://newuserservice.tvunetworks.com/userGroup/callback"}
+[2021-09-28 15:40:10,033] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 15:40:10,399] INFO  com.eden.cases.Test 返回结果：{"result":{"tagList":[{"tagValue":"432","targetClient":"a","tagKey":"43"},{"tagValue":"test","tagKey":"test"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"1","targetClient":"QQQQQQ","tagKey":"43232"},{"tagValue":"52","targetClient":"qwrwqaaa","tagKey":"14"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"}],"firstName":"","redirectUrl":"https://newuserservice.tvunetworks.com/userGroup/callback?session=DB8CC784D94D4777A75DF69EE7007AAA","session":"DB8CC784D94D4777A75DF69EE7007AAA","loginWelcome":"0","userName":"admin@tvunetworks.com","userId":"8a8c96cf3cf0de22013cf0e06ead0002","email":"admin@tvunetworks.com"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 15:40:10,399] INFO  com.eden.cases.Base 验证通过！返回结果包含："tagValue":"432"
+[2021-09-28 15:40:10,400] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 15:40:10,400] INFO  com.eden.cases.Base URL：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 15:40:10,400] INFO  com.eden.cases.Test 测试通过--API:https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 15:40:10,400] INFO  com.eden.cases.Test 已经临时储存的key：{session=DB8CC784D94D4777A75DF69EE7007AAA, tagValue=432}
+[2021-09-28 15:40:10,400] INFO  com.eden.cases.Base <<<<<<<<线程等待:1秒后将测试下一个请求
+[2021-09-28 15:40:11,410] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetRole)：
+[2021-09-28 15:40:11,411] INFO  com.eden.cases.Base URL：http://10.12.128.228/userAuth/main/GetRole?session=DB8CC784D94D4777A75DF69EE7007AAA
+[2021-09-28 15:40:11,411] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 15:40:11,423] INFO  com.eden.cases.Test 返回结果：{"role":2,"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 15:40:11,423] INFO  com.eden.cases.Base 验证通过！返回结果包含："role":2
+[2021-09-28 15:40:11,423] INFO  com.eden.cases.Base URL：http://10.12.128.228/userAuth/main/GetRole?session=DB8CC784D94D4777A75DF69EE7007AAA
+[2021-09-28 15:40:11,424] INFO  com.eden.cases.Test 测试通过--API:http://10.12.128.228/userAuth/main/GetRole?session=DB8CC784D94D4777A75DF69EE7007AAA
+[2021-09-28 15:40:11,424] INFO  com.eden.cases.Test 已经临时储存的key：{session=DB8CC784D94D4777A75DF69EE7007AAA, tagValue=432}
+[2021-09-28 15:40:11,424] INFO  com.eden.cases.Base <<<<<<<<线程等待:1秒后将测试下一个请求
+[2021-09-28 15:40:12,438] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken)：
+[2021-09-28 15:40:12,438] INFO  com.eden.cases.Base URL：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 15:40:12,438] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 15:40:12,441] INFO  com.eden.cases.Base 请求头：{"Authorization":"DB8CC784D94D4777A75DF69EE7007AAA","Content-Type":"application/json"}
+[2021-09-28 15:40:12,489] INFO  com.eden.cases.Test 返回结果：{"result":{"expire":360,"token":"E96227FF27C545ABBF1CC503BD6922D1"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 15:40:12,490] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 15:40:12,490] INFO  com.eden.cases.Base URL：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 15:40:12,490] INFO  com.eden.cases.Test 测试通过--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 15:40:12,490] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"940da86dcc415c84417420d1f6149ff3","requestId":"513a14f295ab4f78aa7c06adaa1d844a","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632814812438"}, session=DB8CC784D94D4777A75DF69EE7007AAA, tagValue=432, token=E96227FF27C545ABBF1CC503BD6922D1}
+[2021-09-28 15:40:12,490] INFO  com.eden.cases.Base <<<<<<<<线程等待:1秒后将测试下一个请求
+[2021-09-28 15:44:58,345] INFO  com.eden.cases.Test >>>>>>>>开始测试API(登录)：
+[2021-09-28 15:44:58,345] INFO  com.eden.cases.Base URL：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 15:44:58,345] INFO  com.eden.cases.Base 参数：{"serverName":"General Management","imgCode":"s","pwd":"BA3253876AED6BC22D4A6FF53D8406C6AD864195ED144AB5C87621B6C233B548BAEAE6956DF346EC8C17F5EA10F35EE3CBC514797ED7DDD3145464E2A0BAB413","email":"admin@tvunetworks.com","key":"6f280da79c0641a7b3c631db30eed847","url":"https://newuserservice.tvunetworks.com/userGroup/callback"}
+[2021-09-28 15:44:58,345] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 15:44:58,734] INFO  com.eden.cases.Test 返回结果：{"result":{"tagList":[{"tagValue":"432","targetClient":"a","tagKey":"43"},{"tagValue":"test","tagKey":"test"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"1","targetClient":"QQQQQQ","tagKey":"43232"},{"tagValue":"52","targetClient":"qwrwqaaa","tagKey":"14"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"}],"firstName":"","redirectUrl":"https://newuserservice.tvunetworks.com/userGroup/callback?session=92B1D9B18AFC4444B0E437FE88BBB86B","session":"92B1D9B18AFC4444B0E437FE88BBB86B","loginWelcome":"0","userName":"admin@tvunetworks.com","userId":"8a8c96cf3cf0de22013cf0e06ead0002","email":"admin@tvunetworks.com"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 15:44:58,735] INFO  com.eden.cases.Base 验证通过！返回结果包含："tagValue":"432"
+[2021-09-28 15:44:58,735] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 15:44:58,735] INFO  com.eden.cases.Base URL：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 15:44:58,735] INFO  com.eden.cases.Test >>>>>>>>测试通过(登录)--API:https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 15:44:58,736] INFO  com.eden.cases.Test 已经临时储存的key：{session=92B1D9B18AFC4444B0E437FE88BBB86B, tagValue=432}
+[2021-09-28 15:44:58,736] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 15:44:59,743] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetRole)：
+[2021-09-28 15:44:59,744] INFO  com.eden.cases.Base URL：http://10.12.128.228/userAuth/main/GetRole?session=92B1D9B18AFC4444B0E437FE88BBB86B
+[2021-09-28 15:44:59,744] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 15:44:59,754] INFO  com.eden.cases.Test 返回结果：{"role":2,"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 15:44:59,754] INFO  com.eden.cases.Base 验证通过！返回结果包含："role":2
+[2021-09-28 15:44:59,754] INFO  com.eden.cases.Base URL：http://10.12.128.228/userAuth/main/GetRole?session=92B1D9B18AFC4444B0E437FE88BBB86B
+[2021-09-28 15:44:59,754] INFO  com.eden.cases.Test >>>>>>>>测试通过(GetRole)--API:http://10.12.128.228/userAuth/main/GetRole?session=92B1D9B18AFC4444B0E437FE88BBB86B
+[2021-09-28 15:44:59,754] INFO  com.eden.cases.Test 已经临时储存的key：{session=92B1D9B18AFC4444B0E437FE88BBB86B, tagValue=432}
+[2021-09-28 15:44:59,754] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 15:45:00,757] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken)：
+[2021-09-28 15:45:00,757] INFO  com.eden.cases.Base URL：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 15:45:00,757] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 15:45:00,762] INFO  com.eden.cases.Base 请求头：{"Authorization":"92B1D9B18AFC4444B0E437FE88BBB86B","Content-Type":"application/json"}
+[2021-09-28 15:45:00,823] INFO  com.eden.cases.Test 返回结果：{"result":{"expire":360,"token":"5F6F50EA860A462181A7180E1B3958FF"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 15:45:00,824] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 15:45:00,824] INFO  com.eden.cases.Base URL：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 15:45:00,824] INFO  com.eden.cases.Test >>>>>>>>测试通过(GetToken)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 15:45:00,825] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"989ba22dbef79dde3ec44cf06e99a8af","requestId":"81f621dacf0a44b2bb3130bbdba5dc9f","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632815100757"}, session=92B1D9B18AFC4444B0E437FE88BBB86B, tagValue=432, token=5F6F50EA860A462181A7180E1B3958FF}
+[2021-09-28 15:45:00,825] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 15:45:35,034] INFO  com.eden.cases.Test >>>>>>>>开始测试API(登录)：
+[2021-09-28 15:45:35,035] INFO  com.eden.cases.Base URL：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 15:45:35,035] INFO  com.eden.cases.Base 参数：{"serverName":"General Management","imgCode":"s","pwd":"BA3253876AED6BC22D4A6FF53D8406C6AD864195ED144AB5C87621B6C233B548BAEAE6956DF346EC8C17F5EA10F35EE3CBC514797ED7DDD3145464E2A0BAB413","email":"admin@tvunetworks.com","key":"6f280da79c0641a7b3c631db30eed847","url":"https://newuserservice.tvunetworks.com/userGroup/callback"}
+[2021-09-28 15:45:35,035] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 15:45:35,425] INFO  com.eden.cases.Test 返回结果：{"result":{"tagList":[{"tagValue":"432","targetClient":"a","tagKey":"43"},{"tagValue":"test","tagKey":"test"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"1","targetClient":"QQQQQQ","tagKey":"43232"},{"tagValue":"52","targetClient":"qwrwqaaa","tagKey":"14"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"}],"firstName":"","redirectUrl":"https://newuserservice.tvunetworks.com/userGroup/callback?session=C0423EF50AC44EC2A866041A7CCB2C92","session":"C0423EF50AC44EC2A866041A7CCB2C92","loginWelcome":"0","userName":"admin@tvunetworks.com","userId":"8a8c96cf3cf0de22013cf0e06ead0002","email":"admin@tvunetworks.com"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 15:45:35,425] INFO  com.eden.cases.Base 验证通过！返回结果包含："tagValue":"432"
+[2021-09-28 15:45:35,426] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 15:45:35,426] INFO  com.eden.cases.Base URL：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 15:45:35,426] INFO  com.eden.cases.Test <<<<<<<测试通过(登录)--API:https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 15:45:35,426] INFO  com.eden.cases.Test 已经临时储存的key：{session=C0423EF50AC44EC2A866041A7CCB2C92, tagValue=432}
+[2021-09-28 15:45:35,426] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 15:45:36,433] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetRole)：
+[2021-09-28 15:45:36,434] INFO  com.eden.cases.Base URL：http://10.12.128.228/userAuth/main/GetRole?session=C0423EF50AC44EC2A866041A7CCB2C92
+[2021-09-28 15:45:36,435] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 15:45:36,447] INFO  com.eden.cases.Test 返回结果：{"role":2,"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 15:45:36,448] INFO  com.eden.cases.Base 验证通过！返回结果包含："role":2
+[2021-09-28 15:45:36,448] INFO  com.eden.cases.Base URL：http://10.12.128.228/userAuth/main/GetRole?session=C0423EF50AC44EC2A866041A7CCB2C92
+[2021-09-28 15:45:36,448] INFO  com.eden.cases.Test <<<<<<<测试通过(GetRole)--API:http://10.12.128.228/userAuth/main/GetRole?session=C0423EF50AC44EC2A866041A7CCB2C92
+[2021-09-28 15:45:36,448] INFO  com.eden.cases.Test 已经临时储存的key：{session=C0423EF50AC44EC2A866041A7CCB2C92, tagValue=432}
+[2021-09-28 15:45:36,448] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 15:45:37,463] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken)：
+[2021-09-28 15:45:37,463] INFO  com.eden.cases.Base URL：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 15:45:37,464] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 15:45:37,471] INFO  com.eden.cases.Base 请求头：{"Authorization":"C0423EF50AC44EC2A866041A7CCB2C92","Content-Type":"application/json"}
+[2021-09-28 15:45:37,563] INFO  com.eden.cases.Test 返回结果：{"result":{"expire":360,"token":"A91450ED5FA843039120C7678B15D5E0"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 15:45:37,564] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 15:45:37,565] INFO  com.eden.cases.Base URL：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 15:45:37,565] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 15:45:37,566] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"fe6e8d8b52c2b2daa222f6cf11e0d0a0","requestId":"c5af2203dd564e12aa4e07fc96717fbe","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632815137465"}, session=C0423EF50AC44EC2A866041A7CCB2C92, tagValue=432, token=A91450ED5FA843039120C7678B15D5E0}
+[2021-09-28 15:45:37,566] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 15:59:54,501] INFO  com.eden.cases.Test >>>>>>>>开始测试API(登录)：
+[2021-09-28 15:59:54,501] INFO  com.eden.cases.Base URL：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 15:59:54,501] INFO  com.eden.cases.Base 参数：{"serverName":"General Management","imgCode":"s","pwd":"BA3253876AED6BC22D4A6FF53D8406C6AD864195ED144AB5C87621B6C233B548BAEAE6956DF346EC8C17F5EA10F35EE3CBC514797ED7DDD3145464E2A0BAB413","email":"admin@tvunetworks.com","key":"6f280da79c0641a7b3c631db30eed847","url":"https://newuserservice.tvunetworks.com/userGroup/callback"}
+[2021-09-28 15:59:54,501] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 15:59:54,905] INFO  com.eden.cases.Test 返回结果：{"result":{"tagList":[{"tagValue":"432","targetClient":"a","tagKey":"43"},{"tagValue":"test","tagKey":"test"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"1","targetClient":"QQQQQQ","tagKey":"43232"},{"tagValue":"52","targetClient":"qwrwqaaa","tagKey":"14"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"}],"firstName":"","redirectUrl":"https://newuserservice.tvunetworks.com/userGroup/callback?session=E57DAA426A4D41F8B7E950D40F773DDE","session":"E57DAA426A4D41F8B7E950D40F773DDE","loginWelcome":"0","userName":"admin@tvunetworks.com","userId":"8a8c96cf3cf0de22013cf0e06ead0002","email":"admin@tvunetworks.com"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 15:59:54,905] INFO  com.eden.cases.Base 验证通过！返回结果包含："tagValue":"432"
+[2021-09-28 15:59:54,906] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 15:59:54,906] INFO  com.eden.cases.Base URL：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 15:59:54,906] INFO  com.eden.cases.Test <<<<<<<测试通过(登录)--API:https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 15:59:54,906] INFO  com.eden.cases.Test 已经临时储存的key：{session=E57DAA426A4D41F8B7E950D40F773DDE, tagValue=test}
+[2021-09-28 15:59:54,906] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 15:59:55,918] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetRole)：
+[2021-09-28 15:59:55,919] INFO  com.eden.cases.Base URL：http://10.12.128.228/userAuth/main/GetRole?session=E57DAA426A4D41F8B7E950D40F773DDE
+[2021-09-28 15:59:55,920] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 15:59:55,932] INFO  com.eden.cases.Test 返回结果：{"role":2,"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 15:59:55,932] INFO  com.eden.cases.Base 验证通过！返回结果包含："role":2
+[2021-09-28 15:59:55,932] INFO  com.eden.cases.Base URL：http://10.12.128.228/userAuth/main/GetRole?session=E57DAA426A4D41F8B7E950D40F773DDE
+[2021-09-28 15:59:55,932] INFO  com.eden.cases.Test <<<<<<<测试通过(GetRole)--API:http://10.12.128.228/userAuth/main/GetRole?session=E57DAA426A4D41F8B7E950D40F773DDE
+[2021-09-28 15:59:55,932] INFO  com.eden.cases.Test 已经临时储存的key：{session=E57DAA426A4D41F8B7E950D40F773DDE, tagValue=test}
+[2021-09-28 15:59:55,932] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 15:59:56,933] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken)：
+[2021-09-28 15:59:56,934] INFO  com.eden.cases.Base URL：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 15:59:56,935] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 15:59:56,949] INFO  com.eden.cases.Base 请求头：{"Authorization":"E57DAA426A4D41F8B7E950D40F773DDE","Content-Type":"application/json"}
+[2021-09-28 15:59:57,003] INFO  com.eden.cases.Test 返回结果：{"result":{"expire":360,"token":"6033047FACB24007AC28B6877781D2C3"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 15:59:57,003] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 15:59:57,003] INFO  com.eden.cases.Base URL：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 15:59:57,004] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 15:59:57,004] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"aded6b2f4c4a69f33175a826fdfa885a","requestId":"abd5aec7d35543248e2cd97b9744073c","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632815996935"}, session=E57DAA426A4D41F8B7E950D40F773DDE, tagValue=test, token=6033047FACB24007AC28B6877781D2C3}
+[2021-09-28 15:59:57,004] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:01:22,543] INFO  com.eden.cases.Test >>>>>>>>开始测试API(登录)：
+[2021-09-28 16:01:22,543] INFO  com.eden.cases.Base URL：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:01:22,544] INFO  com.eden.cases.Base 参数：{"serverName":"General Management","imgCode":"s","pwd":"BA3253876AED6BC22D4A6FF53D8406C6AD864195ED144AB5C87621B6C233B548BAEAE6956DF346EC8C17F5EA10F35EE3CBC514797ED7DDD3145464E2A0BAB413","email":"admin@tvunetworks.com","key":"6f280da79c0641a7b3c631db30eed847","url":"https://newuserservice.tvunetworks.com/userGroup/callback"}
+[2021-09-28 16:01:22,544] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:01:22,919] INFO  com.eden.cases.Test 返回结果：{"result":{"tagList":[{"tagValue":"432","targetClient":"a","tagKey":"43"},{"tagValue":"test","tagKey":"test"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"1","targetClient":"QQQQQQ","tagKey":"43232"},{"tagValue":"52","targetClient":"qwrwqaaa","tagKey":"14"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"}],"firstName":"","redirectUrl":"https://newuserservice.tvunetworks.com/userGroup/callback?session=C0219DBD8AA04159953645B4477CE14D","session":"C0219DBD8AA04159953645B4477CE14D","loginWelcome":"0","userName":"admin@tvunetworks.com","userId":"8a8c96cf3cf0de22013cf0e06ead0002","email":"admin@tvunetworks.com"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:01:22,919] INFO  com.eden.cases.Base 验证通过！返回结果包含："tagValue":"432"
+[2021-09-28 16:01:22,920] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 16:01:22,920] INFO  com.eden.cases.Base URL：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:01:22,920] INFO  com.eden.cases.Test <<<<<<<测试通过(登录)--API:https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:01:22,920] INFO  com.eden.cases.Test 已经临时储存的key：{session=C0219DBD8AA04159953645B4477CE14D, tagValue=RW}
+[2021-09-28 16:01:22,920] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:01:23,928] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetRole)：
+[2021-09-28 16:01:23,928] INFO  com.eden.cases.Base URL：http://10.12.128.228/userAuth/main/GetRole?session=C0219DBD8AA04159953645B4477CE14D
+[2021-09-28 16:01:23,929] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:01:23,943] INFO  com.eden.cases.Test 返回结果：{"role":2,"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:01:23,943] INFO  com.eden.cases.Base 验证通过！返回结果包含："role":2
+[2021-09-28 16:01:23,944] INFO  com.eden.cases.Base URL：http://10.12.128.228/userAuth/main/GetRole?session=C0219DBD8AA04159953645B4477CE14D
+[2021-09-28 16:01:23,944] INFO  com.eden.cases.Test <<<<<<<测试通过(GetRole)--API:http://10.12.128.228/userAuth/main/GetRole?session=C0219DBD8AA04159953645B4477CE14D
+[2021-09-28 16:01:23,944] INFO  com.eden.cases.Test 已经临时储存的key：{session=C0219DBD8AA04159953645B4477CE14D, tagValue=RW}
+[2021-09-28 16:01:23,944] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:01:24,958] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken)：
+[2021-09-28 16:01:24,959] INFO  com.eden.cases.Base URL：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:01:24,959] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:01:24,973] INFO  com.eden.cases.Base 请求头：{"Authorization":"C0219DBD8AA04159953645B4477CE14D","Content-Type":"application/json"}
+[2021-09-28 16:01:25,023] INFO  com.eden.cases.Test 返回结果：{"result":{"expire":360,"token":"B21A361F31634F6498EAFEB9CD3D6227"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:01:25,023] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 16:01:25,023] INFO  com.eden.cases.Base URL：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:01:25,024] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:01:25,024] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"c5469ddcf3151dd7ee206ce05915707d","requestId":"0d15aa124abe44c1b573aec352894c4f","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632816084960"}, session=C0219DBD8AA04159953645B4477CE14D, tagValue=RW, token=B21A361F31634F6498EAFEB9CD3D6227}
+[2021-09-28 16:01:25,024] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:05:55,773] INFO  com.eden.cases.Test >>>>>>>>开始测试API(登录)：
+[2021-09-28 16:05:55,774] INFO  com.eden.cases.Base 参数：{"serverName":"General Management","imgCode":"s","pwd":"BA3253876AED6BC22D4A6FF53D8406C6AD864195ED144AB5C87621B6C233B548BAEAE6956DF346EC8C17F5EA10F35EE3CBC514797ED7DDD3145464E2A0BAB413","email":"admin@tvunetworks.com","key":"6f280da79c0641a7b3c631db30eed847","url":"https://newuserservice.tvunetworks.com/userGroup/callback"}
+[2021-09-28 16:05:55,774] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:05:56,150] INFO  com.eden.cases.Test 返回结果：{"result":{"tagList":[{"tagValue":"432","targetClient":"a","tagKey":"43"},{"tagValue":"test","tagKey":"test"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"1","targetClient":"QQQQQQ","tagKey":"43232"},{"tagValue":"52","targetClient":"qwrwqaaa","tagKey":"14"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"}],"firstName":"","redirectUrl":"https://newuserservice.tvunetworks.com/userGroup/callback?session=443A042D4AC94AB0899A25955414162D","session":"443A042D4AC94AB0899A25955414162D","loginWelcome":"0","userName":"admin@tvunetworks.com","userId":"8a8c96cf3cf0de22013cf0e06ead0002","email":"admin@tvunetworks.com"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:05:56,151] INFO  com.eden.cases.Base 验证通过！返回结果包含："tagValue":"432"
+[2021-09-28 16:05:56,151] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 16:05:56,151] INFO  com.eden.cases.Test <<<<<<<测试通过(登录)--API:https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:05:56,151] INFO  com.eden.cases.Test 已经临时储存的key：{session=443A042D4AC94AB0899A25955414162D, tagValue=RW}
+[2021-09-28 16:05:56,151] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:05:57,153] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetRole)：
+[2021-09-28 16:05:57,153] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:05:57,165] INFO  com.eden.cases.Test 返回结果：{"role":2,"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:05:57,166] INFO  com.eden.cases.Base 验证通过！返回结果包含："role":2
+[2021-09-28 16:05:57,166] INFO  com.eden.cases.Test <<<<<<<测试通过(GetRole)--API:http://10.12.128.228/userAuth/main/GetRole?session=443A042D4AC94AB0899A25955414162D
+[2021-09-28 16:05:57,166] INFO  com.eden.cases.Test 已经临时储存的key：{session=443A042D4AC94AB0899A25955414162D, tagValue=RW}
+[2021-09-28 16:05:57,166] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:05:58,172] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken)：
+[2021-09-28 16:05:58,173] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:05:58,179] INFO  com.eden.cases.Base 请求头：{"Authorization":"443A042D4AC94AB0899A25955414162D","Content-Type":"application/json"}
+[2021-09-28 16:05:58,250] INFO  com.eden.cases.Test 返回结果：{"result":{"expire":360,"token":"4F077FCF881A4313976E0384C9F2EFC1"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:05:58,250] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 16:05:58,251] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:05:58,252] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"743bd48ccbb1617458e51a7596ab360b","requestId":"2e8e3c6092bb4f6c94367c319d9fe719","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632816358173"}, session=443A042D4AC94AB0899A25955414162D, tagValue=RW, token=4F077FCF881A4313976E0384C9F2EFC1}
+[2021-09-28 16:05:58,252] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:09:06,462] INFO  com.eden.cases.Test >>>>>>>>开始测试API(登录)：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:09:06,462] INFO  com.eden.cases.Base 参数：{"serverName":"General Management","imgCode":"s","pwd":"BA3253876AED6BC22D4A6FF53D8406C6AD864195ED144AB5C87621B6C233B548BAEAE6956DF346EC8C17F5EA10F35EE3CBC514797ED7DDD3145464E2A0BAB413","email":"admin@tvunetworks.com","key":"6f280da79c0641a7b3c631db30eed847","url":"https://newuserservice.tvunetworks.com/userGroup/callback"}
+[2021-09-28 16:09:06,463] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:09:06,827] INFO  com.eden.cases.Test 返回结果：{"result":{"tagList":[{"tagValue":"432","targetClient":"a","tagKey":"43"},{"tagValue":"test","tagKey":"test"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"1","targetClient":"QQQQQQ","tagKey":"43232"},{"tagValue":"52","targetClient":"qwrwqaaa","tagKey":"14"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"}],"firstName":"","redirectUrl":"https://newuserservice.tvunetworks.com/userGroup/callback?session=8ED31513E2B54D76A7A4EEC7BC358DDB","session":"8ED31513E2B54D76A7A4EEC7BC358DDB","loginWelcome":"0","userName":"admin@tvunetworks.com","userId":"8a8c96cf3cf0de22013cf0e06ead0002","email":"admin@tvunetworks.com"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:09:06,828] INFO  com.eden.cases.Base 验证通过！返回结果包含："tagValue":"432"
+[2021-09-28 16:09:06,828] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 16:09:06,828] INFO  com.eden.cases.Test <<<<<<<测试通过(登录)--API:https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:09:06,828] INFO  com.eden.cases.Test 已经临时储存的key：{session=8ED31513E2B54D76A7A4EEC7BC358DDB, tagValue=RW}
+[2021-09-28 16:09:06,828] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:09:07,837] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetRole)：http://10.12.128.228/userAuth/main/GetRole?session=8ED31513E2B54D76A7A4EEC7BC358DDB
+[2021-09-28 16:09:07,838] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:09:07,850] INFO  com.eden.cases.Test 返回结果：{"role":2,"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:09:07,851] INFO  com.eden.cases.Base 验证通过！返回结果包含："role":2
+[2021-09-28 16:09:07,851] INFO  com.eden.cases.Test <<<<<<<测试通过(GetRole)--API:http://10.12.128.228/userAuth/main/GetRole?session=8ED31513E2B54D76A7A4EEC7BC358DDB
+[2021-09-28 16:09:07,851] INFO  com.eden.cases.Test 已经临时储存的key：{session=8ED31513E2B54D76A7A4EEC7BC358DDB, tagValue=RW}
+[2021-09-28 16:09:07,851] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:09:08,866] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:09:08,867] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:09:08,874] INFO  com.eden.cases.Base 请求头：{"Authorization":"8ED31513E2B54D76A7A4EEC7BC358DDB","Content-Type":"application/json"}
+[2021-09-28 16:09:08,931] INFO  com.eden.cases.Test 返回结果：{"result":{"expire":360,"token":"1FB1642AF0404D1F80475C852D42BF38"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:09:08,931] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 16:09:08,932] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:09:08,932] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"7c98a2a0f683ddd625dee62f8f097d0a","requestId":"149ae40e6a9643adbbaf3de6a35e12c4","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632816548867"}, session=8ED31513E2B54D76A7A4EEC7BC358DDB, tagValue=RW, token=1FB1642AF0404D1F80475C852D42BF38}
+[2021-09-28 16:09:08,932] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:18:12,611] INFO  com.eden.cases.Test >>>>>>>>开始测试API(登录)：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:18:12,612] INFO  com.eden.cases.Base 参数：{"serverName":"General Management","imgCode":"s","pwd":"BA3253876AED6BC22D4A6FF53D8406C6AD864195ED144AB5C87621B6C233B548BAEAE6956DF346EC8C17F5EA10F35EE3CBC514797ED7DDD3145464E2A0BAB413","email":"admin@tvunetworks.com","key":"6f280da79c0641a7b3c631db30eed847","url":"https://newuserservice.tvunetworks.com/userGroup/callback"}
+[2021-09-28 16:18:12,612] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:18:13,060] INFO  com.eden.cases.Test 返回结果：{"result":{"tagList":[{"tagValue":"432","targetClient":"a","tagKey":"43"},{"tagValue":"test","tagKey":"test"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"1","targetClient":"QQQQQQ","tagKey":"43232"},{"tagValue":"52","targetClient":"qwrwqaaa","tagKey":"14"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"}],"firstName":"","redirectUrl":"https://newuserservice.tvunetworks.com/userGroup/callback?session=B0EE1F09E6204061B5ABCC2AA5A8539F","session":"B0EE1F09E6204061B5ABCC2AA5A8539F","loginWelcome":"0","userName":"admin@tvunetworks.com","userId":"8a8c96cf3cf0de22013cf0e06ead0002","email":"admin@tvunetworks.com"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:18:13,060] INFO  com.eden.cases.Base 验证通过！返回结果包含："tagValue":"432"
+[2021-09-28 16:18:13,061] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 16:18:13,061] INFO  com.eden.cases.Test <<<<<<<测试通过(登录)--API:https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:18:13,061] INFO  com.eden.cases.Test 已经临时储存的key：{session=B0EE1F09E6204061B5ABCC2AA5A8539F, tagValue=RW}
+[2021-09-28 16:18:13,061] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:18:14,062] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetRole)：http://10.12.128.228/userAuth/main/GetRole?session=B0EE1F09E6204061B5ABCC2AA5A8539F
+[2021-09-28 16:18:14,062] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:18:14,078] INFO  com.eden.cases.Test 返回结果：{"role":2,"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:18:14,078] INFO  com.eden.cases.Base 验证通过！返回结果包含："role":2
+[2021-09-28 16:18:14,078] INFO  com.eden.cases.Test <<<<<<<测试通过(GetRole)--API:http://10.12.128.228/userAuth/main/GetRole?session=B0EE1F09E6204061B5ABCC2AA5A8539F
+[2021-09-28 16:18:14,078] INFO  com.eden.cases.Test 已经临时储存的key：{session=B0EE1F09E6204061B5ABCC2AA5A8539F, tagValue=RW}
+[2021-09-28 16:18:14,078] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:18:15,081] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:18:15,082] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:18:15,090] INFO  com.eden.cases.Base 请求头：{"Authorization":"B0EE1F09E6204061B5ABCC2AA5A8539F","Content-Type":"application/json"}
+[2021-09-28 16:18:15,187] INFO  com.eden.cases.Test 返回结果：{"result":{"expire":360,"token":"25E2D49B888944D1A88D0BDBCD632574"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:18:15,188] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 16:18:15,188] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:18:15,189] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"0f8922c6fd5f0591960447def3c9e7ca","requestId":"6135ff9ff5ad430eaf1a2f6d87dab635","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632817095082"}, session=B0EE1F09E6204061B5ABCC2AA5A8539F, tagValue=RW, token=25E2D49B888944D1A88D0BDBCD632574}
+[2021-09-28 16:18:15,190] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:20:40,549] INFO  com.eden.cases.Test >>>>>>>>开始测试API(登录)：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:20:40,550] INFO  com.eden.cases.Base 参数：{"serverName":"General Management","imgCode":"s","pwd":"BA3253876AED6BC22D4A6FF53D8406C6AD864195ED144AB5C87621B6C233B548BAEAE6956DF346EC8C17F5EA10F35EE3CBC514797ED7DDD3145464E2A0BAB413","email":"admin@tvunetworks.com","key":"6f280da79c0641a7b3c631db30eed847","url":"https://newuserservice.tvunetworks.com/userGroup/callback"}
+[2021-09-28 16:20:40,550] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:21:19,375] INFO  com.eden.cases.Test >>>>>>>>开始测试API(登录)：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:21:19,375] INFO  com.eden.cases.Base 参数：{"serverName":"General Management","imgCode":"s","pwd":"BA3253876AED6BC22D4A6FF53D8406C6AD864195ED144AB5C87621B6C233B548BAEAE6956DF346EC8C17F5EA10F35EE3CBC514797ED7DDD3145464E2A0BAB413","email":"admin@tvunetworks.com","key":"6f280da79c0641a7b3c631db30eed847","url":"https://newuserservice.tvunetworks.com/userGroup/callback"}
+[2021-09-28 16:21:19,375] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:22:18,435] INFO  com.eden.cases.Test >>>>>>>>开始测试API(登录)：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:22:18,435] INFO  com.eden.cases.Base 参数：{"serverName":"General Management","imgCode":"s","pwd":"BA3253876AED6BC22D4A6FF53D8406C6AD864195ED144AB5C87621B6C233B548BAEAE6956DF346EC8C17F5EA10F35EE3CBC514797ED7DDD3145464E2A0BAB413","email":"admin@tvunetworks.com","key":"6f280da79c0641a7b3c631db30eed847","url":"https://newuserservice.tvunetworks.com/userGroup/callback"}
+[2021-09-28 16:22:18,436] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:22:18,793] INFO  com.eden.cases.Base 返回结果：{"result":{"tagList":[{"tagValue":"432","targetClient":"a","tagKey":"43"},{"tagValue":"test","tagKey":"test"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"1","targetClient":"QQQQQQ","tagKey":"43232"},{"tagValue":"52","targetClient":"qwrwqaaa","tagKey":"14"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"}],"firstName":"","redirectUrl":"https://newuserservice.tvunetworks.com/userGroup/callback?session=CD21D370020F4D36AA8C65CF566CB893","session":"CD21D370020F4D36AA8C65CF566CB893","loginWelcome":"0","userName":"admin@tvunetworks.com","userId":"8a8c96cf3cf0de22013cf0e06ead0002","email":"admin@tvunetworks.com"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:22:18,794] INFO  com.eden.cases.Base 验证通过！返回结果包含："tagValue":"432"
+[2021-09-28 16:22:18,794] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 16:22:18,794] INFO  com.eden.cases.Test <<<<<<<测试通过(登录)--API:https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:22:18,794] INFO  com.eden.cases.Test 已经临时储存的key：{session=CD21D370020F4D36AA8C65CF566CB893, tagValue=RW}
+[2021-09-28 16:22:18,794] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:22:19,797] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetRole)：http://10.12.128.228/userAuth/main/GetRole?session=CD21D370020F4D36AA8C65CF566CB893
+[2021-09-28 16:22:19,797] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:22:19,814] INFO  com.eden.cases.Base 返回结果：{"role":2,"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:22:19,814] INFO  com.eden.cases.Base 验证通过！返回结果包含："role":2
+[2021-09-28 16:22:19,815] INFO  com.eden.cases.Test <<<<<<<测试通过(GetRole)--API:http://10.12.128.228/userAuth/main/GetRole?session=CD21D370020F4D36AA8C65CF566CB893
+[2021-09-28 16:22:19,815] INFO  com.eden.cases.Test 已经临时储存的key：{session=CD21D370020F4D36AA8C65CF566CB893, tagValue=RW}
+[2021-09-28 16:22:19,815] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:22:20,829] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:22:20,830] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:22:20,836] INFO  com.eden.cases.Base 请求头：{"Authorization":"CD21D370020F4D36AA8C65CF566CB893","Content-Type":"application/json"}
+[2021-09-28 16:22:20,895] INFO  com.eden.cases.Base 返回结果：{"result":{"expire":360,"token":"46B73A9D2BCF4848BFC4678F5A478423"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:22:20,896] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 16:22:20,897] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:22:20,897] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"ddf9009aca6e7bd00e5e1bca7bf70edf","requestId":"a04c12bed17448d5a00c96da80d50bd5","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632817340830"}, session=CD21D370020F4D36AA8C65CF566CB893, tagValue=RW, token=46B73A9D2BCF4848BFC4678F5A478423}
+[2021-09-28 16:22:20,898] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:27:42,811] INFO  com.eden.cases.Test >>>>>>>>开始测试API(登录)：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:27:42,811] INFO  com.eden.cases.Base 参数：{"serverName":"General Management","imgCode":"s","pwd":"BA3253876AED6BC22D4A6FF53D8406C6AD864195ED144AB5C87621B6C233B548BAEAE6956DF346EC8C17F5EA10F35EE3CBC514797ED7DDD3145464E2A0BAB413","email":"admin@tvunetworks.com","key":"6f280da79c0641a7b3c631db30eed847","url":"https://newuserservice.tvunetworks.com/userGroup/callback"}
+[2021-09-28 16:27:42,811] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:27:43,209] INFO  com.eden.cases.Base 返回结果：{"result":{"tagList":[{"tagValue":"432","targetClient":"a","tagKey":"43"},{"tagValue":"test","tagKey":"test"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"1","targetClient":"QQQQQQ","tagKey":"43232"},{"tagValue":"52","targetClient":"qwrwqaaa","tagKey":"14"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"}],"firstName":"","redirectUrl":"https://newuserservice.tvunetworks.com/userGroup/callback?session=C60750CD97EC404AA244EDAE95CE9DDC","session":"C60750CD97EC404AA244EDAE95CE9DDC","loginWelcome":"0","userName":"admin@tvunetworks.com","userId":"8a8c96cf3cf0de22013cf0e06ead0002","email":"admin@tvunetworks.com"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:27:43,210] INFO  com.eden.cases.Base 验证通过！返回结果包含："tagValue":"432"
+[2021-09-28 16:27:43,210] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 16:27:43,210] INFO  com.eden.cases.Test <<<<<<<测试通过(登录)--API:https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:27:43,210] INFO  com.eden.cases.Test 已经临时储存的key：{session=C60750CD97EC404AA244EDAE95CE9DDC, tagValue=RW}
+[2021-09-28 16:27:43,210] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:27:44,212] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetRole)：http://10.12.128.228/userAuth/main/GetRole?session=C60750CD97EC404AA244EDAE95CE9DDC
+[2021-09-28 16:27:44,212] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:27:44,223] INFO  com.eden.cases.Base 返回结果：{"role":2,"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:27:44,223] INFO  com.eden.cases.Base 验证通过！返回结果包含："role":2
+[2021-09-28 16:27:44,223] INFO  com.eden.cases.Test <<<<<<<测试通过(GetRole)--API:http://10.12.128.228/userAuth/main/GetRole?session=C60750CD97EC404AA244EDAE95CE9DDC
+[2021-09-28 16:27:44,224] INFO  com.eden.cases.Test 已经临时储存的key：{session=C60750CD97EC404AA244EDAE95CE9DDC, tagValue=RW}
+[2021-09-28 16:27:44,224] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:27:45,228] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-1)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:27:45,228] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:27:45,234] INFO  com.eden.cases.Base 请求头：{"Authorization":"C60750CD97EC404AA244EDAE95CE9DDC","Content-Type":"application/json"}
+[2021-09-28 16:27:45,284] INFO  com.eden.cases.Base 返回结果：{"result":{"expire":360,"token":"9D73D92F4C9343B585A44DF5EA0FB2D8"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:27:45,285] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 16:27:45,285] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken-1)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:27:45,286] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"30448754bee5dadeee729e12d7c96318","requestId":"e4ef5e5bbe684a54bb6282affb035940","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632817665228"}, session=C60750CD97EC404AA244EDAE95CE9DDC, tagValue=RW, token=9D73D92F4C9343B585A44DF5EA0FB2D8}
+[2021-09-28 16:27:45,286] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:27:46,289] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-2)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:27:46,290] INFO  com.eden.cases.Base 参数：{"password":"","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:27:46,291] INFO  com.eden.cases.Base 请求头：{"Authorization":"C60750CD97EC404AA244EDAE95CE9DDC","Content-Type":"application/json"}
+[2021-09-28 16:27:46,314] INFO  com.eden.cases.Base 返回结果：{"errorCode":"0x80060002","errorInfo":"Some necessary parameter(s) is lacked"}
+[2021-09-28 16:27:46,315] ERROR com.eden.cases.Base 验证失败！期望返回的值：Some necessary parameter(s) is lacked,实际结果：{"errorCode":"0x80060002","errorInfo":"Some necessary parameter(s) is lacked"}
+[2021-09-28 16:27:46,315] ERROR com.eden.cases.Test <<<<<<<<测试失败(GetToken-2)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:27:46,315] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"a3166c5840b868ab42ceae9cceb523f9","requestId":"e2f50f945ccc4a8b91cd3fb970d3e2d5","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632817666290"}, session=C60750CD97EC404AA244EDAE95CE9DDC, tagValue=RW, token=9D73D92F4C9343B585A44DF5EA0FB2D8}
+[2021-09-28 16:27:46,315] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-3)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:27:46,315] INFO  com.eden.cases.Base 参数：{"password":"1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:27:46,315] INFO  com.eden.cases.Base 请求头：{"Authorization":"C60750CD97EC404AA244EDAE95CE9DDC","Content-Type":"application/json"}
+[2021-09-28 16:27:46,343] INFO  com.eden.cases.Base 返回结果：{"errorCode":"0x80060024","errorInfo":"Wrong password"}
+[2021-09-28 16:27:46,344] ERROR com.eden.cases.Base 验证失败！期望返回的值：Wrong password,实际结果：{"errorCode":"0x80060024","errorInfo":"Wrong password"}
+[2021-09-28 16:27:46,344] ERROR com.eden.cases.Test <<<<<<<<测试失败(GetToken-3)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:27:46,344] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"edd30f9a312cca3e735e04953e36676d","requestId":"56426eb2c1774bd6bb44b45ee1e45a0f","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632817666315"}, session=C60750CD97EC404AA244EDAE95CE9DDC, tagValue=RW, token=9D73D92F4C9343B585A44DF5EA0FB2D8}
+[2021-09-28 16:27:46,344] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-4)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:27:46,345] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edasdf@tvunetworks.com"}
+[2021-09-28 16:27:46,345] INFO  com.eden.cases.Base 请求头：{"Authorization":"C60750CD97EC404AA244EDAE95CE9DDC","Content-Type":"application/json"}
+[2021-09-28 16:27:46,370] INFO  com.eden.cases.Base 返回结果：{"errorCode":"0x80060023","errorInfo":"Inexistent account"}
+[2021-09-28 16:27:46,371] ERROR com.eden.cases.Base 验证失败！期望返回的值：Inexistent account,实际结果：{"errorCode":"0x80060023","errorInfo":"Inexistent account"}
+[2021-09-28 16:27:46,372] ERROR com.eden.cases.Test <<<<<<<<测试失败(GetToken-4)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:27:46,372] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"0f741c727064cdbe10993277f82408c3","requestId":"baf2017e584a438dbb4aa9e2f1e58201","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632817666345"}, session=C60750CD97EC404AA244EDAE95CE9DDC, tagValue=RW, token=9D73D92F4C9343B585A44DF5EA0FB2D8}
+[2021-09-28 16:30:12,879] INFO  com.eden.cases.Test >>>>>>>>开始测试API(登录)：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:30:12,880] INFO  com.eden.cases.Base 参数：{"serverName":"General Management","imgCode":"s","pwd":"BA3253876AED6BC22D4A6FF53D8406C6AD864195ED144AB5C87621B6C233B548BAEAE6956DF346EC8C17F5EA10F35EE3CBC514797ED7DDD3145464E2A0BAB413","email":"admin@tvunetworks.com","key":"6f280da79c0641a7b3c631db30eed847","url":"https://newuserservice.tvunetworks.com/userGroup/callback"}
+[2021-09-28 16:30:12,880] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:30:13,286] INFO  com.eden.cases.Base 返回结果：{"result":{"tagList":[{"tagValue":"432","targetClient":"a","tagKey":"43"},{"tagValue":"test","tagKey":"test"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"1","targetClient":"QQQQQQ","tagKey":"43232"},{"tagValue":"52","targetClient":"qwrwqaaa","tagKey":"14"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"}],"firstName":"","redirectUrl":"https://newuserservice.tvunetworks.com/userGroup/callback?session=35B8BB184C5A48B2A1BA48B6A9D7AD35","session":"35B8BB184C5A48B2A1BA48B6A9D7AD35","loginWelcome":"0","userName":"admin@tvunetworks.com","userId":"8a8c96cf3cf0de22013cf0e06ead0002","email":"admin@tvunetworks.com"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:30:13,286] INFO  com.eden.cases.Base 验证通过！返回结果包含："tagValue":"432"
+[2021-09-28 16:30:13,286] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 16:30:13,286] INFO  com.eden.cases.Test <<<<<<<测试通过(登录)--API:https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:30:13,287] INFO  com.eden.cases.Test 已经临时储存的key：{session=35B8BB184C5A48B2A1BA48B6A9D7AD35, tagValue=RW}
+[2021-09-28 16:30:13,287] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:30:14,302] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetRole)：http://10.12.128.228/userAuth/main/GetRole?session=35B8BB184C5A48B2A1BA48B6A9D7AD35
+[2021-09-28 16:30:14,302] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:30:14,315] INFO  com.eden.cases.Base 返回结果：{"role":2,"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:30:14,315] INFO  com.eden.cases.Base 验证通过！返回结果包含："role":2
+[2021-09-28 16:30:14,315] INFO  com.eden.cases.Test <<<<<<<测试通过(GetRole)--API:http://10.12.128.228/userAuth/main/GetRole?session=35B8BB184C5A48B2A1BA48B6A9D7AD35
+[2021-09-28 16:30:14,315] INFO  com.eden.cases.Test 已经临时储存的key：{session=35B8BB184C5A48B2A1BA48B6A9D7AD35, tagValue=RW}
+[2021-09-28 16:30:14,315] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:30:15,327] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-1)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:30:15,328] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:30:15,334] INFO  com.eden.cases.Base 请求头：{"Authorization":"35B8BB184C5A48B2A1BA48B6A9D7AD35","Content-Type":"application/json"}
+[2021-09-28 16:30:15,389] INFO  com.eden.cases.Base 返回结果：{"result":{"expire":360,"token":"035EAF135C814FF48F010B0E26756845"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:30:15,389] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 16:30:15,389] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken-1)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:30:15,389] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"0f47598e1ea839ec4e48ceb522a94e14","requestId":"ec2734d174ca48f0bc671936be8c04aa","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632817815329"}, session=35B8BB184C5A48B2A1BA48B6A9D7AD35, tagValue=RW, errorInfo=Success}
+[2021-09-28 16:30:15,390] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:30:16,398] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-2)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:30:16,398] INFO  com.eden.cases.Base 参数：{"password":"","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:30:16,400] INFO  com.eden.cases.Base 请求头：{"Authorization":"35B8BB184C5A48B2A1BA48B6A9D7AD35","Content-Type":"application/json"}
+[2021-09-28 16:30:16,423] INFO  com.eden.cases.Base 返回结果：{"errorCode":"0x80060002","errorInfo":"Some necessary parameter(s) is lacked"}
+[2021-09-28 16:30:16,423] ERROR com.eden.cases.Base 验证失败！期望返回的值："errorInfo": "Some necessary parameter(s) is lacked",实际结果：{"errorCode":"0x80060002","errorInfo":"Some necessary parameter(s) is lacked"}
+[2021-09-28 16:30:16,423] ERROR com.eden.cases.Test <<<<<<<<测试失败(GetToken-2)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:30:16,423] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"e4784ef9731dbef192726d5e94dc748d","requestId":"35b308bbee1a4e99956ab66f49dc0fc4","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632817816399"}, session=35B8BB184C5A48B2A1BA48B6A9D7AD35, tagValue=RW, errorInfo=Success}
+[2021-09-28 16:30:16,423] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-3)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:30:16,423] INFO  com.eden.cases.Base 参数：{"password":"1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:30:16,424] INFO  com.eden.cases.Base 请求头：{"Authorization":"35B8BB184C5A48B2A1BA48B6A9D7AD35","Content-Type":"application/json"}
+[2021-09-28 16:30:16,457] INFO  com.eden.cases.Base 返回结果：{"errorCode":"0x80060024","errorInfo":"Wrong password"}
+[2021-09-28 16:30:16,458] ERROR com.eden.cases.Base 验证失败！期望返回的值："errorInfo": "Wrong password",实际结果：{"errorCode":"0x80060024","errorInfo":"Wrong password"}
+[2021-09-28 16:30:16,458] ERROR com.eden.cases.Test <<<<<<<<测试失败(GetToken-3)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:30:16,458] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"75776dc1b203d59d96cc92360b2286dd","requestId":"40ac215426a94d9985bd8ab45d722023","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632817816424"}, session=35B8BB184C5A48B2A1BA48B6A9D7AD35, tagValue=RW, errorInfo=Success}
+[2021-09-28 16:30:16,458] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-4)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:30:16,458] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edasdf@tvunetworks.com"}
+[2021-09-28 16:30:16,458] INFO  com.eden.cases.Base 请求头：{"Authorization":"35B8BB184C5A48B2A1BA48B6A9D7AD35","Content-Type":"application/json"}
+[2021-09-28 16:30:16,481] INFO  com.eden.cases.Base 返回结果：{"errorCode":"0x80060023","errorInfo":"Inexistent account"}
+[2021-09-28 16:30:16,481] ERROR com.eden.cases.Base 验证失败！期望返回的值："errorInfo": "Inexistent account",实际结果：{"errorCode":"0x80060023","errorInfo":"Inexistent account"}
+[2021-09-28 16:30:16,482] ERROR com.eden.cases.Test <<<<<<<<测试失败(GetToken-4)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:30:16,482] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"ece8439edc8e44ce681cc40005bca220","requestId":"ff7c2334ed9348ba9e4e6b97ab8f82ba","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632817816458"}, session=35B8BB184C5A48B2A1BA48B6A9D7AD35, tagValue=RW, errorInfo=Success}
+[2021-09-28 16:33:55,842] INFO  com.eden.cases.Test >>>>>>>>开始测试API(登录)：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:33:55,843] INFO  com.eden.cases.Base 参数：{"serverName":"General Management","imgCode":"s","pwd":"BA3253876AED6BC22D4A6FF53D8406C6AD864195ED144AB5C87621B6C233B548BAEAE6956DF346EC8C17F5EA10F35EE3CBC514797ED7DDD3145464E2A0BAB413","email":"admin@tvunetworks.com","key":"6f280da79c0641a7b3c631db30eed847","url":"https://newuserservice.tvunetworks.com/userGroup/callback"}
+[2021-09-28 16:33:55,843] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:33:56,220] INFO  com.eden.cases.Base 返回结果：{"result":{"tagList":[{"tagValue":"432","targetClient":"a","tagKey":"43"},{"tagValue":"test","tagKey":"test"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"1","targetClient":"QQQQQQ","tagKey":"43232"},{"tagValue":"52","targetClient":"qwrwqaaa","tagKey":"14"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"}],"firstName":"","redirectUrl":"https://newuserservice.tvunetworks.com/userGroup/callback?session=D827D08EDAF64D1EA7A5F815C1318741","session":"D827D08EDAF64D1EA7A5F815C1318741","loginWelcome":"0","userName":"admin@tvunetworks.com","userId":"8a8c96cf3cf0de22013cf0e06ead0002","email":"admin@tvunetworks.com"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:33:56,221] INFO  com.eden.cases.Base 验证通过！返回结果包含："tagValue":"432"
+[2021-09-28 16:33:56,221] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 16:33:56,221] INFO  com.eden.cases.Test <<<<<<<测试通过(登录)--API:https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:33:56,221] INFO  com.eden.cases.Test 已经临时储存的key：{session=D827D08EDAF64D1EA7A5F815C1318741, tagValue=RW}
+[2021-09-28 16:33:56,221] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:33:57,225] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetRole)：http://10.12.128.228/userAuth/main/GetRole?session=D827D08EDAF64D1EA7A5F815C1318741
+[2021-09-28 16:33:57,225] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:33:57,239] INFO  com.eden.cases.Base 返回结果：{"role":2,"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:33:57,239] INFO  com.eden.cases.Base 验证通过！返回结果包含："role":2
+[2021-09-28 16:33:57,239] INFO  com.eden.cases.Test <<<<<<<测试通过(GetRole)--API:http://10.12.128.228/userAuth/main/GetRole?session=D827D08EDAF64D1EA7A5F815C1318741
+[2021-09-28 16:33:57,239] INFO  com.eden.cases.Test 已经临时储存的key：{session=D827D08EDAF64D1EA7A5F815C1318741, tagValue=RW}
+[2021-09-28 16:33:57,239] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:33:58,254] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-1)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:33:58,255] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:33:58,261] INFO  com.eden.cases.Base 请求头：{"Authorization":"D827D08EDAF64D1EA7A5F815C1318741","Content-Type":"application/json"}
+[2021-09-28 16:33:58,353] INFO  com.eden.cases.Base 返回结果：{"result":{"expire":360,"token":"499B70582F0447DDA5E03BD3E525C141"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:33:58,354] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 16:33:58,355] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken-1)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:33:58,355] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"f33f83fb88bd6d5d9885e546ef301fbe","requestId":"fc652f9d31f94815bbbc8837eb350574","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632818038255"}, session=D827D08EDAF64D1EA7A5F815C1318741, tagValue=RW, errorInfo=Success}
+[2021-09-28 16:33:58,356] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:33:59,364] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-2)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:33:59,364] INFO  com.eden.cases.Base 参数：{"password":"","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:33:59,365] INFO  com.eden.cases.Base 请求头：{"Authorization":"D827D08EDAF64D1EA7A5F815C1318741","Content-Type":"application/json"}
+[2021-09-28 16:33:59,392] INFO  com.eden.cases.Base 返回结果：{"errorCode":"0x80060002","errorInfo":"Some necessary parameter(s) is lacked"}
+[2021-09-28 16:33:59,392] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Somenecessaryparameter(s)islacked"
+[2021-09-28 16:33:59,392] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken-2)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:33:59,392] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"97359c42a0d322bed4ced138a486bae8","requestId":"14796826bfa247a2a1903517684cec9f","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632818039364"}, session=D827D08EDAF64D1EA7A5F815C1318741, tagValue=RW, errorInfo=Some necessary parameter(s) is lacked}
+[2021-09-28 16:33:59,392] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:34:00,394] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-3)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:34:00,394] INFO  com.eden.cases.Base 参数：{"password":"1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:34:00,395] INFO  com.eden.cases.Base 请求头：{"Authorization":"D827D08EDAF64D1EA7A5F815C1318741","Content-Type":"application/json"}
+[2021-09-28 16:34:00,414] INFO  com.eden.cases.Base 返回结果：{"errorCode":"0x80060024","errorInfo":"Wrong password"}
+[2021-09-28 16:34:00,414] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Wrongpassword"
+[2021-09-28 16:34:00,414] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken-3)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:34:00,415] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"0ee3422b90bf5c70bc05ff484f6c11ca","requestId":"bc53e4795af743039b283d97239c515f","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632818040394"}, session=D827D08EDAF64D1EA7A5F815C1318741, tagValue=RW, errorInfo=Wrong password}
+[2021-09-28 16:34:00,415] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:34:01,423] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-4)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:34:01,424] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edasdf@tvunetworks.com"}
+[2021-09-28 16:34:01,425] INFO  com.eden.cases.Base 请求头：{"Authorization":"D827D08EDAF64D1EA7A5F815C1318741","Content-Type":"application/json"}
+[2021-09-28 16:34:01,473] INFO  com.eden.cases.Base 返回结果：{"errorCode":"0x80060023","errorInfo":"Inexistent account"}
+[2021-09-28 16:34:01,473] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Inexistentaccount"
+[2021-09-28 16:34:01,474] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken-4)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:34:01,474] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"abc335a23afe4acd223e1e7c154aa0c7","requestId":"739e95848ee6481a9359f609465753a8","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632818041424"}, session=D827D08EDAF64D1EA7A5F815C1318741, tagValue=RW, errorInfo=Inexistent account}
+[2021-09-28 16:34:01,474] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:35:37,924] INFO  com.eden.cases.Test >>>>>>>>开始测试API(登录)：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:35:37,924] INFO  com.eden.cases.Base 参数：{"serverName":"General Management","imgCode":"s","pwd":"BA3253876AED6BC22D4A6FF53D8406C6AD864195ED144AB5C87621B6C233B548BAEAE6956DF346EC8C17F5EA10F35EE3CBC514797ED7DDD3145464E2A0BAB413","email":"admin@tvunetworks.com","key":"6f280da79c0641a7b3c631db30eed847","url":"https://newuserservice.tvunetworks.com/userGroup/callback"}
+[2021-09-28 16:35:37,924] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:35:38,296] INFO  com.eden.cases.Base 返回结果：{"result":{"tagList":[{"tagValue":"432","targetClient":"a","tagKey":"43"},{"tagValue":"test","tagKey":"test"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"1","targetClient":"QQQQQQ","tagKey":"43232"},{"tagValue":"52","targetClient":"qwrwqaaa","tagKey":"14"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"}],"firstName":"","redirectUrl":"https://newuserservice.tvunetworks.com/userGroup/callback?session=3640FB1FADE542FD8D95D35B1D829D66","session":"3640FB1FADE542FD8D95D35B1D829D66","loginWelcome":"0","userName":"admin@tvunetworks.com","userId":"8a8c96cf3cf0de22013cf0e06ead0002","email":"admin@tvunetworks.com"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:35:38,297] INFO  com.eden.cases.Base 验证通过！返回结果包含："tagValue":"432"
+[2021-09-28 16:35:38,297] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 16:35:38,297] INFO  com.eden.cases.Test <<<<<<<测试通过(登录)--API:https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:35:38,298] INFO  com.eden.cases.Test 已经临时储存的key：{session=3640FB1FADE542FD8D95D35B1D829D66, tagValue=RW}
+[2021-09-28 16:35:38,298] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:35:39,301] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetRole)：http://10.12.128.228/userAuth/main/GetRole?session=3640FB1FADE542FD8D95D35B1D829D66
+[2021-09-28 16:35:39,301] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:35:39,310] INFO  com.eden.cases.Base 返回结果：{"role":2,"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:35:39,310] INFO  com.eden.cases.Base 验证通过！返回结果包含："role":2
+[2021-09-28 16:35:39,310] INFO  com.eden.cases.Test <<<<<<<测试通过(GetRole)--API:http://10.12.128.228/userAuth/main/GetRole?session=3640FB1FADE542FD8D95D35B1D829D66
+[2021-09-28 16:35:39,310] INFO  com.eden.cases.Test 已经临时储存的key：{session=3640FB1FADE542FD8D95D35B1D829D66, tagValue=RW}
+[2021-09-28 16:35:39,310] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:35:40,313] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-1)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:35:40,315] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:35:40,321] INFO  com.eden.cases.Base 请求头：{"Authorization":"3640FB1FADE542FD8D95D35B1D829D66","Content-Type":"application/json"}
+[2021-09-28 16:35:40,378] INFO  com.eden.cases.Base 返回结果：{"result":{"expire":360,"token":"E28335F9A84B47D2A04F73728F0614D6"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:35:40,378] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo": "Success"
+[2021-09-28 16:35:40,378] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken-1)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:35:40,379] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"500d29f9861733c9ea89ae5f61a771b2","requestId":"a559a218ae23436781afad031947d98c","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632818140316"}, session=3640FB1FADE542FD8D95D35B1D829D66, tagValue=RW, errorInfo=Success}
+[2021-09-28 16:35:40,379] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:35:41,394] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-2)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:35:41,395] INFO  com.eden.cases.Base 参数：{"password":"","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:35:41,397] INFO  com.eden.cases.Base 请求头：{"Authorization":"3640FB1FADE542FD8D95D35B1D829D66","Content-Type":"application/json"}
+[2021-09-28 16:35:41,417] INFO  com.eden.cases.Base 返回结果：{"errorCode":"0x80060002","errorInfo":"Some necessary parameter(s) is lacked"}
+[2021-09-28 16:35:41,418] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo": "Some necessary parameter(s) is lacked"
+[2021-09-28 16:35:41,418] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken-2)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:35:41,418] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"6c0f9e92a63d1c280b39fb2ef3eac29e","requestId":"e3d375a34efb4b7e964698b63b4af039","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632818141396"}, session=3640FB1FADE542FD8D95D35B1D829D66, tagValue=RW, errorInfo=Some necessary parameter(s) is lacked}
+[2021-09-28 16:35:41,418] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:35:42,424] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-3)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:35:42,424] INFO  com.eden.cases.Base 参数：{"password":"1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:35:42,424] INFO  com.eden.cases.Base 请求头：{"Authorization":"3640FB1FADE542FD8D95D35B1D829D66","Content-Type":"application/json"}
+[2021-09-28 16:35:42,478] INFO  com.eden.cases.Base 返回结果：{"errorCode":"0x80060024","errorInfo":"Wrong password"}
+[2021-09-28 16:35:42,479] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo": "Wrong password"
+[2021-09-28 16:35:42,479] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken-3)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:35:42,479] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"c65f96a2228d18efc14d7cc5aa4f0754","requestId":"9cf25e22d2f841468474fa085b12737e","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632818142424"}, session=3640FB1FADE542FD8D95D35B1D829D66, tagValue=RW, errorInfo=Wrong password}
+[2021-09-28 16:35:42,480] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:35:43,485] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-4)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:35:43,485] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edasdf@tvunetworks.com"}
+[2021-09-28 16:35:43,485] INFO  com.eden.cases.Base 请求头：{"Authorization":"3640FB1FADE542FD8D95D35B1D829D66","Content-Type":"application/json"}
+[2021-09-28 16:35:43,508] INFO  com.eden.cases.Base 返回结果：{"errorCode":"0x80060023","errorInfo":"Inexistent account"}
+[2021-09-28 16:35:43,508] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo": "Inexistent account"
+[2021-09-28 16:35:43,508] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken-4)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:35:43,508] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"8eeaad949e2432452cc83c62336f4ea3","requestId":"b0c3a53e2238452dbc7deb9e3efb343e","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632818143485"}, session=3640FB1FADE542FD8D95D35B1D829D66, tagValue=RW, errorInfo=Inexistent account}
+[2021-09-28 16:35:43,508] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:36:22,815] INFO  com.eden.cases.Test >>>>>>>>开始测试API(登录)：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:36:22,816] INFO  com.eden.cases.Base 参数：{"serverName":"General Management","imgCode":"s","pwd":"BA3253876AED6BC22D4A6FF53D8406C6AD864195ED144AB5C87621B6C233B548BAEAE6956DF346EC8C17F5EA10F35EE3CBC514797ED7DDD3145464E2A0BAB413","email":"admin@tvunetworks.com","key":"6f280da79c0641a7b3c631db30eed847","url":"https://newuserservice.tvunetworks.com/userGroup/callback"}
+[2021-09-28 16:36:22,816] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:36:23,205] INFO  com.eden.cases.Base 返回结果：{"result":{"tagList":[{"tagValue":"432","targetClient":"a","tagKey":"43"},{"tagValue":"test","tagKey":"test"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"1","targetClient":"QQQQQQ","tagKey":"43232"},{"tagValue":"52","targetClient":"qwrwqaaa","tagKey":"14"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"}],"firstName":"","redirectUrl":"https://newuserservice.tvunetworks.com/userGroup/callback?session=FA81ED5407064E0ABCAEFE98507EC9C6","session":"FA81ED5407064E0ABCAEFE98507EC9C6","loginWelcome":"0","userName":"admin@tvunetworks.com","userId":"8a8c96cf3cf0de22013cf0e06ead0002","email":"admin@tvunetworks.com"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:36:23,206] INFO  com.eden.cases.Base 验证通过！返回结果包含："tagValue":"432"
+[2021-09-28 16:36:23,206] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 16:36:23,206] INFO  com.eden.cases.Test <<<<<<<测试通过(登录)--API:https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:36:23,207] INFO  com.eden.cases.Test 已经临时储存的key：{session=FA81ED5407064E0ABCAEFE98507EC9C6, tagValue=RW}
+[2021-09-28 16:36:23,207] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:36:24,214] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetRole)：http://10.12.128.228/userAuth/main/GetRole?session=FA81ED5407064E0ABCAEFE98507EC9C6
+[2021-09-28 16:36:24,214] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:36:24,229] INFO  com.eden.cases.Base 返回结果：{"role":2,"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:36:24,229] INFO  com.eden.cases.Base 验证通过！返回结果包含："role":2
+[2021-09-28 16:36:24,229] INFO  com.eden.cases.Test <<<<<<<测试通过(GetRole)--API:http://10.12.128.228/userAuth/main/GetRole?session=FA81ED5407064E0ABCAEFE98507EC9C6
+[2021-09-28 16:36:24,229] INFO  com.eden.cases.Test 已经临时储存的key：{session=FA81ED5407064E0ABCAEFE98507EC9C6, tagValue=RW}
+[2021-09-28 16:36:24,229] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:36:25,242] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-1)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:36:25,243] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:36:25,250] INFO  com.eden.cases.Base 请求头：{"Authorization":"FA81ED5407064E0ABCAEFE98507EC9C6","Content-Type":"application/json"}
+[2021-09-28 16:36:25,302] INFO  com.eden.cases.Base 返回结果：{"result":{"expire":360,"token":"8F2219E8D7DF4FC488AC7864815099B1"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:36:25,303] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo": "Success"
+[2021-09-28 16:36:25,303] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken-1)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:36:25,303] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"3f9ba465621da09d5871346beb0f75d6","requestId":"5baef97678af4f56b1065ee7630939b4","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632818185243"}, session=FA81ED5407064E0ABCAEFE98507EC9C6, tagValue=RW, errorInfo=Success}
+[2021-09-28 16:36:25,303] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:36:26,305] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-2)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:36:26,306] INFO  com.eden.cases.Base 参数：{"password":"","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:36:26,307] INFO  com.eden.cases.Base 请求头：{"Authorization":"FA81ED5407064E0ABCAEFE98507EC9C6","Content-Type":"application/json"}
+[2021-09-28 16:36:26,332] INFO  com.eden.cases.Base 返回结果：{"errorCode":"0x80060002","errorInfo":"Some necessary parameter(s) is lacked"}
+[2021-09-28 16:36:26,333] INFO  com.eden.cases.Base 验证通过！返回结果包含：Some necessary parameter(s) is lacked
+[2021-09-28 16:36:26,333] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken-2)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:36:26,333] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"e80c34f68b036c11d4c54e4259793ad3","requestId":"f1aa6312c1c84ee0a5435dac8a704d34","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632818186306"}, session=FA81ED5407064E0ABCAEFE98507EC9C6, tagValue=RW, errorInfo=Some necessary parameter(s) is lacked}
+[2021-09-28 16:36:26,333] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:36:27,337] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-3)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:36:27,338] INFO  com.eden.cases.Base 参数：{"password":"1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:36:27,339] INFO  com.eden.cases.Base 请求头：{"Authorization":"FA81ED5407064E0ABCAEFE98507EC9C6","Content-Type":"application/json"}
+[2021-09-28 16:36:27,375] INFO  com.eden.cases.Base 返回结果：{"errorCode":"0x80060024","errorInfo":"Wrong password"}
+[2021-09-28 16:36:27,376] INFO  com.eden.cases.Base 验证通过！返回结果包含：Wrong password
+[2021-09-28 16:36:27,376] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken-3)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:36:27,377] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"4bb58845a1322bbb16a8ac9f34e7836c","requestId":"cd8ce7a0a1aa47fd844dd5235db541c5","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632818187338"}, session=FA81ED5407064E0ABCAEFE98507EC9C6, tagValue=RW, errorInfo=Wrong password}
+[2021-09-28 16:36:27,377] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:36:28,380] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-4)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:36:28,381] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edasdf@tvunetworks.com"}
+[2021-09-28 16:36:28,382] INFO  com.eden.cases.Base 请求头：{"Authorization":"FA81ED5407064E0ABCAEFE98507EC9C6","Content-Type":"application/json"}
+[2021-09-28 16:36:28,403] INFO  com.eden.cases.Base 返回结果：{"errorCode":"0x80060023","errorInfo":"Inexistent account"}
+[2021-09-28 16:36:28,403] INFO  com.eden.cases.Base 验证通过！返回结果包含：Inexistent account
+[2021-09-28 16:36:28,403] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken-4)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:36:28,403] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"1a4f74bdb0ac9165862ed5930037af76","requestId":"560310f092b14ccea97fd960d601f260","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632818188381"}, session=FA81ED5407064E0ABCAEFE98507EC9C6, tagValue=RW, errorInfo=Inexistent account}
+[2021-09-28 16:36:28,403] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:38:15,928] INFO  com.eden.cases.Test >>>>>>>>开始测试API(登录)：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:38:15,929] INFO  com.eden.cases.Base 参数：{"serverName":"General Management","imgCode":"s","pwd":"BA3253876AED6BC22D4A6FF53D8406C6AD864195ED144AB5C87621B6C233B548BAEAE6956DF346EC8C17F5EA10F35EE3CBC514797ED7DDD3145464E2A0BAB413","email":"admin@tvunetworks.com","key":"6f280da79c0641a7b3c631db30eed847","url":"https://newuserservice.tvunetworks.com/userGroup/callback"}
+[2021-09-28 16:38:15,929] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:38:16,307] INFO  com.eden.cases.Base 返回结果：{"result":{"tagList":[{"tagValue":"432","targetClient":"a","tagKey":"43"},{"tagValue":"test","tagKey":"test"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"1","targetClient":"QQQQQQ","tagKey":"43232"},{"tagValue":"52","targetClient":"qwrwqaaa","tagKey":"14"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"}],"firstName":"","redirectUrl":"https://newuserservice.tvunetworks.com/userGroup/callback?session=4BA0013488F140FCA671BB7A2F9337A5","session":"4BA0013488F140FCA671BB7A2F9337A5","loginWelcome":"0","userName":"admin@tvunetworks.com","userId":"8a8c96cf3cf0de22013cf0e06ead0002","email":"admin@tvunetworks.com"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:38:16,308] INFO  com.eden.cases.Base 验证通过！返回结果包含："tagValue":"432"
+[2021-09-28 16:38:16,308] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-09-28 16:38:16,308] INFO  com.eden.cases.Test <<<<<<<测试通过(登录)--API:https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-09-28 16:38:16,308] INFO  com.eden.cases.Test 已经临时储存的key：{session=4BA0013488F140FCA671BB7A2F9337A5, tagValue=RW}
+[2021-09-28 16:38:16,308] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:38:17,322] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetRole)：http://10.12.128.228/userAuth/main/GetRole?session=4BA0013488F140FCA671BB7A2F9337A5
+[2021-09-28 16:38:17,323] INFO  com.eden.cases.Base 请求头：{Content-Type=application/json}
+[2021-09-28 16:38:17,336] INFO  com.eden.cases.Base 返回结果：{"role":2,"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:38:17,337] INFO  com.eden.cases.Base 验证通过！返回结果包含："role":2
+[2021-09-28 16:38:17,337] INFO  com.eden.cases.Test <<<<<<<测试通过(GetRole)--API:http://10.12.128.228/userAuth/main/GetRole?session=4BA0013488F140FCA671BB7A2F9337A5
+[2021-09-28 16:38:17,337] INFO  com.eden.cases.Test 已经临时储存的key：{session=4BA0013488F140FCA671BB7A2F9337A5, tagValue=RW}
+[2021-09-28 16:38:17,337] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:38:18,352] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-1)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:38:18,352] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:38:18,358] INFO  com.eden.cases.Base 请求头：{"Authorization":"4BA0013488F140FCA671BB7A2F9337A5","Content-Type":"application/json"}
+[2021-09-28 16:38:18,460] INFO  com.eden.cases.Base 返回结果：{"result":{"expire":360,"token":"20588FA2451E4C58A7E819D3F88EF803"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-09-28 16:38:18,460] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo": "Success"
+[2021-09-28 16:38:18,460] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken-1)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:38:18,460] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"ef37122359be54de0476b77715f42899","requestId":"13e808f0c03c4bee8bba3f1a71e42c72","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632818298352"}, session=4BA0013488F140FCA671BB7A2F9337A5, tagValue=RW, errorInfo=Success}
+[2021-09-28 16:38:18,460] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:38:19,474] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-2)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:38:19,474] INFO  com.eden.cases.Base 参数：{"password":"","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:38:19,475] INFO  com.eden.cases.Base 请求头：{"Authorization":"4BA0013488F140FCA671BB7A2F9337A5","Content-Type":"application/json"}
+[2021-09-28 16:38:19,496] INFO  com.eden.cases.Base 返回结果：{"errorCode":"0x80060002","errorInfo":"Some necessary parameter(s) is lacked"}
+[2021-09-28 16:38:19,496] INFO  com.eden.cases.Base 验证通过！返回结果包含：Some necessary parameter(s) is lacked
+[2021-09-28 16:38:19,496] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken-2)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:38:19,496] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"8fd9e8b8bbbdbf61f8330fbac9d7725b","requestId":"731f5f41d3814c37b8f24022a20f76b5","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632818299474"}, session=4BA0013488F140FCA671BB7A2F9337A5, tagValue=RW, errorInfo=Some necessary parameter(s) is lacked}
+[2021-09-28 16:38:19,496] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:38:20,506] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-3)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:38:20,509] INFO  com.eden.cases.Base 参数：{"password":"1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-09-28 16:38:20,510] INFO  com.eden.cases.Base 请求头：{"Authorization":"4BA0013488F140FCA671BB7A2F9337A5","Content-Type":"application/json"}
+[2021-09-28 16:38:20,537] INFO  com.eden.cases.Base 返回结果：{"errorCode":"0x80060024","errorInfo":"Wrong password"}
+[2021-09-28 16:38:20,538] INFO  com.eden.cases.Base 验证通过！返回结果包含：Wrong password
+[2021-09-28 16:38:20,538] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken-3)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:38:20,538] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"e4ce0bb03ebc7221d639ebf8228c1de5","requestId":"edd07b24811d4bdaa68d2de5a591cd21","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632818300509"}, session=4BA0013488F140FCA671BB7A2F9337A5, tagValue=RW, errorInfo=Wrong password}
+[2021-09-28 16:38:20,538] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求
+[2021-09-28 16:38:21,551] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-4)：http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:38:21,551] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edasdf@tvunetworks.com"}
+[2021-09-28 16:38:21,552] INFO  com.eden.cases.Base 请求头：{"Authorization":"4BA0013488F140FCA671BB7A2F9337A5","Content-Type":"application/json"}
+[2021-09-28 16:38:21,576] INFO  com.eden.cases.Base 返回结果：{"errorCode":"0x80060023","errorInfo":"Inexistent account"}
+[2021-09-28 16:38:21,576] INFO  com.eden.cases.Base 验证通过！返回结果包含：Inexistent account
+[2021-09-28 16:38:21,576] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken-4)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-09-28 16:38:21,576] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"35a55d854ebc5590216d84fbaff661ae","requestId":"5585a54c42fd4f48a2b676322c35336b","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1632818301551"}, session=4BA0013488F140FCA671BB7A2F9337A5, tagValue=RW, errorInfo=Inexistent account}
+[2021-09-28 16:38:21,576] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个请求

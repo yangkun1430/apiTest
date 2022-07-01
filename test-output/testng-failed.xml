@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]">
+  <test thread-count="5" name="Command line test(failed)">
+    <classes>
+      <class name="com.eden.cases.Test">
+        <methods>
+          <include name="openDoc"/>
+          <include name="printResult"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.eden.cases.Test -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

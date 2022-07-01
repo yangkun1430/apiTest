@@ -1,0 +1,54 @@
+[2021-10-19 15:58:23,084] INFO  com.eden.cases.Test >>>>>>>>开始测试API(登录)：https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-10-19 15:58:23,084] INFO  com.eden.cases.Base 参数：{"serverName":"General Management","imgCode":"s","pwd":"BA3253876AED6BC22D4A6FF53D8406C6AD864195ED144AB5C87621B6C233B548BAEAE6956DF346EC8C17F5EA10F35EE3CBC514797ED7DDD3145464E2A0BAB413","email":"admin@tvunetworks.com","key":"6f280da79c0641a7b3c631db30eed847","url":"https://newuserservice.tvunetworks.com/userGroup/callback"}
+[2021-10-19 15:58:23,095] INFO  com.eden.cases.Base 请求头：{"Content-Type":"application/json"}
+[2021-10-19 15:58:23,561] INFO  com.eden.cases.Base 返回结果：{"result":{"tagList":[{"tagValue":"432","targetClient":"a","tagKey":"43"},{"tagValue":"test","tagKey":"test"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"1","targetClient":"QQQQQQ","tagKey":"43232"},{"tagValue":"52","targetClient":"qwrwqaaa","tagKey":"14"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"b","targetClient":"b","tagKey":"b"},{"tagValue":"c","targetClient":"c","tagKey":"c"},{"tagValue":"RW","targetClient":"USER-GROUP-TSs","tagKey":"redsa"}],"firstName":"","redirectUrl":"https://newuserservice.tvunetworks.com/userGroup/callback?session=E7F94575BF9745BD931362D655EC0845","session":"E7F94575BF9745BD931362D655EC0845","loginWelcome":"0","userName":"admin@tvunetworks.com","userId":"8a8c96cf3cf0de22013cf0e06ead0002","email":"admin@tvunetworks.com"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-10-19 15:58:23,563] INFO  com.eden.cases.Base 验证通过！返回结果包含："tagValue":"432"
+[2021-10-19 15:58:23,564] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-19 15:58:23,565] INFO  com.eden.cases.Test <<<<<<<测试通过(登录)--API:https://newuserservice.tvunetworks.com/userGroup/user-group/login/signIn
+[2021-10-19 15:58:23,565] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"34d0092d269125007681fdd2a6832920","requestId":"2fe63363bd8247e999d036b7a615970e","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1634630303084"}, session=E7F94575BF9745BD931362D655EC0845, tagValue=RW}
+[2021-10-19 15:58:23,565] INFO  com.eden.cases.Base 线程等待2秒后将测试下一个API
+[2021-10-19 15:58:23,566] INFO  com.eden.cases.Base =========================================================
+[2021-10-19 15:58:25,567] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetRole)：http://10.12.128.228/userAuth/main/GetRole?session=E7F94575BF9745BD931362D655EC0845
+[2021-10-19 15:58:25,568] INFO  com.eden.cases.Base 请求头：{"Content-Type":"application/json"}
+[2021-10-19 15:58:25,582] INFO  com.eden.cases.Base 返回结果：{"role":2,"errorCode":"0x0","errorInfo":"Success"}
+[2021-10-19 15:58:25,582] INFO  com.eden.cases.Base 验证通过！返回结果包含："role":2
+[2021-10-19 15:58:25,582] INFO  com.eden.cases.Test <<<<<<<测试通过(GetRole)--API:http://10.12.128.228/userAuth/main/GetRole?session=E7F94575BF9745BD931362D655EC0845
+[2021-10-19 15:58:25,582] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"b415f1f6ff3ef3e46876b1c326f0f50c","requestId":"7e1a23643c3d435a8116cb4329b3b8a8","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1634630305568"}, session=E7F94575BF9745BD931362D655EC0845, tagValue=RW}
+[2021-10-19 15:58:25,582] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-19 15:58:25,582] INFO  com.eden.cases.Base =========================================================
+[2021-10-19 15:58:26,595] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-1)：http://10.12.128.228/userAuth/token/getToken
+[2021-10-19 15:58:26,596] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-10-19 15:58:26,597] INFO  com.eden.cases.Base 请求头：{"Authorization":"E7F94575BF9745BD931362D655EC0845","Content-Type":"application/json"}
+[2021-10-19 15:58:26,893] INFO  com.eden.cases.Base 返回结果：{"result":{"expire":360,"token":"116D54B0E8F64599825E326802FB0F36"},"errorCode":"0x0","errorInfo":"Success"}
+[2021-10-19 15:58:26,894] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo": "Success"
+[2021-10-19 15:58:26,895] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken-1)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-10-19 15:58:26,895] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"73d9657d4920d592ebe3655b463f50ec","requestId":"2195b2af1d69482499dd0b0e765cf862","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1634630306596"}, session=E7F94575BF9745BD931362D655EC0845, tagValue=RW, errorInfo=Success}
+[2021-10-19 15:58:26,896] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-19 15:58:26,896] INFO  com.eden.cases.Base =========================================================
+[2021-10-19 15:58:27,899] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-2)：http://10.12.128.228/userAuth/token/getToken
+[2021-10-19 15:58:27,900] INFO  com.eden.cases.Base 参数：{"password":"","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-10-19 15:58:27,901] INFO  com.eden.cases.Base 请求头：{"Authorization":"E7F94575BF9745BD931362D655EC0845","Content-Type":"application/json"}
+[2021-10-19 15:58:27,927] INFO  com.eden.cases.Base 返回结果：{"errorCode":"0x80060002","errorInfo":"Some necessary parameter(s) is lacked"}
+[2021-10-19 15:58:27,927] INFO  com.eden.cases.Base 验证通过！返回结果包含：Some necessary parameter(s) is lacked
+[2021-10-19 15:58:27,927] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken-2)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-10-19 15:58:27,928] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"df209d3110cf7c62dab14a7e5e5d43b8","requestId":"d37c894b64c44e21966b48d2efd0a883","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1634630307900"}, session=E7F94575BF9745BD931362D655EC0845, tagValue=RW, errorInfo=Some necessary parameter(s) is lacked}
+[2021-10-19 15:58:27,928] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-19 15:58:27,928] INFO  com.eden.cases.Base =========================================================
+[2021-10-19 15:58:28,933] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-3)：http://10.12.128.228/userAuth/token/getToken
+[2021-10-19 15:58:28,934] INFO  com.eden.cases.Base 参数：{"password":"1","expireTime":360,"email":"edenyang@tvunetworks.com"}
+[2021-10-19 15:58:28,935] INFO  com.eden.cases.Base 请求头：{"Authorization":"E7F94575BF9745BD931362D655EC0845","Content-Type":"application/json"}
+[2021-10-19 15:58:28,987] INFO  com.eden.cases.Base 返回结果：{"errorCode":"0x80060024","errorInfo":"Wrong password"}
+[2021-10-19 15:58:28,987] INFO  com.eden.cases.Base 验证通过！返回结果包含：Wrong password
+[2021-10-19 15:58:28,987] INFO  com.eden.cases.Test <<<<<<<测试通过(GetToken-3)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-10-19 15:58:28,987] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"59099bd4af72d13a2dca7fa398f083ff","requestId":"9f2ca9da066b4605b7d77575a39a5204","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1634630308934"}, session=E7F94575BF9745BD931362D655EC0845, tagValue=RW, errorInfo=Wrong password}
+[2021-10-19 15:58:28,987] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-19 15:58:28,988] INFO  com.eden.cases.Base =========================================================
+[2021-10-19 15:58:29,999] INFO  com.eden.cases.Test >>>>>>>>开始测试API(GetToken-4)：http://10.12.128.228/userAuth/token/getToken
+[2021-10-19 15:58:29,999] INFO  com.eden.cases.Base 参数：{"password":"925F43C3CFB956BBE3C6AA8023BA7AD5CFA21D104186FFFC69E768E55940D9653B1CD36FBA614FBA2E1844F4436DA20F83750C6EC1DB356DA154691BDD71A9B1","expireTime":360,"email":"edasdf@tvunetworks.com"}
+[2021-10-19 15:58:30,000] INFO  com.eden.cases.Base 请求头：{"Authorization":"E7F94575BF9745BD931362D655EC0845","Content-Type":"application/json"}
+[2021-10-19 15:58:30,079] INFO  com.eden.cases.Base 返回结果：{"errorCode":"0x80060023","errorInfo":"Inexistent account"}
+[2021-10-19 15:58:30,080] ERROR com.eden.cases.Base 验证失败！期望返回的值：按时  打发  算法  按时  发的  发生Inexistent account1,实际结果：{"errorCode":"0x80060023","errorInfo":"Inexistent account"}
+[2021-10-19 15:58:30,080] ERROR com.eden.cases.Test <<<<<<<<测试失败(GetToken-4)--API:http://10.12.128.228/userAuth/token/getToken
+[2021-10-19 15:58:30,080] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"c9f2299a334088fdc989e1b0580da4e3","requestId":"6708fe3b714a4fa4a7da69f641a3c52f","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1634630309999"}, session=E7F94575BF9745BD931362D655EC0845, tagValue=RW, errorInfo=Wrong password}
+[2021-10-19 15:58:30,081] INFO  com.eden.cases.Test =========================================================
+[2021-10-19 15:58:30,129] INFO  com.eden.cases.Base 返回结果：eden此次手动执行测试或测试未开始

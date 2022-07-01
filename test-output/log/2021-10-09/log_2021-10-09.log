@@ -1,0 +1,846 @@
+[2021-10-09 10:13:20,789] INFO  com.eden.cases.Test >>>>>>>>开始测试API(创建aws实例)：http://10.12.128.228/instance/instance-manage/api/instance/create
+[2021-10-09 10:13:20,814] INFO  com.eden.cases.Base 参数：{"imageVersion":"","shellPlaceholder":"","configId":"","latitude":"","origin":"","instanceType":"","requestIp":"","region":"us-east-1","type":"Region","imageType":"CloudR","longitude":""}
+[2021-10-09 10:13:20,869] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"715401eed0a32d0d79556dfd1c76406e","requestId":"3156efad442744f1a6d724bdf8fa9194","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633745600814"},"Content-Type":"application/json"}
+[2021-10-09 10:13:28,333] INFO  com.eden.cases.Base 返回结果：{"result":{"elasticSuccess":false,"privateIp":"172.31.83.0","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-09faa8ef1be90e377","lock":0,"id":"11d294d9d76743008b6bd67464ca14af","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"18.212.36.32","callerIp":"10.12.128.202","launchTime":1633745608129,"region":"us-east-1","status":"starting"},"requestId":"3156efad442744f1a6d724bdf8fa9194","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 10:13:28,334] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo": "Success"
+[2021-10-09 10:13:28,334] INFO  com.eden.cases.Base 验证通过！返回结果包含："status":"starting"
+[2021-10-09 10:13:28,334] INFO  com.eden.cases.Base 验证通过！返回结果包含："region":"us-east-1"
+[2021-10-09 10:13:28,334] INFO  com.eden.cases.Base 验证通过！返回结果包含："imageType":"CloudR"
+[2021-10-09 10:13:28,334] INFO  com.eden.cases.Test <<<<<<<测试通过(创建aws实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/create
+[2021-10-09 10:13:28,334] INFO  com.eden.cases.Test 已经临时储存的key：{instanceId=i-09faa8ef1be90e377, accesskey={"signature":"715401eed0a32d0d79556dfd1c76406e","requestId":"3156efad442744f1a6d724bdf8fa9194","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633745600814"}, publicIp=18.212.36.32, imageType=CloudR}
+[2021-10-09 10:13:28,335] INFO  com.eden.cases.Base 线程等待10秒后将测试下一个API
+[2021-10-09 10:13:28,335] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 10:13:38,338] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询正在运行的实例)：http://10.12.128.228/instance/instance-manage/api/instance/listAllIds
+[2021-10-09 10:13:38,338] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 10:13:38,339] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"fb6a9884e9c8fa715e81f14f5b085310","requestId":"e33d522b3da444388e2faa834c01e9b8","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633745618338"},"Content-Type":"application/json"}
+[2021-10-09 10:13:38,357] INFO  com.eden.cases.Base 返回结果：{"result":["i-09faa8ef1be90e377"],"requestId":"e33d522b3da444388e2faa834c01e9b8","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 10:13:38,357] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo": "Success"
+[2021-10-09 10:13:38,357] INFO  com.eden.cases.Base 验证通过！返回结果包含：${instanceId}
+[2021-10-09 10:13:38,357] INFO  com.eden.cases.Test <<<<<<<测试通过(查询正在运行的实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/listAllIds
+[2021-10-09 10:13:38,357] INFO  com.eden.cases.Test 已经临时储存的key：{instanceId=i-09faa8ef1be90e377, accesskey={"signature":"fb6a9884e9c8fa715e81f14f5b085310","requestId":"e33d522b3da444388e2faa834c01e9b8","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633745618338"}, publicIp=18.212.36.32, imageType=CloudR}
+[2021-10-09 10:13:38,357] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 10:13:38,357] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 10:13:39,369] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据instanceId查询实例)：http://10.12.128.228/instance/instance-manage/api/instance/getInstance
+[2021-10-09 10:13:39,370] INFO  com.eden.cases.Base 参数：{"instanceId":"i-09faa8ef1be90e377"}
+[2021-10-09 10:13:39,371] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"4e9bd7b8e89e46efd89c633de29ff50e","requestId":"b73cdbc20b65448d8a84d63e7bc8ed3f","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633745619371"},"Content-Type":"application/json"}
+[2021-10-09 10:13:39,389] INFO  com.eden.cases.Base 返回结果：{"result":{"privateIp":"172.31.83.0","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-09faa8ef1be90e377","lock":0,"id":"11d294d9d76743008b6bd67464ca14af","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"18.212.36.32","callerIp":"10.12.128.202","launchTime":1633745608129,"region":"us-east-1","status":"running"},"requestId":"b73cdbc20b65448d8a84d63e7bc8ed3f","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 10:13:39,389] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo": "Success"
+[2021-10-09 10:13:39,389] INFO  com.eden.cases.Base 验证通过！返回结果包含：${instanceId}
+[2021-10-09 10:13:39,389] INFO  com.eden.cases.Test <<<<<<<测试通过(根据instanceId查询实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/getInstance
+[2021-10-09 10:13:39,389] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-09faa8ef1be90e377, accesskey={"signature":"4e9bd7b8e89e46efd89c633de29ff50e","requestId":"b73cdbc20b65448d8a84d63e7bc8ed3f","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633745619371"}, publicIp=18.212.36.32, imageType=CloudR}
+[2021-10-09 10:13:39,389] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 10:13:39,390] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 10:13:40,402] INFO  com.eden.cases.Test >>>>>>>>开始测试API(分页查询实例)：http://10.12.128.228/instance/instance-manage/api/instance/pageInstance
+[2021-10-09 10:13:40,403] INFO  com.eden.cases.Base 参数：{"instanceId":"","privateIp":"","pageSize":100,"publicIp":"","region":"","imageType":"","pageNum":100,"platform":"","callerIp":"","status":"Running"}
+[2021-10-09 10:13:40,405] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"77a38fb2eacd18c26b6b2882b106a8c9","requestId":"20189b33e89b4531b6d3e851e477ee47","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633745620403"},"Content-Type":"application/json"}
+[2021-10-09 10:13:40,431] INFO  com.eden.cases.Base 返回结果：{"result":{"startRow":1,"navigatepageNums":[1],"lastPage":1,"prePage":0,"hasNextPage":false,"nextPage":0,"pageSize":100,"endRow":1,"list":[{"privateIp":"172.31.83.0","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-09faa8ef1be90e377","lock":0,"id":"11d294d9d76743008b6bd67464ca14af","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"18.212.36.32","callerIp":"10.12.128.202","launchTime":1633745608129,"region":"us-east-1","status":"running"}],"pageNum":1,"navigatePages":8,"total":1,"navigateFirstPage":1,"pages":1,"size":1,"firstPage":1,"isLastPage":true,"hasPreviousPage":false,"navigateLastPage":1,"isFirstPage":true},"requestId":"20189b33e89b4531b6d3e851e477ee47","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 10:13:40,431] INFO  com.eden.cases.Base 验证通过！返回结果包含：${instanceId}
+[2021-10-09 10:13:40,431] INFO  com.eden.cases.Test <<<<<<<测试通过(分页查询实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/pageInstance
+[2021-10-09 10:13:40,431] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-09faa8ef1be90e377, accesskey={"signature":"77a38fb2eacd18c26b6b2882b106a8c9","requestId":"20189b33e89b4531b6d3e851e477ee47","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633745620403"}, publicIp=18.212.36.32, imageType=CloudR}
+[2021-10-09 10:13:40,431] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 10:13:40,431] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 10:13:41,445] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询当前可用的Region)：http://10.12.128.228/instance/instance-manage/api/region/listActiveRegion
+[2021-10-09 10:13:41,446] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 10:13:41,447] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"768cbada780790f10e456b1dd0aa06ad","requestId":"103a3973301e4a329b744621fe518418","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633745621446"},"Content-Type":"application/json"}
+[2021-10-09 10:13:41,465] INFO  com.eden.cases.Base 返回结果：{"result":["us-east-1","ap-northeast-2"],"requestId":"103a3973301e4a329b744621fe518418","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 10:13:41,466] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 10:13:41,466] INFO  com.eden.cases.Test <<<<<<<测试通过(查询当前可用的Region)--API:http://10.12.128.228/instance/instance-manage/api/region/listActiveRegion
+[2021-10-09 10:13:41,466] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-09faa8ef1be90e377, accesskey={"signature":"768cbada780790f10e456b1dd0aa06ad","requestId":"103a3973301e4a329b744621fe518418","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633745621446"}, publicIp=18.212.36.32, imageType=CloudR}
+[2021-10-09 10:13:41,466] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 10:13:41,466] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 10:13:42,488] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询最优的Region)：http://10.12.128.228/instance/instance-manage/api/region/chooseRegion
+[2021-10-09 10:13:42,489] INFO  com.eden.cases.Base 参数：{"requestIp":"18.212.36.32","type":"IP","imageType":"CloudR"}
+[2021-10-09 10:13:42,491] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"28ec4ccc8c6886477d01cbf116417a41","requestId":"376828a2e4b34e61915cf4b16a6b1665","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633745622490"},"Content-Type":"application/json"}
+[2021-10-09 10:13:43,281] INFO  com.eden.cases.Base 返回结果：{"result":"us-east-1","requestId":"376828a2e4b34e61915cf4b16a6b1665","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 10:13:43,281] INFO  com.eden.cases.Base 验证通过！返回结果包含："result": "us-east-1"
+[2021-10-09 10:13:43,281] INFO  com.eden.cases.Test <<<<<<<测试通过(查询最优的Region)--API:http://10.12.128.228/instance/instance-manage/api/region/chooseRegion
+[2021-10-09 10:13:43,281] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-09faa8ef1be90e377, accesskey={"signature":"28ec4ccc8c6886477d01cbf116417a41","requestId":"376828a2e4b34e61915cf4b16a6b1665","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633745622490"}, publicIp=18.212.36.32, imageType=CloudR}
+[2021-10-09 10:13:43,281] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 10:13:43,282] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 10:13:44,295] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据距离排序所有可用region)：http://10.12.128.228/instance/instance-manage/api/region/sortRegion
+[2021-10-09 10:13:44,296] INFO  com.eden.cases.Base 参数：{"requestIp":"18.212.36.32","type":"IP","imageType":"CloudR"}
+[2021-10-09 10:13:44,297] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"c80570e2d92a0a7818c242fc33982f8a","requestId":"44baa819ea77470b94ce089dac580f50","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633745624296"},"Content-Type":"application/json"}
+[2021-10-09 10:13:44,416] INFO  com.eden.cases.Base 返回结果：{"result":["us-east-1","ap-northeast-2"],"requestId":"44baa819ea77470b94ce089dac580f50","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 10:13:44,417] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 10:13:44,417] INFO  com.eden.cases.Base 验证通过！返回结果包含：ap-northeast-2
+[2021-10-09 10:13:44,418] INFO  com.eden.cases.Test <<<<<<<测试通过(根据距离排序所有可用region)--API:http://10.12.128.228/instance/instance-manage/api/region/sortRegion
+[2021-10-09 10:13:44,418] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-09faa8ef1be90e377, accesskey={"signature":"c80570e2d92a0a7818c242fc33982f8a","requestId":"44baa819ea77470b94ce089dac580f50","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633745624296"}, publicIp=18.212.36.32, imageType=CloudR}
+[2021-10-09 10:13:44,418] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 10:13:44,418] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 10:13:45,424] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询当前可用的RegionWithRemark)：http://10.12.128.228/instance/instance-manage/api/region/listActiveRegionWithRemark
+[2021-10-09 10:13:45,424] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 10:13:45,424] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"eb53156edbad17bb69e1d4d890304d4d","requestId":"b00d9ca1fb454e59819fe6a6331811f0","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633745625424"},"Content-Type":"application/json"}
+[2021-10-09 10:13:45,442] INFO  com.eden.cases.Base 返回结果：{"result":[{"remark":"US East (N. Virginia)","region":"us-east-1"},{"remark":"Asia Pacific (Seoul)","region":"ap-northeast-2"}],"requestId":"b00d9ca1fb454e59819fe6a6331811f0","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 10:13:45,442] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 10:13:45,443] INFO  com.eden.cases.Base 验证通过！返回结果包含：ap-northeast-2
+[2021-10-09 10:13:45,443] INFO  com.eden.cases.Test <<<<<<<测试通过(查询当前可用的RegionWithRemark)--API:http://10.12.128.228/instance/instance-manage/api/region/listActiveRegionWithRemark
+[2021-10-09 10:13:45,443] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-09faa8ef1be90e377, accesskey={"signature":"eb53156edbad17bb69e1d4d890304d4d","requestId":"b00d9ca1fb454e59819fe6a6331811f0","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633745625424"}, publicIp=18.212.36.32, imageType=CloudR}
+[2021-10-09 10:13:45,443] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 10:13:45,443] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 10:13:46,454] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询最优的RegionWithRemark)：http://10.12.128.228/instance/instance-manage/api/region/chooseRegionWithRemark
+[2021-10-09 10:13:46,454] INFO  com.eden.cases.Base 参数：{"requestIp":"18.212.36.32","type":"IP","imageType":"CloudR"}
+[2021-10-09 10:13:46,455] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"eb277adaa78970a37215ae7ac8ba7ab0","requestId":"c6f82845660f4b0bb554a95d1c975cbe","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633745626454"},"Content-Type":"application/json"}
+[2021-10-09 10:13:46,479] INFO  com.eden.cases.Base 返回结果：{"result":{"remark":"US East (N. Virginia)","region":"us-east-1"},"requestId":"c6f82845660f4b0bb554a95d1c975cbe","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 10:13:46,479] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 10:13:46,479] INFO  com.eden.cases.Test <<<<<<<测试通过(查询最优的RegionWithRemark)--API:http://10.12.128.228/instance/instance-manage/api/region/chooseRegionWithRemark
+[2021-10-09 10:13:46,479] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-09faa8ef1be90e377, accesskey={"signature":"eb277adaa78970a37215ae7ac8ba7ab0","requestId":"c6f82845660f4b0bb554a95d1c975cbe","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633745626454"}, publicIp=18.212.36.32, imageType=CloudR}
+[2021-10-09 10:13:46,479] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 10:13:46,479] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 10:13:47,483] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据 Instance 创建镜像)：http://10.12.128.228/instance/instance-manage/api/image/upgradeImage
+[2021-10-09 10:13:47,483] INFO  com.eden.cases.Base 参数：{"instanceId":"i-09faa8ef1be90e377","version":"20210607"}
+[2021-10-09 10:13:47,483] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"28fa65409cf518eaf946473fd195de78","requestId":"61c3ae1784504c30a2f66a7bae22c0c3","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633745627483"},"Content-Type":"application/json"}
+[2021-10-09 10:13:47,503] INFO  com.eden.cases.Base 返回结果：{"requestId":"61c3ae1784504c30a2f66a7bae22c0c3","errorCode":"81202802","errorInfo":"This image version already exist"}
+[2021-10-09 10:13:47,503] ERROR com.eden.cases.Base 验证失败！期望返回的值："errorInfo":"Success",实际结果：{"requestId":"61c3ae1784504c30a2f66a7bae22c0c3","errorCode":"81202802","errorInfo":"This image version already exist"}
+[2021-10-09 10:13:47,503] ERROR com.eden.cases.Test <<<<<<<<测试失败(根据 Instance 创建镜像)--API:http://10.12.128.228/instance/instance-manage/api/image/upgradeImage
+[2021-10-09 10:13:47,503] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-09faa8ef1be90e377, accesskey={"signature":"28fa65409cf518eaf946473fd195de78","requestId":"61c3ae1784504c30a2f66a7bae22c0c3","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633745627483"}, publicIp=18.212.36.32, imageType=CloudR}
+[2021-10-09 10:13:47,503] INFO  com.eden.cases.Test >>>>>>>>开始测试API(shutdown实例)：http://10.12.128.228/instance/instance-manage/api/instance/shutdown
+[2021-10-09 10:13:47,504] INFO  com.eden.cases.Base 参数：{"instanceId":"i-09faa8ef1be90e377"}
+[2021-10-09 10:13:47,504] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"fc4293a1fee246a022c6545219939bbd","requestId":"60ca55ae213f4fb49aa2032efe82f0cf","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633745627504"},"Content-Type":"application/json"}
+[2021-10-09 10:13:49,235] INFO  com.eden.cases.Base 返回结果：{"requestId":"60ca55ae213f4fb49aa2032efe82f0cf","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 10:13:49,236] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 10:13:49,236] INFO  com.eden.cases.Test <<<<<<<测试通过(shutdown实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/shutdown
+[2021-10-09 10:13:49,236] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-09faa8ef1be90e377, accesskey={"signature":"fc4293a1fee246a022c6545219939bbd","requestId":"60ca55ae213f4fb49aa2032efe82f0cf","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633745627504"}, publicIp=18.212.36.32, imageType=CloudR}
+[2021-10-09 10:13:49,236] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 10:13:49,237] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 10:20:03,648] INFO  com.eden.cases.Test >>>>>>>>开始测试API(创建aws实例)：http://10.12.128.228/instance/instance-manage/api/instance/create
+[2021-10-09 10:20:03,649] INFO  com.eden.cases.Base 参数：{"imageVersion":"","shellPlaceholder":"","configId":"","latitude":"","origin":"","instanceType":"","requestIp":"","region":"us-east-1","type":"Region","imageType":"CloudR","longitude":""}
+[2021-10-09 10:20:03,654] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"a7c6905a852b92d9220e792c5ea846a7","requestId":"6223b89d7efb445987884de053fba2a0","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746003649"},"Content-Type":"application/json"}
+[2021-10-09 10:20:10,076] INFO  com.eden.cases.Base 返回结果：{"result":{"elasticSuccess":false,"privateIp":"172.31.80.131","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-0eb1d9f5f7ebe89ec","lock":0,"id":"ca9e17101cce4abeb77a53584db775e2","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"3.86.186.240","callerIp":"10.12.128.202","launchTime":1633746009872,"region":"us-east-1","status":"starting"},"requestId":"6223b89d7efb445987884de053fba2a0","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 10:20:10,076] ERROR com.eden.cases.Test <<<<<<<<测试失败(创建aws实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/create
+[2021-10-09 10:20:10,076] INFO  com.eden.cases.Test 已经临时储存的key：{accesskey={"signature":"a7c6905a852b92d9220e792c5ea846a7","requestId":"6223b89d7efb445987884de053fba2a0","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746003649"}}
+[2021-10-09 10:20:10,076] INFO  com.eden.cases.Test =========================================================
+[2021-10-09 10:20:10,076] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询正在运行的实例)：http://10.12.128.228/instance/instance-manage/api/instance/listAllIds
+[2021-10-09 10:21:26,568] INFO  com.eden.cases.Test >>>>>>>>开始测试API(创建aws实例)：http://10.12.128.228/instance/instance-manage/api/instance/create
+[2021-10-09 10:21:26,568] INFO  com.eden.cases.Base 参数：{"imageVersion":"","shellPlaceholder":"","configId":"","latitude":"","origin":"","instanceType":"","requestIp":"","region":"us-east-1","type":"Region","imageType":"CloudR","longitude":""}
+[2021-10-09 10:21:26,573] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"44be9ff138cfb49d2aef1828e7888c3e","requestId":"9e4649edc80245838bf954333bbe81ea","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746086568"},"Content-Type":"application/json"}
+[2021-10-09 10:21:30,665] INFO  com.eden.cases.Base 返回结果：{"result":{"elasticSuccess":false,"privateIp":"172.31.84.169","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-079dde420337c68b7","lock":0,"id":"c971d225ff9c417f81bae8f9ab2934ff","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"3.89.115.108","callerIp":"10.12.128.202","launchTime":1633746090560,"region":"us-east-1","status":"starting"},"requestId":"9e4649edc80245838bf954333bbe81ea","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 10:21:30,665] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 10:21:30,665] INFO  com.eden.cases.Base 验证通过！返回结果包含："status":"starting"
+[2021-10-09 10:21:30,666] INFO  com.eden.cases.Base 验证通过！返回结果包含："region":"us-east-1"
+[2021-10-09 10:21:30,666] INFO  com.eden.cases.Base 验证通过！返回结果包含："imageType":"CloudR"
+[2021-10-09 10:21:30,666] INFO  com.eden.cases.Test <<<<<<<测试通过(创建aws实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/create
+[2021-10-09 10:21:30,666] INFO  com.eden.cases.Test 已经临时储存的key：{instanceId=i-079dde420337c68b7, accesskey={"signature":"44be9ff138cfb49d2aef1828e7888c3e","requestId":"9e4649edc80245838bf954333bbe81ea","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746086568"}, publicIp=3.89.115.108, imageType=CloudR}
+[2021-10-09 10:21:30,666] INFO  com.eden.cases.Base 线程等待10秒后将测试下一个API
+[2021-10-09 10:21:30,666] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 10:21:40,681] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询正在运行的实例)：http://10.12.128.228/instance/instance-manage/api/instance/listAllIds
+[2021-10-09 10:21:40,681] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 10:21:40,681] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"6b8fb8bf969a94a3988847fa9792b3f5","requestId":"959e91515fac49a3aa427d548249413e","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746100681"},"Content-Type":"application/json"}
+[2021-10-09 10:21:40,699] INFO  com.eden.cases.Base 返回结果：{"result":["i-079dde420337c68b7","i-0eb1d9f5f7ebe89ec"],"requestId":"959e91515fac49a3aa427d548249413e","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 10:21:40,699] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 10:21:40,699] INFO  com.eden.cases.Base 验证通过！返回结果包含：i-079dde420337c68b7
+[2021-10-09 10:21:40,700] INFO  com.eden.cases.Test <<<<<<<测试通过(查询正在运行的实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/listAllIds
+[2021-10-09 10:21:40,700] INFO  com.eden.cases.Test 已经临时储存的key：{instanceId=i-079dde420337c68b7, accesskey={"signature":"6b8fb8bf969a94a3988847fa9792b3f5","requestId":"959e91515fac49a3aa427d548249413e","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746100681"}, publicIp=3.89.115.108, imageType=CloudR}
+[2021-10-09 10:21:40,700] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 10:21:40,700] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 10:21:41,711] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据instanceId查询实例)：http://10.12.128.228/instance/instance-manage/api/instance/getInstance
+[2021-10-09 10:21:41,712] INFO  com.eden.cases.Base 参数：{"instanceId":"i-079dde420337c68b7"}
+[2021-10-09 10:21:41,714] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"d1c22a1d386a5b4b46f24982c6f27f43","requestId":"fd7fd42a59504b80b3ad684377a228dd","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746101713"},"Content-Type":"application/json"}
+[2021-10-09 10:21:41,736] INFO  com.eden.cases.Base 返回结果：{"result":{"privateIp":"172.31.84.169","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-079dde420337c68b7","lock":0,"id":"c971d225ff9c417f81bae8f9ab2934ff","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"3.89.115.108","callerIp":"10.12.128.202","launchTime":1633746090560,"region":"us-east-1","status":"running"},"requestId":"fd7fd42a59504b80b3ad684377a228dd","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 10:21:41,737] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 10:21:41,738] INFO  com.eden.cases.Base 验证通过！返回结果包含：i-079dde420337c68b7
+[2021-10-09 10:21:41,739] INFO  com.eden.cases.Test <<<<<<<测试通过(根据instanceId查询实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/getInstance
+[2021-10-09 10:21:41,740] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-079dde420337c68b7, accesskey={"signature":"d1c22a1d386a5b4b46f24982c6f27f43","requestId":"fd7fd42a59504b80b3ad684377a228dd","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746101713"}, publicIp=3.89.115.108, imageType=CloudR}
+[2021-10-09 10:21:41,740] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 10:21:41,740] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 10:21:42,742] INFO  com.eden.cases.Test >>>>>>>>开始测试API(分页查询实例)：http://10.12.128.228/instance/instance-manage/api/instance/pageInstance
+[2021-10-09 10:21:42,742] INFO  com.eden.cases.Base 参数：{"instanceId":"","privateIp":"","pageSize":100,"publicIp":"","region":"","imageType":"","pageNum":100,"platform":"","callerIp":"","status":"Running"}
+[2021-10-09 10:21:42,743] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"a760ef567d9c3614639969620708730d","requestId":"b553d2cf8c754d39a5208e658c203cf1","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746102742"},"Content-Type":"application/json"}
+[2021-10-09 10:21:42,770] INFO  com.eden.cases.Base 返回结果：{"result":{"startRow":1,"navigatepageNums":[1],"lastPage":1,"prePage":0,"hasNextPage":false,"nextPage":0,"pageSize":100,"endRow":2,"list":[{"privateIp":"172.31.84.169","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-079dde420337c68b7","lock":0,"id":"c971d225ff9c417f81bae8f9ab2934ff","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"3.89.115.108","callerIp":"10.12.128.202","launchTime":1633746090560,"region":"us-east-1","status":"running"},{"privateIp":"172.31.80.131","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-0eb1d9f5f7ebe89ec","lock":0,"id":"ca9e17101cce4abeb77a53584db775e2","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"3.86.186.240","callerIp":"10.12.128.202","launchTime":1633746009872,"region":"us-east-1","status":"running"}],"pageNum":1,"navigatePages":8,"total":2,"navigateFirstPage":1,"pages":1,"size":2,"firstPage":1,"isLastPage":true,"hasPreviousPage":false,"navigateLastPage":1,"isFirstPage":true},"requestId":"b553d2cf8c754d39a5208e658c203cf1","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 10:21:42,771] INFO  com.eden.cases.Base 验证通过！返回结果包含：i-079dde420337c68b7
+[2021-10-09 10:21:42,771] INFO  com.eden.cases.Test <<<<<<<测试通过(分页查询实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/pageInstance
+[2021-10-09 10:21:42,771] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-079dde420337c68b7, accesskey={"signature":"a760ef567d9c3614639969620708730d","requestId":"b553d2cf8c754d39a5208e658c203cf1","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746102742"}, publicIp=3.89.115.108, imageType=CloudR}
+[2021-10-09 10:21:42,771] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 10:21:42,771] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 10:21:43,784] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询当前可用的Region)：http://10.12.128.228/instance/instance-manage/api/region/listActiveRegion
+[2021-10-09 10:21:43,785] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 10:21:43,786] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"10a54c042996bc56ba3cf66bd54a715e","requestId":"587ec4bbefe3443a81ffb0feaba70165","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746103785"},"Content-Type":"application/json"}
+[2021-10-09 10:21:43,802] INFO  com.eden.cases.Base 返回结果：{"result":["us-east-1","ap-northeast-2"],"requestId":"587ec4bbefe3443a81ffb0feaba70165","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 10:21:43,802] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 10:21:43,802] INFO  com.eden.cases.Test <<<<<<<测试通过(查询当前可用的Region)--API:http://10.12.128.228/instance/instance-manage/api/region/listActiveRegion
+[2021-10-09 10:21:43,802] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-079dde420337c68b7, accesskey={"signature":"10a54c042996bc56ba3cf66bd54a715e","requestId":"587ec4bbefe3443a81ffb0feaba70165","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746103785"}, publicIp=3.89.115.108, imageType=CloudR}
+[2021-10-09 10:21:43,802] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 10:21:43,802] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 10:21:44,814] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询最优的Region)：http://10.12.128.228/instance/instance-manage/api/region/chooseRegion
+[2021-10-09 10:21:44,815] INFO  com.eden.cases.Base 参数：{"requestIp":"3.89.115.108","type":"IP","imageType":"CloudR"}
+[2021-10-09 10:21:44,816] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"60aba973f3ed1a65ad57442a9cd9e201","requestId":"4fbf5b9a0188460795f75bdd0bedabc0","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746104815"},"Content-Type":"application/json"}
+[2021-10-09 10:21:45,623] INFO  com.eden.cases.Base 返回结果：{"result":"us-east-1","requestId":"4fbf5b9a0188460795f75bdd0bedabc0","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 10:21:45,624] INFO  com.eden.cases.Base 验证通过！返回结果包含："result":"us-east-1"
+[2021-10-09 10:21:45,624] INFO  com.eden.cases.Test <<<<<<<测试通过(查询最优的Region)--API:http://10.12.128.228/instance/instance-manage/api/region/chooseRegion
+[2021-10-09 10:21:45,625] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-079dde420337c68b7, accesskey={"signature":"60aba973f3ed1a65ad57442a9cd9e201","requestId":"4fbf5b9a0188460795f75bdd0bedabc0","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746104815"}, publicIp=3.89.115.108, imageType=CloudR}
+[2021-10-09 10:21:45,625] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 10:21:45,625] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 10:21:46,637] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据距离排序所有可用region)：http://10.12.128.228/instance/instance-manage/api/region/sortRegion
+[2021-10-09 10:21:46,637] INFO  com.eden.cases.Base 参数：{"requestIp":"3.89.115.108","type":"IP","imageType":"CloudR"}
+[2021-10-09 10:21:46,638] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"901df0728be88de55b634d6822c65f19","requestId":"e5d02078fb50490eb7d4fff25e1fd700","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746106637"},"Content-Type":"application/json"}
+[2021-10-09 10:21:46,669] INFO  com.eden.cases.Base 返回结果：{"result":["us-east-1","ap-northeast-2"],"requestId":"e5d02078fb50490eb7d4fff25e1fd700","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 10:21:46,669] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 10:21:46,670] INFO  com.eden.cases.Base 验证通过！返回结果包含：ap-northeast-2
+[2021-10-09 10:21:46,670] INFO  com.eden.cases.Test <<<<<<<测试通过(根据距离排序所有可用region)--API:http://10.12.128.228/instance/instance-manage/api/region/sortRegion
+[2021-10-09 10:21:46,670] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-079dde420337c68b7, accesskey={"signature":"901df0728be88de55b634d6822c65f19","requestId":"e5d02078fb50490eb7d4fff25e1fd700","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746106637"}, publicIp=3.89.115.108, imageType=CloudR}
+[2021-10-09 10:21:46,670] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 10:21:46,670] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 10:21:47,684] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询当前可用的RegionWithRemark)：http://10.12.128.228/instance/instance-manage/api/region/listActiveRegionWithRemark
+[2021-10-09 10:21:47,685] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 10:21:47,686] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"d21c635ecf11cf11d2d7231c4dca8694","requestId":"37230aafb32540cf900aa0b54c1e5f43","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746107685"},"Content-Type":"application/json"}
+[2021-10-09 10:21:47,706] INFO  com.eden.cases.Base 返回结果：{"result":[{"remark":"US East (N. Virginia)","region":"us-east-1"},{"remark":"Asia Pacific (Seoul)","region":"ap-northeast-2"}],"requestId":"37230aafb32540cf900aa0b54c1e5f43","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 10:21:47,706] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 10:21:47,706] INFO  com.eden.cases.Base 验证通过！返回结果包含：ap-northeast-2
+[2021-10-09 10:21:47,706] INFO  com.eden.cases.Test <<<<<<<测试通过(查询当前可用的RegionWithRemark)--API:http://10.12.128.228/instance/instance-manage/api/region/listActiveRegionWithRemark
+[2021-10-09 10:21:47,706] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-079dde420337c68b7, accesskey={"signature":"d21c635ecf11cf11d2d7231c4dca8694","requestId":"37230aafb32540cf900aa0b54c1e5f43","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746107685"}, publicIp=3.89.115.108, imageType=CloudR}
+[2021-10-09 10:21:47,706] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 10:21:47,706] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 10:21:48,713] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询最优的RegionWithRemark)：http://10.12.128.228/instance/instance-manage/api/region/chooseRegionWithRemark
+[2021-10-09 10:21:48,713] INFO  com.eden.cases.Base 参数：{"requestIp":"3.89.115.108","type":"IP","imageType":"CloudR"}
+[2021-10-09 10:21:48,714] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"d209a79d276164a2fc115069970973e5","requestId":"3355f2504d5b4321969d9e47ed97388e","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746108713"},"Content-Type":"application/json"}
+[2021-10-09 10:21:48,781] INFO  com.eden.cases.Base 返回结果：{"result":{"remark":"US East (N. Virginia)","region":"us-east-1"},"requestId":"3355f2504d5b4321969d9e47ed97388e","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 10:21:48,781] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 10:21:48,781] INFO  com.eden.cases.Test <<<<<<<测试通过(查询最优的RegionWithRemark)--API:http://10.12.128.228/instance/instance-manage/api/region/chooseRegionWithRemark
+[2021-10-09 10:21:48,781] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-079dde420337c68b7, accesskey={"signature":"d209a79d276164a2fc115069970973e5","requestId":"3355f2504d5b4321969d9e47ed97388e","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746108713"}, publicIp=3.89.115.108, imageType=CloudR}
+[2021-10-09 10:21:48,781] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 10:21:48,781] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 10:21:49,792] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据 Instance 创建镜像)：http://10.12.128.228/instance/instance-manage/api/image/upgradeImage
+[2021-10-09 10:21:49,793] INFO  com.eden.cases.Base 参数：{"instanceId":"i-079dde420337c68b7","version":"20210607"}
+[2021-10-09 10:21:49,794] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"89aa4ff77f33a0647ae2a6cece6b4395","requestId":"29d9cee050944eea8c814ae6c5ab5315","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746109793"},"Content-Type":"application/json"}
+[2021-10-09 10:21:49,813] INFO  com.eden.cases.Base 返回结果：{"requestId":"29d9cee050944eea8c814ae6c5ab5315","errorCode":"81202802","errorInfo":"This image version already exist"}
+[2021-10-09 10:21:49,813] ERROR com.eden.cases.Base 验证失败！期望返回的值："errorInfo":"Success",实际结果：{"requestId":"29d9cee050944eea8c814ae6c5ab5315","errorCode":"81202802","errorInfo":"This image version already exist"}
+[2021-10-09 10:21:49,813] ERROR com.eden.cases.Test <<<<<<<<测试失败(根据 Instance 创建镜像)--API:http://10.12.128.228/instance/instance-manage/api/image/upgradeImage
+[2021-10-09 10:21:49,813] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-079dde420337c68b7, accesskey={"signature":"89aa4ff77f33a0647ae2a6cece6b4395","requestId":"29d9cee050944eea8c814ae6c5ab5315","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746109793"}, publicIp=3.89.115.108, imageType=CloudR}
+[2021-10-09 10:21:49,813] INFO  com.eden.cases.Test =========================================================
+[2021-10-09 10:21:49,813] INFO  com.eden.cases.Test >>>>>>>>开始测试API(shutdown实例)：http://10.12.128.228/instance/instance-manage/api/instance/shutdown
+[2021-10-09 10:21:49,814] INFO  com.eden.cases.Base 参数：{"instanceId":"i-079dde420337c68b7"}
+[2021-10-09 10:21:49,814] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"332494f56708ea1faa421d86318fad34","requestId":"04cac638d01b447ba6813ae79dccdca5","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746109814"},"Content-Type":"application/json"}
+[2021-10-09 10:21:51,476] INFO  com.eden.cases.Base 返回结果：{"requestId":"04cac638d01b447ba6813ae79dccdca5","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 10:21:51,477] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 10:21:51,477] INFO  com.eden.cases.Test <<<<<<<测试通过(shutdown实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/shutdown
+[2021-10-09 10:21:51,477] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-079dde420337c68b7, accesskey={"signature":"332494f56708ea1faa421d86318fad34","requestId":"04cac638d01b447ba6813ae79dccdca5","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633746109814"}, publicIp=3.89.115.108, imageType=CloudR}
+[2021-10-09 10:21:51,477] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 10:21:51,477] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:34:13,956] INFO  com.eden.cases.Test >>>>>>>>开始测试API(创建aws实例)：http://10.12.128.228/instance/instance-manage/api/instance/create
+[2021-10-09 13:34:13,966] INFO  com.eden.cases.Base 参数：{"imageVersion":"","shellPlaceholder":"","configId":"","latitude":"","origin":"","instanceType":"","requestIp":"","region":"us-east-1","type":"Region","imageType":"CloudR","longitude":""}
+[2021-10-09 13:34:14,004] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"2d4898e205c0c10c90ed365d6eecdae5","requestId":"418e27e118a34dfa81471480c1263f4d","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757653966"},"Content-Type":"application/json"}
+[2021-10-09 13:34:20,009] INFO  com.eden.cases.Base 返回结果：{"result":{"elasticSuccess":false,"privateIp":"172.31.87.173","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-035036e3ce996a83e","lock":0,"id":"343dda6c7140473a9ac15abfe04e6440","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"18.204.204.212","callerIp":"10.12.128.202","launchTime":1633757659846,"region":"us-east-1","status":"starting"},"requestId":"418e27e118a34dfa81471480c1263f4d","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:34:20,009] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:34:20,009] INFO  com.eden.cases.Base 验证通过！返回结果包含："status":"starting"
+[2021-10-09 13:34:20,009] INFO  com.eden.cases.Base 验证通过！返回结果包含："region":"us-east-1"
+[2021-10-09 13:34:20,010] INFO  com.eden.cases.Base 验证通过！返回结果包含："imageType":"CloudR"
+[2021-10-09 13:34:20,010] INFO  com.eden.cases.Test <<<<<<<测试通过(创建aws实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/create
+[2021-10-09 13:34:20,010] INFO  com.eden.cases.Test 已经临时储存的key：{instanceId=i-035036e3ce996a83e, accesskey={"signature":"2d4898e205c0c10c90ed365d6eecdae5","requestId":"418e27e118a34dfa81471480c1263f4d","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757653966"}, publicIp=18.204.204.212, imageType=CloudR}
+[2021-10-09 13:34:20,010] INFO  com.eden.cases.Base 线程等待10秒后将测试下一个API
+[2021-10-09 13:34:20,010] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:34:30,018] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询正在运行的实例)：http://10.12.128.228/instance/instance-manage/api/instance/listAllIds
+[2021-10-09 13:34:30,018] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 13:34:30,020] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"9bc0380b918335aa616c055fba08e9a8","requestId":"fcf52ddcd30b4c56ada959df38c09200","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757670019"},"Content-Type":"application/json"}
+[2021-10-09 13:34:30,036] INFO  com.eden.cases.Base 返回结果：{"result":["i-035036e3ce996a83e"],"requestId":"fcf52ddcd30b4c56ada959df38c09200","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:34:30,036] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:34:30,036] INFO  com.eden.cases.Base 验证通过！返回结果包含：i-035036e3ce996a83e
+[2021-10-09 13:34:30,036] INFO  com.eden.cases.Test <<<<<<<测试通过(查询正在运行的实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/listAllIds
+[2021-10-09 13:34:30,036] INFO  com.eden.cases.Test 已经临时储存的key：{instanceId=i-035036e3ce996a83e, accesskey={"signature":"9bc0380b918335aa616c055fba08e9a8","requestId":"fcf52ddcd30b4c56ada959df38c09200","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757670019"}, publicIp=18.204.204.212, imageType=CloudR}
+[2021-10-09 13:34:30,036] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:34:30,037] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:34:31,050] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据instanceId查询实例)：http://10.12.128.228/instance/instance-manage/api/instance/getInstance
+[2021-10-09 13:34:31,051] INFO  com.eden.cases.Base 参数：{"instanceId":"i-035036e3ce996a83e"}
+[2021-10-09 13:34:31,053] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"beb3307987bb46391ad6118845ce6aa3","requestId":"cc3c8bde98e141b599306750f72eca57","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757671052"},"Content-Type":"application/json"}
+[2021-10-09 13:34:31,079] INFO  com.eden.cases.Base 返回结果：{"result":{"privateIp":"172.31.87.173","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-035036e3ce996a83e","lock":0,"id":"343dda6c7140473a9ac15abfe04e6440","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"18.204.204.212","callerIp":"10.12.128.202","launchTime":1633757659846,"region":"us-east-1","status":"running"},"requestId":"cc3c8bde98e141b599306750f72eca57","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:34:31,079] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:34:31,080] INFO  com.eden.cases.Base 验证通过！返回结果包含：i-035036e3ce996a83e
+[2021-10-09 13:34:31,080] INFO  com.eden.cases.Test <<<<<<<测试通过(根据instanceId查询实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/getInstance
+[2021-10-09 13:34:31,080] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-035036e3ce996a83e, accesskey={"signature":"beb3307987bb46391ad6118845ce6aa3","requestId":"cc3c8bde98e141b599306750f72eca57","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757671052"}, publicIp=18.204.204.212, imageType=CloudR}
+[2021-10-09 13:34:31,080] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:34:31,080] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:34:32,091] INFO  com.eden.cases.Test >>>>>>>>开始测试API(分页查询实例)：http://10.12.128.228/instance/instance-manage/api/instance/pageInstance
+[2021-10-09 13:34:32,091] INFO  com.eden.cases.Base 参数：{"instanceId":"","privateIp":"","pageSize":100,"publicIp":"","region":"","imageType":"","pageNum":100,"platform":"","callerIp":"","status":"Running"}
+[2021-10-09 13:34:32,091] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"c86804c2b846f5e19b94f2c984de6603","requestId":"641ce9c5aa0a4291be01c125c33c1c06","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757672091"},"Content-Type":"application/json"}
+[2021-10-09 13:34:32,124] INFO  com.eden.cases.Base 返回结果：{"result":{"startRow":1,"navigatepageNums":[1],"lastPage":1,"prePage":0,"hasNextPage":false,"nextPage":0,"pageSize":100,"endRow":1,"list":[{"privateIp":"172.31.87.173","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-035036e3ce996a83e","lock":0,"id":"343dda6c7140473a9ac15abfe04e6440","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"18.204.204.212","callerIp":"10.12.128.202","launchTime":1633757659846,"region":"us-east-1","status":"running"}],"pageNum":1,"navigatePages":8,"total":1,"navigateFirstPage":1,"pages":1,"size":1,"firstPage":1,"isLastPage":true,"hasPreviousPage":false,"navigateLastPage":1,"isFirstPage":true},"requestId":"641ce9c5aa0a4291be01c125c33c1c06","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:34:32,125] INFO  com.eden.cases.Base 验证通过！返回结果包含：i-035036e3ce996a83e
+[2021-10-09 13:34:32,125] INFO  com.eden.cases.Test <<<<<<<测试通过(分页查询实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/pageInstance
+[2021-10-09 13:34:32,125] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-035036e3ce996a83e, accesskey={"signature":"c86804c2b846f5e19b94f2c984de6603","requestId":"641ce9c5aa0a4291be01c125c33c1c06","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757672091"}, publicIp=18.204.204.212, imageType=CloudR}
+[2021-10-09 13:34:32,125] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:34:32,125] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:34:33,133] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询当前可用的Region)：http://10.12.128.228/instance/instance-manage/api/region/listActiveRegion
+[2021-10-09 13:34:33,134] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 13:34:33,135] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"abad21dad5fb27165f66e04b86d9f0c6","requestId":"545ce139c5fe4f798e5c86d4e512715c","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757673134"},"Content-Type":"application/json"}
+[2021-10-09 13:34:33,163] INFO  com.eden.cases.Base 返回结果：{"result":["us-east-1","ap-northeast-2"],"requestId":"545ce139c5fe4f798e5c86d4e512715c","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:34:33,163] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:34:33,163] INFO  com.eden.cases.Test <<<<<<<测试通过(查询当前可用的Region)--API:http://10.12.128.228/instance/instance-manage/api/region/listActiveRegion
+[2021-10-09 13:34:33,163] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-035036e3ce996a83e, accesskey={"signature":"abad21dad5fb27165f66e04b86d9f0c6","requestId":"545ce139c5fe4f798e5c86d4e512715c","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757673134"}, publicIp=18.204.204.212, imageType=CloudR}
+[2021-10-09 13:34:33,164] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:34:33,164] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:34:34,164] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询最优的Region)：http://10.12.128.228/instance/instance-manage/api/region/chooseRegion
+[2021-10-09 13:34:34,165] INFO  com.eden.cases.Base 参数：{"requestIp":"18.204.204.212","type":"IP","imageType":"CloudR"}
+[2021-10-09 13:34:34,166] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"804f7200866ace0b0af0856ed877200f","requestId":"b1872d5330f14b6db863e87ac75f6015","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757674165"},"Content-Type":"application/json"}
+[2021-10-09 13:34:34,955] INFO  com.eden.cases.Base 返回结果：{"result":"us-east-1","requestId":"b1872d5330f14b6db863e87ac75f6015","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:34:34,956] INFO  com.eden.cases.Base 验证通过！返回结果包含："result":"us-east-1"
+[2021-10-09 13:34:34,956] INFO  com.eden.cases.Test <<<<<<<测试通过(查询最优的Region)--API:http://10.12.128.228/instance/instance-manage/api/region/chooseRegion
+[2021-10-09 13:34:34,956] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-035036e3ce996a83e, accesskey={"signature":"804f7200866ace0b0af0856ed877200f","requestId":"b1872d5330f14b6db863e87ac75f6015","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757674165"}, publicIp=18.204.204.212, imageType=CloudR}
+[2021-10-09 13:34:34,957] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:34:34,957] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:34:35,958] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据距离排序所有可用region)：http://10.12.128.228/instance/instance-manage/api/region/sortRegion
+[2021-10-09 13:34:35,958] INFO  com.eden.cases.Base 参数：{"requestIp":"18.204.204.212","type":"IP","imageType":"CloudR"}
+[2021-10-09 13:34:35,959] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"5f337ea8c0fa82de35aaf16f5b017312","requestId":"0dc0d40f1de54f418bb425967c7bbe37","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757675958"},"Content-Type":"application/json"}
+[2021-10-09 13:34:36,014] INFO  com.eden.cases.Base 返回结果：{"result":["us-east-1","ap-northeast-2"],"requestId":"0dc0d40f1de54f418bb425967c7bbe37","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:34:36,015] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:34:36,015] INFO  com.eden.cases.Base 验证通过！返回结果包含：ap-northeast-2
+[2021-10-09 13:34:36,015] INFO  com.eden.cases.Test <<<<<<<测试通过(根据距离排序所有可用region)--API:http://10.12.128.228/instance/instance-manage/api/region/sortRegion
+[2021-10-09 13:34:36,015] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-035036e3ce996a83e, accesskey={"signature":"5f337ea8c0fa82de35aaf16f5b017312","requestId":"0dc0d40f1de54f418bb425967c7bbe37","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757675958"}, publicIp=18.204.204.212, imageType=CloudR}
+[2021-10-09 13:34:36,015] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:34:36,015] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:34:37,021] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询当前可用的RegionWithRemark)：http://10.12.128.228/instance/instance-manage/api/region/listActiveRegionWithRemark
+[2021-10-09 13:34:37,022] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 13:34:37,023] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"62d89966d35ba120aa54fbfa1e16727e","requestId":"c94303f3b5cf440da2112228967afbb0","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757677022"},"Content-Type":"application/json"}
+[2021-10-09 13:34:37,050] INFO  com.eden.cases.Base 返回结果：{"result":[{"remark":"US East (N. Virginia)","region":"us-east-1"},{"remark":"Asia Pacific (Seoul)","region":"ap-northeast-2"}],"requestId":"c94303f3b5cf440da2112228967afbb0","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:34:37,050] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:34:37,051] INFO  com.eden.cases.Base 验证通过！返回结果包含：ap-northeast-2
+[2021-10-09 13:34:37,051] INFO  com.eden.cases.Test <<<<<<<测试通过(查询当前可用的RegionWithRemark)--API:http://10.12.128.228/instance/instance-manage/api/region/listActiveRegionWithRemark
+[2021-10-09 13:34:37,051] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-035036e3ce996a83e, accesskey={"signature":"62d89966d35ba120aa54fbfa1e16727e","requestId":"c94303f3b5cf440da2112228967afbb0","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757677022"}, publicIp=18.204.204.212, imageType=CloudR}
+[2021-10-09 13:34:37,051] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:34:37,051] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:34:38,054] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询最优的RegionWithRemark)：http://10.12.128.228/instance/instance-manage/api/region/chooseRegionWithRemark
+[2021-10-09 13:34:38,055] INFO  com.eden.cases.Base 参数：{"requestIp":"18.204.204.212","type":"IP","imageType":"CloudR"}
+[2021-10-09 13:34:38,056] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"37b7f01ade63df10c83b38dfc5b55a9d","requestId":"5d45bcb012734e53acb555b472d2cf6d","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757678055"},"Content-Type":"application/json"}
+[2021-10-09 13:34:38,092] INFO  com.eden.cases.Base 返回结果：{"result":{"remark":"US East (N. Virginia)","region":"us-east-1"},"requestId":"5d45bcb012734e53acb555b472d2cf6d","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:34:38,093] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:34:38,093] INFO  com.eden.cases.Test <<<<<<<测试通过(查询最优的RegionWithRemark)--API:http://10.12.128.228/instance/instance-manage/api/region/chooseRegionWithRemark
+[2021-10-09 13:34:38,093] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-035036e3ce996a83e, accesskey={"signature":"37b7f01ade63df10c83b38dfc5b55a9d","requestId":"5d45bcb012734e53acb555b472d2cf6d","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757678055"}, publicIp=18.204.204.212, imageType=CloudR}
+[2021-10-09 13:34:38,093] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:34:38,093] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:34:39,098] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据 Instance 创建镜像)：http://10.12.128.228/instance/instance-manage/api/image/upgradeImage
+[2021-10-09 13:34:39,099] INFO  com.eden.cases.Base 参数：{"instanceId":"i-035036e3ce996a83e","version":"20210607"}
+[2021-10-09 13:34:39,100] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"dbf23c4c5e9f5a130d955f501546c83a","requestId":"87349f88c34c4d5ead2e4a954ed04855","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757679099"},"Content-Type":"application/json"}
+[2021-10-09 13:34:39,138] INFO  com.eden.cases.Base 返回结果：{"requestId":"87349f88c34c4d5ead2e4a954ed04855","errorCode":"81202802","errorInfo":"This image version already exist"}
+[2021-10-09 13:34:39,139] ERROR com.eden.cases.Base 验证失败！期望返回的值："errorInfo":"Success",实际结果：{"requestId":"87349f88c34c4d5ead2e4a954ed04855","errorCode":"81202802","errorInfo":"This image version already exist"}
+[2021-10-09 13:34:39,139] ERROR com.eden.cases.Test <<<<<<<<测试失败(根据 Instance 创建镜像)--API:http://10.12.128.228/instance/instance-manage/api/image/upgradeImage
+[2021-10-09 13:34:39,139] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-035036e3ce996a83e, accesskey={"signature":"dbf23c4c5e9f5a130d955f501546c83a","requestId":"87349f88c34c4d5ead2e4a954ed04855","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757679099"}, publicIp=18.204.204.212, imageType=CloudR}
+[2021-10-09 13:34:39,139] INFO  com.eden.cases.Test =========================================================
+[2021-10-09 13:34:39,140] INFO  com.eden.cases.Test >>>>>>>>开始测试API(shutdown实例)：http://10.12.128.228/instance/instance-manage/api/instance/shutdown
+[2021-10-09 13:34:39,140] INFO  com.eden.cases.Base 参数：{"instanceId":"i-035036e3ce996a83e"}
+[2021-10-09 13:34:39,141] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"266b42471854ea684ea8899b509dd6aa","requestId":"b0097219ef7c476f83cd2cc50b8e4d03","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757679140"},"Content-Type":"application/json"}
+[2021-10-09 13:34:40,578] INFO  com.eden.cases.Base 返回结果：{"requestId":"b0097219ef7c476f83cd2cc50b8e4d03","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:34:40,579] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:34:40,579] INFO  com.eden.cases.Test <<<<<<<测试通过(shutdown实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/shutdown
+[2021-10-09 13:34:40,579] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-035036e3ce996a83e, accesskey={"signature":"266b42471854ea684ea8899b509dd6aa","requestId":"b0097219ef7c476f83cd2cc50b8e4d03","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757679140"}, publicIp=18.204.204.212, imageType=CloudR}
+[2021-10-09 13:34:40,580] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:34:40,580] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:36:13,204] INFO  com.eden.cases.Test >>>>>>>>开始测试API(创建aws实例)：http://10.12.128.228/instance/instance-manage/api/instance/create
+[2021-10-09 13:36:13,204] INFO  com.eden.cases.Base 参数：{"imageVersion":"","shellPlaceholder":"","configId":"","latitude":"","origin":"","instanceType":"","requestIp":"","region":"us-east-1","type":"Region","imageType":"CloudR","longitude":""}
+[2021-10-09 13:36:13,209] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"7bb8063bdecbee53a985a058bc922844","requestId":"6fd5aeae18b4472892c852864dfb3382","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757773205"},"Content-Type":"application/json"}
+[2021-10-09 13:36:18,408] INFO  com.eden.cases.Base 返回结果：{"result":{"elasticSuccess":false,"privateIp":"172.31.80.156","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-0353c13ae2be07257","lock":0,"id":"de0df1ada0d9449a8e7847a9b8436b03","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"34.201.77.62","callerIp":"10.12.128.202","launchTime":1633757778390,"region":"us-east-1","status":"starting"},"requestId":"6fd5aeae18b4472892c852864dfb3382","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:36:18,409] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:36:18,409] INFO  com.eden.cases.Base 验证通过！返回结果包含："status":"starting"
+[2021-10-09 13:36:18,409] INFO  com.eden.cases.Base 验证通过！返回结果包含："region":"us-east-1"
+[2021-10-09 13:36:18,410] INFO  com.eden.cases.Base 验证通过！返回结果包含："imageType":"CloudR"
+[2021-10-09 13:36:18,410] INFO  com.eden.cases.Test <<<<<<<测试通过(创建aws实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/create
+[2021-10-09 13:36:18,411] INFO  com.eden.cases.Test 已经临时储存的key：{instanceId=i-0353c13ae2be07257, accesskey={"signature":"7bb8063bdecbee53a985a058bc922844","requestId":"6fd5aeae18b4472892c852864dfb3382","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757773205"}, publicIp=34.201.77.62, imageType=CloudR}
+[2021-10-09 13:36:18,411] INFO  com.eden.cases.Base 线程等待10秒后将测试下一个API
+[2021-10-09 13:36:18,411] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:36:28,424] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询正在运行的实例)：http://10.12.128.228/instance/instance-manage/api/instance/listAllIds
+[2021-10-09 13:36:28,425] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 13:36:28,427] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"4c3688af79b26b92d4366d110cab654a","requestId":"d0e438dc92c54c56b67fee6000063c4c","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757788426"},"Content-Type":"application/json"}
+[2021-10-09 13:36:28,446] INFO  com.eden.cases.Base 返回结果：{"result":["i-0353c13ae2be07257"],"requestId":"d0e438dc92c54c56b67fee6000063c4c","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:36:28,446] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:36:28,446] INFO  com.eden.cases.Base 验证通过！返回结果包含：i-0353c13ae2be07257
+[2021-10-09 13:36:28,446] INFO  com.eden.cases.Test <<<<<<<测试通过(查询正在运行的实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/listAllIds
+[2021-10-09 13:36:28,446] INFO  com.eden.cases.Test 已经临时储存的key：{instanceId=i-0353c13ae2be07257, accesskey={"signature":"4c3688af79b26b92d4366d110cab654a","requestId":"d0e438dc92c54c56b67fee6000063c4c","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757788426"}, publicIp=34.201.77.62, imageType=CloudR}
+[2021-10-09 13:36:28,446] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:36:28,446] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:36:29,461] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据instanceId查询实例)：http://10.12.128.228/instance/instance-manage/api/instance/getInstance
+[2021-10-09 13:36:29,461] INFO  com.eden.cases.Base 参数：{"instanceId":"i-0353c13ae2be07257"}
+[2021-10-09 13:36:29,463] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"12de59fc48a15119ff620f0ee8b278d3","requestId":"c606c3b28234496aa301586aa59669e0","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757789461"},"Content-Type":"application/json"}
+[2021-10-09 13:36:29,480] INFO  com.eden.cases.Base 返回结果：{"result":{"privateIp":"172.31.80.156","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-0353c13ae2be07257","lock":0,"id":"de0df1ada0d9449a8e7847a9b8436b03","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"34.201.77.62","callerIp":"10.12.128.202","launchTime":1633757778390,"region":"us-east-1","status":"running"},"requestId":"c606c3b28234496aa301586aa59669e0","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:36:29,480] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:36:29,481] INFO  com.eden.cases.Base 验证通过！返回结果包含：i-0353c13ae2be07257
+[2021-10-09 13:36:29,481] INFO  com.eden.cases.Test <<<<<<<测试通过(根据instanceId查询实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/getInstance
+[2021-10-09 13:36:29,481] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0353c13ae2be07257, accesskey={"signature":"12de59fc48a15119ff620f0ee8b278d3","requestId":"c606c3b28234496aa301586aa59669e0","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757789461"}, publicIp=34.201.77.62, imageType=CloudR}
+[2021-10-09 13:36:29,481] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:36:29,481] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:36:30,495] INFO  com.eden.cases.Test >>>>>>>>开始测试API(分页查询实例)：http://10.12.128.228/instance/instance-manage/api/instance/pageInstance
+[2021-10-09 13:36:30,495] INFO  com.eden.cases.Base 参数：{"instanceId":"","privateIp":"","pageSize":100,"publicIp":"","region":"","imageType":"","pageNum":100,"platform":"","callerIp":"","status":"Running"}
+[2021-10-09 13:36:30,495] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"9d5bad14c9147ae0c6b836d2aea6852e","requestId":"8bcd9b2d79c349c4a11dc63f95eece9a","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757790495"},"Content-Type":"application/json"}
+[2021-10-09 13:36:30,541] INFO  com.eden.cases.Base 返回结果：{"result":{"startRow":1,"navigatepageNums":[1],"lastPage":1,"prePage":0,"hasNextPage":false,"nextPage":0,"pageSize":100,"endRow":1,"list":[{"privateIp":"172.31.80.156","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-0353c13ae2be07257","lock":0,"id":"de0df1ada0d9449a8e7847a9b8436b03","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"34.201.77.62","callerIp":"10.12.128.202","launchTime":1633757778390,"region":"us-east-1","status":"running"}],"pageNum":1,"navigatePages":8,"total":1,"navigateFirstPage":1,"pages":1,"size":1,"firstPage":1,"isLastPage":true,"hasPreviousPage":false,"navigateLastPage":1,"isFirstPage":true},"requestId":"8bcd9b2d79c349c4a11dc63f95eece9a","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:36:30,542] INFO  com.eden.cases.Base 验证通过！返回结果包含：i-0353c13ae2be07257
+[2021-10-09 13:36:30,542] INFO  com.eden.cases.Test <<<<<<<测试通过(分页查询实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/pageInstance
+[2021-10-09 13:36:30,542] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0353c13ae2be07257, accesskey={"signature":"9d5bad14c9147ae0c6b836d2aea6852e","requestId":"8bcd9b2d79c349c4a11dc63f95eece9a","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757790495"}, publicIp=34.201.77.62, imageType=CloudR}
+[2021-10-09 13:36:30,542] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:36:30,542] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:36:31,555] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询当前可用的Region)：http://10.12.128.228/instance/instance-manage/api/region/listActiveRegion
+[2021-10-09 13:36:31,556] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 13:36:31,557] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"64a3fbced1798d7cf0059de59249be2f","requestId":"b6dfd97cdebc4b2bb886b6c126c65b41","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757791556"},"Content-Type":"application/json"}
+[2021-10-09 13:36:31,578] INFO  com.eden.cases.Base 返回结果：{"result":["us-east-1","ap-northeast-2"],"requestId":"b6dfd97cdebc4b2bb886b6c126c65b41","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:36:31,578] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:36:31,578] INFO  com.eden.cases.Test <<<<<<<测试通过(查询当前可用的Region)--API:http://10.12.128.228/instance/instance-manage/api/region/listActiveRegion
+[2021-10-09 13:36:31,578] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0353c13ae2be07257, accesskey={"signature":"64a3fbced1798d7cf0059de59249be2f","requestId":"b6dfd97cdebc4b2bb886b6c126c65b41","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757791556"}, publicIp=34.201.77.62, imageType=CloudR}
+[2021-10-09 13:36:31,578] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:36:31,579] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:36:32,586] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询最优的Region)：http://10.12.128.228/instance/instance-manage/api/region/chooseRegion
+[2021-10-09 13:36:32,587] INFO  com.eden.cases.Base 参数：{"requestIp":"34.201.77.62","type":"IP","imageType":"CloudR"}
+[2021-10-09 13:36:32,588] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"0ad8238f3948b668ab2dfaa5dda55204","requestId":"afd85071ae724b958848aa062e0b41bf","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757792587"},"Content-Type":"application/json"}
+[2021-10-09 13:36:33,387] INFO  com.eden.cases.Base 返回结果：{"result":"us-east-1","requestId":"afd85071ae724b958848aa062e0b41bf","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:36:33,388] INFO  com.eden.cases.Base 验证通过！返回结果包含："result":"us-east-1"
+[2021-10-09 13:36:33,388] INFO  com.eden.cases.Test <<<<<<<测试通过(查询最优的Region)--API:http://10.12.128.228/instance/instance-manage/api/region/chooseRegion
+[2021-10-09 13:36:33,389] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0353c13ae2be07257, accesskey={"signature":"0ad8238f3948b668ab2dfaa5dda55204","requestId":"afd85071ae724b958848aa062e0b41bf","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757792587"}, publicIp=34.201.77.62, imageType=CloudR}
+[2021-10-09 13:36:33,389] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:36:33,389] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:36:34,394] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据距离排序所有可用region)：http://10.12.128.228/instance/instance-manage/api/region/sortRegion
+[2021-10-09 13:36:34,394] INFO  com.eden.cases.Base 参数：{"requestIp":"34.201.77.62","type":"IP","imageType":"CloudR"}
+[2021-10-09 13:36:34,395] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"015c8f723d3ec10b9fcd6f8990507141","requestId":"34489be3cc8541e18bebd60bb4045049","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757794394"},"Content-Type":"application/json"}
+[2021-10-09 13:36:34,452] INFO  com.eden.cases.Base 返回结果：{"result":["us-east-1","ap-northeast-2"],"requestId":"34489be3cc8541e18bebd60bb4045049","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:36:34,453] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:36:34,454] INFO  com.eden.cases.Base 验证通过！返回结果包含：ap-northeast-2
+[2021-10-09 13:36:34,454] INFO  com.eden.cases.Test <<<<<<<测试通过(根据距离排序所有可用region)--API:http://10.12.128.228/instance/instance-manage/api/region/sortRegion
+[2021-10-09 13:36:34,454] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0353c13ae2be07257, accesskey={"signature":"015c8f723d3ec10b9fcd6f8990507141","requestId":"34489be3cc8541e18bebd60bb4045049","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757794394"}, publicIp=34.201.77.62, imageType=CloudR}
+[2021-10-09 13:36:34,454] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:36:34,454] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:36:35,458] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询当前可用的RegionWithRemark)：http://10.12.128.228/instance/instance-manage/api/region/listActiveRegionWithRemark
+[2021-10-09 13:36:35,458] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 13:36:35,459] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"084b16fada3c34f8a1918b4566e95648","requestId":"2a84a0d1fa894c02a46ccfa0f5fe7d4c","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757795458"},"Content-Type":"application/json"}
+[2021-10-09 13:36:35,478] INFO  com.eden.cases.Base 返回结果：{"result":[{"remark":"US East (N. Virginia)","region":"us-east-1"},{"remark":"Asia Pacific (Seoul)","region":"ap-northeast-2"}],"requestId":"2a84a0d1fa894c02a46ccfa0f5fe7d4c","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:36:35,478] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:36:35,478] INFO  com.eden.cases.Base 验证通过！返回结果包含：ap-northeast-2
+[2021-10-09 13:36:35,478] INFO  com.eden.cases.Test <<<<<<<测试通过(查询当前可用的RegionWithRemark)--API:http://10.12.128.228/instance/instance-manage/api/region/listActiveRegionWithRemark
+[2021-10-09 13:36:35,479] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0353c13ae2be07257, accesskey={"signature":"084b16fada3c34f8a1918b4566e95648","requestId":"2a84a0d1fa894c02a46ccfa0f5fe7d4c","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757795458"}, publicIp=34.201.77.62, imageType=CloudR}
+[2021-10-09 13:36:35,479] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:36:35,479] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:36:36,488] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询最优的RegionWithRemark)：http://10.12.128.228/instance/instance-manage/api/region/chooseRegionWithRemark
+[2021-10-09 13:36:36,489] INFO  com.eden.cases.Base 参数：{"requestIp":"34.201.77.62","type":"IP","imageType":"CloudR"}
+[2021-10-09 13:36:36,490] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"9c1b8f2f6934eb4a97cf329e96acada4","requestId":"d1acca84b241489e87b40fdada352340","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757796489"},"Content-Type":"application/json"}
+[2021-10-09 13:36:36,516] INFO  com.eden.cases.Base 返回结果：{"result":{"remark":"US East (N. Virginia)","region":"us-east-1"},"requestId":"d1acca84b241489e87b40fdada352340","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:36:36,517] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:36:36,517] INFO  com.eden.cases.Test <<<<<<<测试通过(查询最优的RegionWithRemark)--API:http://10.12.128.228/instance/instance-manage/api/region/chooseRegionWithRemark
+[2021-10-09 13:36:36,517] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0353c13ae2be07257, accesskey={"signature":"9c1b8f2f6934eb4a97cf329e96acada4","requestId":"d1acca84b241489e87b40fdada352340","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757796489"}, publicIp=34.201.77.62, imageType=CloudR}
+[2021-10-09 13:36:36,517] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:36:36,517] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:36:37,521] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据 Instance 创建镜像)：http://10.12.128.228/instance/instance-manage/api/image/upgradeImage
+[2021-10-09 13:36:37,522] INFO  com.eden.cases.Base 参数：{"instanceId":"i-0353c13ae2be07257","version":"20210607"}
+[2021-10-09 13:36:37,523] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"4f8902057531e4e959623f05edf8e260","requestId":"676b5b5e3274476cac8574d2fe08d6e0","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757797522"},"Content-Type":"application/json"}
+[2021-10-09 13:36:37,555] INFO  com.eden.cases.Base 返回结果：{"requestId":"676b5b5e3274476cac8574d2fe08d6e0","errorCode":"81202802","errorInfo":"This image version already exist"}
+[2021-10-09 13:36:37,556] ERROR com.eden.cases.Base 验证失败！期望返回的值："errorInfo":"Success",实际结果：{"requestId":"676b5b5e3274476cac8574d2fe08d6e0","errorCode":"81202802","errorInfo":"This image version already exist"}
+[2021-10-09 13:36:37,556] ERROR com.eden.cases.Test <<<<<<<<测试失败(根据 Instance 创建镜像)--API:http://10.12.128.228/instance/instance-manage/api/image/upgradeImage
+[2021-10-09 13:36:37,556] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0353c13ae2be07257, accesskey={"signature":"4f8902057531e4e959623f05edf8e260","requestId":"676b5b5e3274476cac8574d2fe08d6e0","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757797522"}, publicIp=34.201.77.62, imageType=CloudR}
+[2021-10-09 13:36:37,556] INFO  com.eden.cases.Test =========================================================
+[2021-10-09 13:36:37,556] INFO  com.eden.cases.Test >>>>>>>>开始测试API(shutdown实例)：http://10.12.128.228/instance/instance-manage/api/instance/shutdown
+[2021-10-09 13:36:37,556] INFO  com.eden.cases.Base 参数：{"instanceId":"i-0353c13ae2be07257"}
+[2021-10-09 13:36:37,557] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"640c801609fe470c3c87fda17a3033dc","requestId":"a5df82e691094437aa15bda1ce33d1fa","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757797556"},"Content-Type":"application/json"}
+[2021-10-09 13:36:39,119] INFO  com.eden.cases.Base 返回结果：{"requestId":"a5df82e691094437aa15bda1ce33d1fa","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:36:39,119] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:36:39,120] INFO  com.eden.cases.Test <<<<<<<测试通过(shutdown实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/shutdown
+[2021-10-09 13:36:39,120] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0353c13ae2be07257, accesskey={"signature":"640c801609fe470c3c87fda17a3033dc","requestId":"a5df82e691094437aa15bda1ce33d1fa","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757797556"}, publicIp=34.201.77.62, imageType=CloudR}
+[2021-10-09 13:36:39,120] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:36:39,120] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:39:44,365] INFO  com.eden.cases.Test >>>>>>>>开始测试API(创建aws实例)：http://10.12.128.228/instance/instance-manage/api/instance/create
+[2021-10-09 13:39:44,366] INFO  com.eden.cases.Base 参数：{"imageVersion":"","shellPlaceholder":"","configId":"","latitude":"","origin":"","instanceType":"","requestIp":"","region":"us-east-1","type":"Region","imageType":"CloudR","longitude":""}
+[2021-10-09 13:39:44,369] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"4615471f4096df4bc83d3a7ad89ed4ae","requestId":"50214ee926244daca20ae1f9e0d21a66","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757984366"},"Content-Type":"application/json"}
+[2021-10-09 13:39:48,430] INFO  com.eden.cases.Base 返回结果：{"result":{"elasticSuccess":false,"privateIp":"172.31.90.132","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-0f5d2989aa09945ef","lock":0,"id":"8e385304c85a4afbbc8b80e3c1e84f08","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"100.27.27.91","callerIp":"10.12.128.202","launchTime":1633757988426,"region":"us-east-1","status":"starting"},"requestId":"50214ee926244daca20ae1f9e0d21a66","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:39:48,430] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:39:48,430] INFO  com.eden.cases.Base 验证通过！返回结果包含："status":"starting"
+[2021-10-09 13:39:48,430] INFO  com.eden.cases.Base 验证通过！返回结果包含："region":"us-east-1"
+[2021-10-09 13:39:48,430] INFO  com.eden.cases.Base 验证通过！返回结果包含："imageType":"CloudR"
+[2021-10-09 13:39:48,430] INFO  com.eden.cases.Test <<<<<<<测试通过(创建aws实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/create
+[2021-10-09 13:39:48,431] INFO  com.eden.cases.Test 已经临时储存的key：{instanceId=i-0f5d2989aa09945ef, accesskey={"signature":"4615471f4096df4bc83d3a7ad89ed4ae","requestId":"50214ee926244daca20ae1f9e0d21a66","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757984366"}, publicIp=100.27.27.91, imageType=CloudR}
+[2021-10-09 13:39:48,431] INFO  com.eden.cases.Base 线程等待10秒后将测试下一个API
+[2021-10-09 13:39:48,431] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:39:58,433] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询正在运行的实例)：http://10.12.128.228/instance/instance-manage/api/instance/listAllIds
+[2021-10-09 13:39:58,433] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 13:39:58,435] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"13a5d28ef8147f5ec22e028bed874a9e","requestId":"50eccc83dbc843c79028b9a4fcdeee81","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757998434"},"Content-Type":"application/json"}
+[2021-10-09 13:39:58,456] INFO  com.eden.cases.Base 返回结果：{"result":["i-0f5d2989aa09945ef","i-0353c13ae2be07257"],"requestId":"50eccc83dbc843c79028b9a4fcdeee81","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:39:58,456] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:39:58,456] INFO  com.eden.cases.Base 验证通过！返回结果包含：i-0f5d2989aa09945ef
+[2021-10-09 13:39:58,456] INFO  com.eden.cases.Test <<<<<<<测试通过(查询正在运行的实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/listAllIds
+[2021-10-09 13:39:58,456] INFO  com.eden.cases.Test 已经临时储存的key：{instanceId=i-0f5d2989aa09945ef, accesskey={"signature":"13a5d28ef8147f5ec22e028bed874a9e","requestId":"50eccc83dbc843c79028b9a4fcdeee81","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757998434"}, publicIp=100.27.27.91, imageType=CloudR}
+[2021-10-09 13:39:58,456] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:39:58,456] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:39:59,458] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据instanceId查询实例)：http://10.12.128.228/instance/instance-manage/api/instance/getInstance
+[2021-10-09 13:39:59,459] INFO  com.eden.cases.Base 参数：{"instanceId":"i-0f5d2989aa09945ef"}
+[2021-10-09 13:39:59,460] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"7f5e8ccb5f95f7f9ba7b49a816c5137e","requestId":"51fa89b7fb934903900c10878a363a63","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757999459"},"Content-Type":"application/json"}
+[2021-10-09 13:39:59,474] INFO  com.eden.cases.Base 返回结果：{"result":{"privateIp":"172.31.90.132","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-0f5d2989aa09945ef","lock":0,"id":"8e385304c85a4afbbc8b80e3c1e84f08","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"100.27.27.91","callerIp":"10.12.128.202","launchTime":1633757988426,"region":"us-east-1","status":"running"},"requestId":"51fa89b7fb934903900c10878a363a63","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:39:59,475] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:39:59,475] INFO  com.eden.cases.Base 验证通过！返回结果包含：i-0f5d2989aa09945ef
+[2021-10-09 13:39:59,475] INFO  com.eden.cases.Test <<<<<<<测试通过(根据instanceId查询实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/getInstance
+[2021-10-09 13:39:59,475] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0f5d2989aa09945ef, accesskey={"signature":"7f5e8ccb5f95f7f9ba7b49a816c5137e","requestId":"51fa89b7fb934903900c10878a363a63","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633757999459"}, publicIp=100.27.27.91, imageType=CloudR}
+[2021-10-09 13:39:59,475] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:39:59,475] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:40:00,487] INFO  com.eden.cases.Test >>>>>>>>开始测试API(分页查询实例)：http://10.12.128.228/instance/instance-manage/api/instance/pageInstance
+[2021-10-09 13:40:00,488] INFO  com.eden.cases.Base 参数：{"instanceId":"","privateIp":"","pageSize":100,"publicIp":"","region":"","imageType":"","pageNum":100,"platform":"","callerIp":"","status":"Running"}
+[2021-10-09 13:40:00,489] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"ad09ce5780f20faa5b6da8d9404b5f1e","requestId":"7bb24bd9bf864a34b62a2375874b15b8","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758000488"},"Content-Type":"application/json"}
+[2021-10-09 13:40:00,517] INFO  com.eden.cases.Base 返回结果：{"result":{"startRow":1,"navigatepageNums":[1],"lastPage":1,"prePage":0,"hasNextPage":false,"nextPage":0,"pageSize":100,"endRow":1,"list":[{"privateIp":"172.31.90.132","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-0f5d2989aa09945ef","lock":0,"id":"8e385304c85a4afbbc8b80e3c1e84f08","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"100.27.27.91","callerIp":"10.12.128.202","launchTime":1633757988426,"region":"us-east-1","status":"running"}],"pageNum":1,"navigatePages":8,"total":1,"navigateFirstPage":1,"pages":1,"size":1,"firstPage":1,"isLastPage":true,"hasPreviousPage":false,"navigateLastPage":1,"isFirstPage":true},"requestId":"7bb24bd9bf864a34b62a2375874b15b8","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:40:00,518] INFO  com.eden.cases.Base 验证通过！返回结果包含：i-0f5d2989aa09945ef
+[2021-10-09 13:40:00,518] INFO  com.eden.cases.Test <<<<<<<测试通过(分页查询实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/pageInstance
+[2021-10-09 13:40:00,518] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0f5d2989aa09945ef, accesskey={"signature":"ad09ce5780f20faa5b6da8d9404b5f1e","requestId":"7bb24bd9bf864a34b62a2375874b15b8","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758000488"}, publicIp=100.27.27.91, imageType=CloudR}
+[2021-10-09 13:40:00,518] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:40:00,518] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:40:01,532] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询当前可用的Region)：http://10.12.128.228/instance/instance-manage/api/region/listActiveRegion
+[2021-10-09 13:40:01,533] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 13:40:01,535] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"8fc47e01bf52f4b8fc5d277ec6c1a2b9","requestId":"046215429d0040669926e97bf83f24c1","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758001533"},"Content-Type":"application/json"}
+[2021-10-09 13:40:01,551] INFO  com.eden.cases.Base 返回结果：{"result":["us-east-1","ap-northeast-2"],"requestId":"046215429d0040669926e97bf83f24c1","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:40:01,552] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:40:01,552] INFO  com.eden.cases.Test <<<<<<<测试通过(查询当前可用的Region)--API:http://10.12.128.228/instance/instance-manage/api/region/listActiveRegion
+[2021-10-09 13:40:01,552] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0f5d2989aa09945ef, accesskey={"signature":"8fc47e01bf52f4b8fc5d277ec6c1a2b9","requestId":"046215429d0040669926e97bf83f24c1","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758001533"}, publicIp=100.27.27.91, imageType=CloudR}
+[2021-10-09 13:40:01,552] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:40:01,552] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:40:02,559] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询最优的Region)：http://10.12.128.228/instance/instance-manage/api/region/chooseRegion
+[2021-10-09 13:40:02,560] INFO  com.eden.cases.Base 参数：{"requestIp":"100.27.27.91","type":"IP","imageType":"CloudR"}
+[2021-10-09 13:40:02,562] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"acd36abcd344bc37f801eb60e18b2d43","requestId":"15f7669710f44cb4824ad9d4394f1416","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758002560"},"Content-Type":"application/json"}
+[2021-10-09 13:40:03,405] INFO  com.eden.cases.Base 返回结果：{"result":"us-east-1","requestId":"15f7669710f44cb4824ad9d4394f1416","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:40:03,406] INFO  com.eden.cases.Base 验证通过！返回结果包含："result":"us-east-1"
+[2021-10-09 13:40:03,406] INFO  com.eden.cases.Test <<<<<<<测试通过(查询最优的Region)--API:http://10.12.128.228/instance/instance-manage/api/region/chooseRegion
+[2021-10-09 13:40:03,407] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0f5d2989aa09945ef, accesskey={"signature":"acd36abcd344bc37f801eb60e18b2d43","requestId":"15f7669710f44cb4824ad9d4394f1416","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758002560"}, publicIp=100.27.27.91, imageType=CloudR}
+[2021-10-09 13:40:03,407] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:40:03,407] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:40:04,418] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据距离排序所有可用region)：http://10.12.128.228/instance/instance-manage/api/region/sortRegion
+[2021-10-09 13:40:04,418] INFO  com.eden.cases.Base 参数：{"requestIp":"100.27.27.91","type":"IP","imageType":"CloudR"}
+[2021-10-09 13:40:04,419] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"d56d001aafe58ed72d488ebc4a5d574a","requestId":"00687e4bbaaa465b8c2af1147d21816b","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758004418"},"Content-Type":"application/json"}
+[2021-10-09 13:40:04,471] INFO  com.eden.cases.Base 返回结果：{"result":["us-east-1","ap-northeast-2"],"requestId":"00687e4bbaaa465b8c2af1147d21816b","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:40:04,472] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:40:04,472] INFO  com.eden.cases.Base 验证通过！返回结果包含：ap-northeast-2
+[2021-10-09 13:40:04,473] INFO  com.eden.cases.Test <<<<<<<测试通过(根据距离排序所有可用region)--API:http://10.12.128.228/instance/instance-manage/api/region/sortRegion
+[2021-10-09 13:40:04,473] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0f5d2989aa09945ef, accesskey={"signature":"d56d001aafe58ed72d488ebc4a5d574a","requestId":"00687e4bbaaa465b8c2af1147d21816b","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758004418"}, publicIp=100.27.27.91, imageType=CloudR}
+[2021-10-09 13:40:04,473] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:40:04,474] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:40:05,480] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询当前可用的RegionWithRemark)：http://10.12.128.228/instance/instance-manage/api/region/listActiveRegionWithRemark
+[2021-10-09 13:40:05,480] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 13:40:05,481] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"3ca62c01af2c5e134c74a2fce216af90","requestId":"dde535fee9cb4c5a9c8c4990145a48bd","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758005480"},"Content-Type":"application/json"}
+[2021-10-09 13:40:05,502] INFO  com.eden.cases.Base 返回结果：{"result":[{"remark":"US East (N. Virginia)","region":"us-east-1"},{"remark":"Asia Pacific (Seoul)","region":"ap-northeast-2"}],"requestId":"dde535fee9cb4c5a9c8c4990145a48bd","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:40:05,502] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:40:05,502] INFO  com.eden.cases.Base 验证通过！返回结果包含：ap-northeast-2
+[2021-10-09 13:40:05,502] INFO  com.eden.cases.Test <<<<<<<测试通过(查询当前可用的RegionWithRemark)--API:http://10.12.128.228/instance/instance-manage/api/region/listActiveRegionWithRemark
+[2021-10-09 13:40:05,502] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0f5d2989aa09945ef, accesskey={"signature":"3ca62c01af2c5e134c74a2fce216af90","requestId":"dde535fee9cb4c5a9c8c4990145a48bd","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758005480"}, publicIp=100.27.27.91, imageType=CloudR}
+[2021-10-09 13:40:05,502] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:40:05,502] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:40:06,510] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询最优的RegionWithRemark)：http://10.12.128.228/instance/instance-manage/api/region/chooseRegionWithRemark
+[2021-10-09 13:40:06,510] INFO  com.eden.cases.Base 参数：{"requestIp":"100.27.27.91","type":"IP","imageType":"CloudR"}
+[2021-10-09 13:40:06,511] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"a5030974713a07ee893486223620da88","requestId":"c633c972056647349a6987ebef220b0d","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758006510"},"Content-Type":"application/json"}
+[2021-10-09 13:40:06,535] INFO  com.eden.cases.Base 返回结果：{"result":{"remark":"US East (N. Virginia)","region":"us-east-1"},"requestId":"c633c972056647349a6987ebef220b0d","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:40:06,536] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:40:06,536] INFO  com.eden.cases.Test <<<<<<<测试通过(查询最优的RegionWithRemark)--API:http://10.12.128.228/instance/instance-manage/api/region/chooseRegionWithRemark
+[2021-10-09 13:40:06,536] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0f5d2989aa09945ef, accesskey={"signature":"a5030974713a07ee893486223620da88","requestId":"c633c972056647349a6987ebef220b0d","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758006510"}, publicIp=100.27.27.91, imageType=CloudR}
+[2021-10-09 13:40:06,536] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:40:06,536] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:40:07,539] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据 Instance 创建镜像)：http://10.12.128.228/instance/instance-manage/api/image/upgradeImage
+[2021-10-09 13:40:07,540] INFO  com.eden.cases.Base 参数：{"instanceId":"i-0f5d2989aa09945ef","version":"20210607"}
+[2021-10-09 13:40:07,541] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"2a111bb6ca64159abe03168ae262ed75","requestId":"b5aeefd5590f40798721f17f40c68dc2","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758007540"},"Content-Type":"application/json"}
+[2021-10-09 13:40:07,668] INFO  com.eden.cases.Base 返回结果：{"requestId":"b5aeefd5590f40798721f17f40c68dc2","errorCode":"81202802","errorInfo":"This image version already exist"}
+[2021-10-09 13:40:07,669] ERROR com.eden.cases.Base 验证失败！期望返回的值："errorInfo":"Success",实际结果：{"requestId":"b5aeefd5590f40798721f17f40c68dc2","errorCode":"81202802","errorInfo":"This image version already exist"}
+[2021-10-09 13:40:07,669] ERROR com.eden.cases.Test <<<<<<<<测试失败(根据 Instance 创建镜像)--API:http://10.12.128.228/instance/instance-manage/api/image/upgradeImage
+[2021-10-09 13:40:07,670] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0f5d2989aa09945ef, accesskey={"signature":"2a111bb6ca64159abe03168ae262ed75","requestId":"b5aeefd5590f40798721f17f40c68dc2","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758007540"}, publicIp=100.27.27.91, imageType=CloudR}
+[2021-10-09 13:40:07,670] INFO  com.eden.cases.Test =========================================================
+[2021-10-09 13:40:07,670] INFO  com.eden.cases.Test >>>>>>>>开始测试API(shutdown实例)：http://10.12.128.228/instance/instance-manage/api/instance/shutdown
+[2021-10-09 13:40:07,671] INFO  com.eden.cases.Base 参数：{"instanceId":"i-0f5d2989aa09945ef"}
+[2021-10-09 13:40:07,672] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"580f2ba8dd17f1c9798f8e6d8e6892c5","requestId":"72296aa7c0614082a15840acff3d9c2f","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758007671"},"Content-Type":"application/json"}
+[2021-10-09 13:40:09,489] INFO  com.eden.cases.Base 返回结果：{"requestId":"72296aa7c0614082a15840acff3d9c2f","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:40:09,489] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:40:09,490] INFO  com.eden.cases.Test <<<<<<<测试通过(shutdown实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/shutdown
+[2021-10-09 13:40:09,490] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0f5d2989aa09945ef, accesskey={"signature":"580f2ba8dd17f1c9798f8e6d8e6892c5","requestId":"72296aa7c0614082a15840acff3d9c2f","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758007671"}, publicIp=100.27.27.91, imageType=CloudR}
+[2021-10-09 13:40:09,490] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:40:09,491] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:47:19,787] INFO  com.eden.cases.Test >>>>>>>>开始测试API(创建aws实例)：http://10.12.128.228/instance/instance-manage/api/instance/create
+[2021-10-09 13:47:19,788] INFO  com.eden.cases.Base 参数：{"imageVersion":"","shellPlaceholder":"","configId":"","latitude":"","origin":"","instanceType":"","requestIp":"","region":"us-east-1","type":"Region","imageType":"CloudR","longitude":""}
+[2021-10-09 13:47:19,792] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"ae0086e45a9227397fbeec4419fbc622","requestId":"133b64b9e0e24aaf96a9bc1c703f6710","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758439788"},"Content-Type":"application/json"}
+[2021-10-09 13:47:25,098] INFO  com.eden.cases.Base 返回结果：{"result":{"elasticSuccess":false,"privateIp":"172.31.91.188","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-046fca6ca2e6d03c0","lock":0,"id":"dd57674678e24462abb29f2856bfb704","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"54.174.126.212","callerIp":"10.12.128.202","launchTime":1633758445063,"region":"us-east-1","status":"starting"},"requestId":"133b64b9e0e24aaf96a9bc1c703f6710","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:47:25,099] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:47:25,099] INFO  com.eden.cases.Base 验证通过！返回结果包含："status":"starting"
+[2021-10-09 13:47:25,099] INFO  com.eden.cases.Base 验证通过！返回结果包含："region":"us-east-1"
+[2021-10-09 13:47:25,099] INFO  com.eden.cases.Base 验证通过！返回结果包含："imageType":"CloudR"
+[2021-10-09 13:47:25,099] INFO  com.eden.cases.Test <<<<<<<测试通过(创建aws实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/create
+[2021-10-09 13:47:25,100] INFO  com.eden.cases.Test 已经临时储存的key：{instanceId=i-046fca6ca2e6d03c0, accesskey={"signature":"ae0086e45a9227397fbeec4419fbc622","requestId":"133b64b9e0e24aaf96a9bc1c703f6710","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758439788"}, publicIp=54.174.126.212, imageType=CloudR}
+[2021-10-09 13:47:25,100] INFO  com.eden.cases.Base 线程等待10秒后将测试下一个API
+[2021-10-09 13:47:25,100] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:47:35,102] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询正在运行的实例)：http://10.12.128.228/instance/instance-manage/api/instance/listAllIds
+[2021-10-09 13:47:35,102] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 13:47:35,102] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"d94c610a315d7d3754fd54606d711072","requestId":"d7bac025cdca4664a3a85b5b08270452","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758455102"},"Content-Type":"application/json"}
+[2021-10-09 13:47:35,119] INFO  com.eden.cases.Base 返回结果：{"result":["i-046fca6ca2e6d03c0"],"requestId":"d7bac025cdca4664a3a85b5b08270452","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:47:35,119] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:47:35,119] INFO  com.eden.cases.Base 验证通过！返回结果包含：i-046fca6ca2e6d03c0
+[2021-10-09 13:47:35,119] INFO  com.eden.cases.Test <<<<<<<测试通过(查询正在运行的实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/listAllIds
+[2021-10-09 13:47:35,119] INFO  com.eden.cases.Test 已经临时储存的key：{instanceId=i-046fca6ca2e6d03c0, accesskey={"signature":"d94c610a315d7d3754fd54606d711072","requestId":"d7bac025cdca4664a3a85b5b08270452","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758455102"}, publicIp=54.174.126.212, imageType=CloudR}
+[2021-10-09 13:47:35,119] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:47:35,119] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:47:36,134] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据instanceId查询实例)：http://10.12.128.228/instance/instance-manage/api/instance/getInstance
+[2021-10-09 13:47:36,134] INFO  com.eden.cases.Base 参数：{"instanceId":"i-046fca6ca2e6d03c0"}
+[2021-10-09 13:47:36,134] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"92d4a3bba0ea8318f8d5d09090f52bd0","requestId":"fe7a1dc8b6db4c219304155866c2aa60","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758456134"},"Content-Type":"application/json"}
+[2021-10-09 13:47:36,153] INFO  com.eden.cases.Base 返回结果：{"result":{"privateIp":"172.31.91.188","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-046fca6ca2e6d03c0","lock":0,"id":"dd57674678e24462abb29f2856bfb704","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"54.174.126.212","callerIp":"10.12.128.202","launchTime":1633758445063,"region":"us-east-1","status":"starting"},"requestId":"fe7a1dc8b6db4c219304155866c2aa60","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:47:36,153] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:47:36,154] INFO  com.eden.cases.Base 验证通过！返回结果包含：i-046fca6ca2e6d03c0
+[2021-10-09 13:47:36,154] INFO  com.eden.cases.Test <<<<<<<测试通过(根据instanceId查询实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/getInstance
+[2021-10-09 13:47:36,154] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-046fca6ca2e6d03c0, accesskey={"signature":"92d4a3bba0ea8318f8d5d09090f52bd0","requestId":"fe7a1dc8b6db4c219304155866c2aa60","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758456134"}, publicIp=54.174.126.212, imageType=CloudR}
+[2021-10-09 13:47:36,154] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:47:36,154] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:47:37,163] INFO  com.eden.cases.Test >>>>>>>>开始测试API(分页查询实例)：http://10.12.128.228/instance/instance-manage/api/instance/pageInstance
+[2021-10-09 13:47:37,164] INFO  com.eden.cases.Base 参数：{"instanceId":"","privateIp":"","pageSize":100,"publicIp":"","region":"","imageType":"","pageNum":100,"platform":"","callerIp":"","status":"Running"}
+[2021-10-09 13:47:37,165] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"2eca8b2cfb52936c17670744a5703178","requestId":"0545e6ec94834a43866969a468131083","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758457164"},"Content-Type":"application/json"}
+[2021-10-09 13:47:37,182] INFO  com.eden.cases.Base 返回结果：{"result":{"startRow":0,"navigatepageNums":[],"lastPage":0,"prePage":0,"hasNextPage":false,"nextPage":0,"pageSize":100,"endRow":0,"list":[],"pageNum":0,"navigatePages":8,"total":0,"navigateFirstPage":0,"pages":0,"size":0,"firstPage":0,"isLastPage":true,"hasPreviousPage":false,"navigateLastPage":0,"isFirstPage":false},"requestId":"0545e6ec94834a43866969a468131083","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:47:37,183] ERROR com.eden.cases.Base 验证失败！期望返回的值：i-046fca6ca2e6d03c0,实际结果：{"result":{"startRow":0,"navigatepageNums":[],"lastPage":0,"prePage":0,"hasNextPage":false,"nextPage":0,"pageSize":100,"endRow":0,"list":[],"pageNum":0,"navigatePages":8,"total":0,"navigateFirstPage":0,"pages":0,"size":0,"firstPage":0,"isLastPage":true,"hasPreviousPage":false,"navigateLastPage":0,"isFirstPage":false},"requestId":"0545e6ec94834a43866969a468131083","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:47:37,183] ERROR com.eden.cases.Test <<<<<<<<测试失败(分页查询实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/pageInstance
+[2021-10-09 13:47:37,183] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-046fca6ca2e6d03c0, accesskey={"signature":"2eca8b2cfb52936c17670744a5703178","requestId":"0545e6ec94834a43866969a468131083","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758457164"}, publicIp=54.174.126.212, imageType=CloudR}
+[2021-10-09 13:47:37,183] INFO  com.eden.cases.Test =========================================================
+[2021-10-09 13:47:37,183] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询当前可用的Region)：http://10.12.128.228/instance/instance-manage/api/region/listActiveRegion
+[2021-10-09 13:47:37,183] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 13:47:37,184] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"f0c2b39f13bdf22e6a05d304102a60fa","requestId":"5a87273ae9cc4d6792796013c3a508f5","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758457183"},"Content-Type":"application/json"}
+[2021-10-09 13:47:37,197] INFO  com.eden.cases.Base 返回结果：{"result":["us-east-1","ap-northeast-2"],"requestId":"5a87273ae9cc4d6792796013c3a508f5","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:47:37,198] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:47:37,198] INFO  com.eden.cases.Test <<<<<<<测试通过(查询当前可用的Region)--API:http://10.12.128.228/instance/instance-manage/api/region/listActiveRegion
+[2021-10-09 13:47:37,198] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-046fca6ca2e6d03c0, accesskey={"signature":"f0c2b39f13bdf22e6a05d304102a60fa","requestId":"5a87273ae9cc4d6792796013c3a508f5","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758457183"}, publicIp=54.174.126.212, imageType=CloudR}
+[2021-10-09 13:47:37,198] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:47:37,198] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:47:38,209] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询最优的Region)：http://10.12.128.228/instance/instance-manage/api/region/chooseRegion
+[2021-10-09 13:47:38,209] INFO  com.eden.cases.Base 参数：{"requestIp":"54.174.126.212","type":"IP","imageType":"CloudR"}
+[2021-10-09 13:47:38,210] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"86e02b8c2fd6c8f0f95ce7e2b1516871","requestId":"a7b9e81f814d481d99f286fb16911d0a","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758458209"},"Content-Type":"application/json"}
+[2021-10-09 13:47:39,041] INFO  com.eden.cases.Base 返回结果：{"result":"us-east-1","requestId":"a7b9e81f814d481d99f286fb16911d0a","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:47:39,041] INFO  com.eden.cases.Base 验证通过！返回结果包含："result":"us-east-1"
+[2021-10-09 13:47:39,042] INFO  com.eden.cases.Test <<<<<<<测试通过(查询最优的Region)--API:http://10.12.128.228/instance/instance-manage/api/region/chooseRegion
+[2021-10-09 13:47:39,042] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-046fca6ca2e6d03c0, accesskey={"signature":"86e02b8c2fd6c8f0f95ce7e2b1516871","requestId":"a7b9e81f814d481d99f286fb16911d0a","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758458209"}, publicIp=54.174.126.212, imageType=CloudR}
+[2021-10-09 13:47:39,042] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:47:39,042] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:47:40,049] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据距离排序所有可用region)：http://10.12.128.228/instance/instance-manage/api/region/sortRegion
+[2021-10-09 13:47:40,049] INFO  com.eden.cases.Base 参数：{"requestIp":"54.174.126.212","type":"IP","imageType":"CloudR"}
+[2021-10-09 13:47:40,050] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"73be93934fac3917c3fbb2286a875409","requestId":"f539de211680436fbb7f8816d19a6e43","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758460049"},"Content-Type":"application/json"}
+[2021-10-09 13:47:40,096] INFO  com.eden.cases.Base 返回结果：{"result":["us-east-1","ap-northeast-2"],"requestId":"f539de211680436fbb7f8816d19a6e43","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:47:40,096] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:47:40,096] INFO  com.eden.cases.Base 验证通过！返回结果包含：ap-northeast-2
+[2021-10-09 13:47:40,097] INFO  com.eden.cases.Test <<<<<<<测试通过(根据距离排序所有可用region)--API:http://10.12.128.228/instance/instance-manage/api/region/sortRegion
+[2021-10-09 13:47:40,097] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-046fca6ca2e6d03c0, accesskey={"signature":"73be93934fac3917c3fbb2286a875409","requestId":"f539de211680436fbb7f8816d19a6e43","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758460049"}, publicIp=54.174.126.212, imageType=CloudR}
+[2021-10-09 13:47:40,097] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:47:40,097] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:47:41,112] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询当前可用的RegionWithRemark)：http://10.12.128.228/instance/instance-manage/api/region/listActiveRegionWithRemark
+[2021-10-09 13:47:41,112] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 13:47:41,113] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"f31066e747d4c4d28855145552b77629","requestId":"78d9f7e941bb4e608ee604f53318743a","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758461112"},"Content-Type":"application/json"}
+[2021-10-09 13:47:41,147] INFO  com.eden.cases.Base 返回结果：{"result":[{"remark":"US East (N. Virginia)","region":"us-east-1"},{"remark":"Asia Pacific (Seoul)","region":"ap-northeast-2"}],"requestId":"78d9f7e941bb4e608ee604f53318743a","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:47:41,148] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:47:41,148] INFO  com.eden.cases.Base 验证通过！返回结果包含：ap-northeast-2
+[2021-10-09 13:47:41,148] INFO  com.eden.cases.Test <<<<<<<测试通过(查询当前可用的RegionWithRemark)--API:http://10.12.128.228/instance/instance-manage/api/region/listActiveRegionWithRemark
+[2021-10-09 13:47:41,148] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-046fca6ca2e6d03c0, accesskey={"signature":"f31066e747d4c4d28855145552b77629","requestId":"78d9f7e941bb4e608ee604f53318743a","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758461112"}, publicIp=54.174.126.212, imageType=CloudR}
+[2021-10-09 13:47:41,148] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:47:41,148] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:47:42,158] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询最优的RegionWithRemark)：http://10.12.128.228/instance/instance-manage/api/region/chooseRegionWithRemark
+[2021-10-09 13:47:42,159] INFO  com.eden.cases.Base 参数：{"requestIp":"54.174.126.212","type":"IP","imageType":"CloudR"}
+[2021-10-09 13:47:42,160] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"f777817bfd881e38fbd33d090d7285bb","requestId":"f1a634a7554e406a8ebf21e67d3a59b4","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758462159"},"Content-Type":"application/json"}
+[2021-10-09 13:47:42,184] INFO  com.eden.cases.Base 返回结果：{"result":{"remark":"US East (N. Virginia)","region":"us-east-1"},"requestId":"f1a634a7554e406a8ebf21e67d3a59b4","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:47:42,184] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:47:42,184] INFO  com.eden.cases.Test <<<<<<<测试通过(查询最优的RegionWithRemark)--API:http://10.12.128.228/instance/instance-manage/api/region/chooseRegionWithRemark
+[2021-10-09 13:47:42,185] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-046fca6ca2e6d03c0, accesskey={"signature":"f777817bfd881e38fbd33d090d7285bb","requestId":"f1a634a7554e406a8ebf21e67d3a59b4","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758462159"}, publicIp=54.174.126.212, imageType=CloudR}
+[2021-10-09 13:47:42,185] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:47:42,185] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:47:43,186] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据 Instance 创建镜像)：http://10.12.128.228/instance/instance-manage/api/image/upgradeImage
+[2021-10-09 13:47:43,187] INFO  com.eden.cases.Base 参数：{"instanceId":"i-046fca6ca2e6d03c0","version":"20210607"}
+[2021-10-09 13:47:43,188] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"26ffe67e33fa0dacc772515e56a0b532","requestId":"82a909c1923149088477c07cec9c8780","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758463187"},"Content-Type":"application/json"}
+[2021-10-09 13:47:43,224] INFO  com.eden.cases.Base 返回结果：{"requestId":"82a909c1923149088477c07cec9c8780","errorCode":"81202802","errorInfo":"This image version already exist"}
+[2021-10-09 13:47:43,224] ERROR com.eden.cases.Base 验证失败！期望返回的值："errorInfo":"Success",实际结果：{"requestId":"82a909c1923149088477c07cec9c8780","errorCode":"81202802","errorInfo":"This image version already exist"}
+[2021-10-09 13:47:43,224] ERROR com.eden.cases.Test <<<<<<<<测试失败(根据 Instance 创建镜像)--API:http://10.12.128.228/instance/instance-manage/api/image/upgradeImage
+[2021-10-09 13:47:43,224] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-046fca6ca2e6d03c0, accesskey={"signature":"26ffe67e33fa0dacc772515e56a0b532","requestId":"82a909c1923149088477c07cec9c8780","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758463187"}, publicIp=54.174.126.212, imageType=CloudR}
+[2021-10-09 13:47:43,225] INFO  com.eden.cases.Test =========================================================
+[2021-10-09 13:47:43,225] INFO  com.eden.cases.Test >>>>>>>>开始测试API(shutdown实例)：http://10.12.128.228/instance/instance-manage/api/instance/shutdown
+[2021-10-09 13:47:43,225] INFO  com.eden.cases.Base 参数：{"instanceId":"i-046fca6ca2e6d03c0"}
+[2021-10-09 13:47:43,225] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"601ea98274b1e6ac86927b4a7887692e","requestId":"bb487f9b29c54108b2df843f17eefc21","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758463225"},"Content-Type":"application/json"}
+[2021-10-09 13:47:44,646] INFO  com.eden.cases.Base 返回结果：{"requestId":"bb487f9b29c54108b2df843f17eefc21","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:47:44,647] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:47:44,648] INFO  com.eden.cases.Test <<<<<<<测试通过(shutdown实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/shutdown
+[2021-10-09 13:47:44,648] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-046fca6ca2e6d03c0, accesskey={"signature":"601ea98274b1e6ac86927b4a7887692e","requestId":"bb487f9b29c54108b2df843f17eefc21","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758463225"}, publicIp=54.174.126.212, imageType=CloudR}
+[2021-10-09 13:47:44,648] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:47:44,648] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:51:06,561] INFO  com.eden.cases.Test >>>>>>>>开始测试API(创建aws实例)：http://10.12.128.228/instance/instance-manage/api/instance/create
+[2021-10-09 13:51:06,561] INFO  com.eden.cases.Base 参数：{"imageVersion":"","shellPlaceholder":"","configId":"","latitude":"","origin":"","instanceType":"","requestIp":"","region":"us-east-1","type":"Region","imageType":"CloudR","longitude":""}
+[2021-10-09 13:51:06,565] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"71ab7406e121d9d5293a090cd25fb74f","requestId":"742bf04855e4480b8f3f907ee142d3fa","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758666561"},"Content-Type":"application/json"}
+[2021-10-09 13:51:11,885] INFO  com.eden.cases.Base 返回结果：{"result":{"elasticSuccess":false,"privateIp":"172.31.93.176","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-0a4fe5cc55d6c9a8e","lock":0,"id":"762b4635e0c144e3a806e891162c3a91","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"54.84.58.22","callerIp":"10.12.128.202","launchTime":1633758671834,"region":"us-east-1","status":"starting"},"requestId":"742bf04855e4480b8f3f907ee142d3fa","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:51:11,885] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:51:11,885] INFO  com.eden.cases.Base 验证通过！返回结果包含："status":"starting"
+[2021-10-09 13:51:11,885] INFO  com.eden.cases.Base 验证通过！返回结果包含："region":"us-east-1"
+[2021-10-09 13:51:11,886] INFO  com.eden.cases.Base 验证通过！返回结果包含："imageType":"CloudR"
+[2021-10-09 13:51:11,886] INFO  com.eden.cases.Test <<<<<<<测试通过(创建aws实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/create
+[2021-10-09 13:51:11,886] INFO  com.eden.cases.Test 已经临时储存的key：{instanceId=i-0a4fe5cc55d6c9a8e, accesskey={"signature":"71ab7406e121d9d5293a090cd25fb74f","requestId":"742bf04855e4480b8f3f907ee142d3fa","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758666561"}, publicIp=54.84.58.22, imageType=CloudR}
+[2021-10-09 13:51:11,886] INFO  com.eden.cases.Base 线程等待10秒后将测试下一个API
+[2021-10-09 13:51:11,886] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:51:21,897] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询正在运行的实例)：http://10.12.128.228/instance/instance-manage/api/instance/listAllIds
+[2021-10-09 13:51:21,898] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 13:51:21,900] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"cc193479f2325080ace496124c222077","requestId":"d807c23b6b45401e895777a30bed64bd","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758681899"},"Content-Type":"application/json"}
+[2021-10-09 13:51:21,918] INFO  com.eden.cases.Base 返回结果：{"result":["i-0a4fe5cc55d6c9a8e"],"requestId":"d807c23b6b45401e895777a30bed64bd","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:51:21,918] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:51:21,918] INFO  com.eden.cases.Base 验证通过！返回结果包含：i-0a4fe5cc55d6c9a8e
+[2021-10-09 13:51:21,918] INFO  com.eden.cases.Test <<<<<<<测试通过(查询正在运行的实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/listAllIds
+[2021-10-09 13:51:21,918] INFO  com.eden.cases.Test 已经临时储存的key：{instanceId=i-0a4fe5cc55d6c9a8e, accesskey={"signature":"cc193479f2325080ace496124c222077","requestId":"d807c23b6b45401e895777a30bed64bd","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758681899"}, publicIp=54.84.58.22, imageType=CloudR}
+[2021-10-09 13:51:21,918] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:51:21,919] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:51:22,928] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据instanceId查询实例)：http://10.12.128.228/instance/instance-manage/api/instance/getInstance
+[2021-10-09 13:51:22,929] INFO  com.eden.cases.Base 参数：{"instanceId":"i-0a4fe5cc55d6c9a8e"}
+[2021-10-09 13:51:22,931] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"a2f685b92317fc25f0143fd342df098a","requestId":"555d56f20de542979276604aef006981","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758682929"},"Content-Type":"application/json"}
+[2021-10-09 13:51:22,950] INFO  com.eden.cases.Base 返回结果：{"result":{"privateIp":"172.31.93.176","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-0a4fe5cc55d6c9a8e","lock":0,"id":"762b4635e0c144e3a806e891162c3a91","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"54.84.58.22","callerIp":"10.12.128.202","launchTime":1633758671834,"region":"us-east-1","status":"running"},"requestId":"555d56f20de542979276604aef006981","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:51:22,950] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:51:22,950] INFO  com.eden.cases.Base 验证通过！返回结果包含：i-0a4fe5cc55d6c9a8e
+[2021-10-09 13:51:22,950] INFO  com.eden.cases.Test <<<<<<<测试通过(根据instanceId查询实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/getInstance
+[2021-10-09 13:51:22,951] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0a4fe5cc55d6c9a8e, accesskey={"signature":"a2f685b92317fc25f0143fd342df098a","requestId":"555d56f20de542979276604aef006981","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758682929"}, publicIp=54.84.58.22, imageType=CloudR}
+[2021-10-09 13:51:22,951] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:51:22,951] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:51:23,956] INFO  com.eden.cases.Test >>>>>>>>开始测试API(分页查询实例)：http://10.12.128.228/instance/instance-manage/api/instance/pageInstance
+[2021-10-09 13:51:23,956] INFO  com.eden.cases.Base 参数：{"instanceId":"","privateIp":"","pageSize":100,"publicIp":"","region":"","imageType":"","pageNum":100,"platform":"","callerIp":"","status":"Running"}
+[2021-10-09 13:51:23,957] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"f5144621a202b170a05c10f878975e5c","requestId":"a69e7a1120a641238a4ff20073da07aa","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758683956"},"Content-Type":"application/json"}
+[2021-10-09 13:51:23,997] INFO  com.eden.cases.Base 返回结果：{"result":{"startRow":1,"navigatepageNums":[1],"lastPage":1,"prePage":0,"hasNextPage":false,"nextPage":0,"pageSize":100,"endRow":1,"list":[{"privateIp":"172.31.93.176","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-0a4fe5cc55d6c9a8e","lock":0,"id":"762b4635e0c144e3a806e891162c3a91","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"54.84.58.22","callerIp":"10.12.128.202","launchTime":1633758671834,"region":"us-east-1","status":"running"}],"pageNum":1,"navigatePages":8,"total":1,"navigateFirstPage":1,"pages":1,"size":1,"firstPage":1,"isLastPage":true,"hasPreviousPage":false,"navigateLastPage":1,"isFirstPage":true},"requestId":"a69e7a1120a641238a4ff20073da07aa","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:51:23,997] INFO  com.eden.cases.Base 验证通过！返回结果包含：i-0a4fe5cc55d6c9a8e
+[2021-10-09 13:51:23,998] INFO  com.eden.cases.Test <<<<<<<测试通过(分页查询实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/pageInstance
+[2021-10-09 13:51:23,998] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0a4fe5cc55d6c9a8e, accesskey={"signature":"f5144621a202b170a05c10f878975e5c","requestId":"a69e7a1120a641238a4ff20073da07aa","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758683956"}, publicIp=54.84.58.22, imageType=CloudR}
+[2021-10-09 13:51:23,998] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:51:23,998] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:51:25,006] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询当前可用的Region)：http://10.12.128.228/instance/instance-manage/api/region/listActiveRegion
+[2021-10-09 13:51:25,007] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 13:51:25,010] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"98eaa333cb88d8d77e73f8cff84652d6","requestId":"18c4052ee5a54e0f9f1ea6b9f53f5a38","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758685008"},"Content-Type":"application/json"}
+[2021-10-09 13:51:25,025] INFO  com.eden.cases.Base 返回结果：{"result":["us-east-1","ap-northeast-2"],"requestId":"18c4052ee5a54e0f9f1ea6b9f53f5a38","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:51:25,026] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:51:25,026] INFO  com.eden.cases.Test <<<<<<<测试通过(查询当前可用的Region)--API:http://10.12.128.228/instance/instance-manage/api/region/listActiveRegion
+[2021-10-09 13:51:25,026] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0a4fe5cc55d6c9a8e, accesskey={"signature":"98eaa333cb88d8d77e73f8cff84652d6","requestId":"18c4052ee5a54e0f9f1ea6b9f53f5a38","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758685008"}, publicIp=54.84.58.22, imageType=CloudR}
+[2021-10-09 13:51:25,026] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:51:25,026] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:51:26,038] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询最优的Region)：http://10.12.128.228/instance/instance-manage/api/region/chooseRegion
+[2021-10-09 13:51:26,039] INFO  com.eden.cases.Base 参数：{"requestIp":"54.84.58.22","type":"IP","imageType":"CloudR"}
+[2021-10-09 13:51:26,040] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"8ae3fc3f46672dd71af20ffcad78f2b4","requestId":"57790b14ddf04fb88675619f332d1b23","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758686039"},"Content-Type":"application/json"}
+[2021-10-09 13:51:26,861] INFO  com.eden.cases.Base 返回结果：{"result":"us-east-1","requestId":"57790b14ddf04fb88675619f332d1b23","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:51:26,861] INFO  com.eden.cases.Base 验证通过！返回结果包含："result":"us-east-1"
+[2021-10-09 13:51:26,862] INFO  com.eden.cases.Test <<<<<<<测试通过(查询最优的Region)--API:http://10.12.128.228/instance/instance-manage/api/region/chooseRegion
+[2021-10-09 13:51:26,862] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0a4fe5cc55d6c9a8e, accesskey={"signature":"8ae3fc3f46672dd71af20ffcad78f2b4","requestId":"57790b14ddf04fb88675619f332d1b23","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758686039"}, publicIp=54.84.58.22, imageType=CloudR}
+[2021-10-09 13:51:26,862] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:51:26,862] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:51:27,867] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据距离排序所有可用region)：http://10.12.128.228/instance/instance-manage/api/region/sortRegion
+[2021-10-09 13:51:27,868] INFO  com.eden.cases.Base 参数：{"requestIp":"54.84.58.22","type":"IP","imageType":"CloudR"}
+[2021-10-09 13:51:27,869] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"c83ce8812ab8022b7b25d12b169b7150","requestId":"046718bb9c5d43d988e32fb9a590b452","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758687868"},"Content-Type":"application/json"}
+[2021-10-09 13:51:27,899] INFO  com.eden.cases.Base 返回结果：{"result":["us-east-1","ap-northeast-2"],"requestId":"046718bb9c5d43d988e32fb9a590b452","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:51:27,899] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:51:27,899] INFO  com.eden.cases.Base 验证通过！返回结果包含：ap-northeast-2
+[2021-10-09 13:51:27,900] INFO  com.eden.cases.Test <<<<<<<测试通过(根据距离排序所有可用region)--API:http://10.12.128.228/instance/instance-manage/api/region/sortRegion
+[2021-10-09 13:51:27,900] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0a4fe5cc55d6c9a8e, accesskey={"signature":"c83ce8812ab8022b7b25d12b169b7150","requestId":"046718bb9c5d43d988e32fb9a590b452","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758687868"}, publicIp=54.84.58.22, imageType=CloudR}
+[2021-10-09 13:51:27,900] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:51:27,900] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:51:28,901] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询当前可用的RegionWithRemark)：http://10.12.128.228/instance/instance-manage/api/region/listActiveRegionWithRemark
+[2021-10-09 13:51:28,902] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 13:51:28,903] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"488e19864b36b31e1153752b692f882e","requestId":"214d15917b7443eabbb24b026eb20762","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758688902"},"Content-Type":"application/json"}
+[2021-10-09 13:51:28,923] INFO  com.eden.cases.Base 返回结果：{"result":[{"remark":"US East (N. Virginia)","region":"us-east-1"},{"remark":"Asia Pacific (Seoul)","region":"ap-northeast-2"}],"requestId":"214d15917b7443eabbb24b026eb20762","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:51:28,924] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:51:28,924] INFO  com.eden.cases.Base 验证通过！返回结果包含：ap-northeast-2
+[2021-10-09 13:51:28,924] INFO  com.eden.cases.Test <<<<<<<测试通过(查询当前可用的RegionWithRemark)--API:http://10.12.128.228/instance/instance-manage/api/region/listActiveRegionWithRemark
+[2021-10-09 13:51:28,924] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0a4fe5cc55d6c9a8e, accesskey={"signature":"488e19864b36b31e1153752b692f882e","requestId":"214d15917b7443eabbb24b026eb20762","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758688902"}, publicIp=54.84.58.22, imageType=CloudR}
+[2021-10-09 13:51:28,924] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:51:28,924] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:51:29,934] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询最优的RegionWithRemark)：http://10.12.128.228/instance/instance-manage/api/region/chooseRegionWithRemark
+[2021-10-09 13:51:29,934] INFO  com.eden.cases.Base 参数：{"requestIp":"54.84.58.22","type":"IP","imageType":"CloudR"}
+[2021-10-09 13:51:29,935] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"2185ef481c92c1fee643ff462e439786","requestId":"fb26ae9d2272434e8b609aebbfa6a395","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758689934"},"Content-Type":"application/json"}
+[2021-10-09 13:51:30,002] INFO  com.eden.cases.Base 返回结果：{"result":{"remark":"US East (N. Virginia)","region":"us-east-1"},"requestId":"fb26ae9d2272434e8b609aebbfa6a395","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:51:30,003] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:51:30,003] INFO  com.eden.cases.Test <<<<<<<测试通过(查询最优的RegionWithRemark)--API:http://10.12.128.228/instance/instance-manage/api/region/chooseRegionWithRemark
+[2021-10-09 13:51:30,003] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0a4fe5cc55d6c9a8e, accesskey={"signature":"2185ef481c92c1fee643ff462e439786","requestId":"fb26ae9d2272434e8b609aebbfa6a395","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758689934"}, publicIp=54.84.58.22, imageType=CloudR}
+[2021-10-09 13:51:30,003] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:51:30,004] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:51:31,015] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据 Instance 创建镜像)：http://10.12.128.228/instance/instance-manage/api/image/upgradeImage
+[2021-10-09 13:51:31,016] INFO  com.eden.cases.Base 参数：{"instanceId":"i-0a4fe5cc55d6c9a8e","version":"20210607"}
+[2021-10-09 13:51:31,017] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"d2a46138598dcd629ccd25aa6747dc5e","requestId":"3b2cbe29cd554484b81679f212ab1708","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758691017"},"Content-Type":"application/json"}
+[2021-10-09 13:51:31,037] INFO  com.eden.cases.Base 返回结果：{"requestId":"3b2cbe29cd554484b81679f212ab1708","errorCode":"81202802","errorInfo":"This image version already exist"}
+[2021-10-09 13:51:31,037] ERROR com.eden.cases.Base 验证失败！期望返回的值："errorInfo":"Success",实际结果：{"requestId":"3b2cbe29cd554484b81679f212ab1708","errorCode":"81202802","errorInfo":"This image version already exist"}
+[2021-10-09 13:51:31,037] ERROR com.eden.cases.Test <<<<<<<<测试失败(根据 Instance 创建镜像)--API:http://10.12.128.228/instance/instance-manage/api/image/upgradeImage
+[2021-10-09 13:51:31,037] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0a4fe5cc55d6c9a8e, accesskey={"signature":"d2a46138598dcd629ccd25aa6747dc5e","requestId":"3b2cbe29cd554484b81679f212ab1708","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758691017"}, publicIp=54.84.58.22, imageType=CloudR}
+[2021-10-09 13:51:31,037] INFO  com.eden.cases.Test =========================================================
+[2021-10-09 13:51:31,038] INFO  com.eden.cases.Test >>>>>>>>开始测试API(shutdown实例)：http://10.12.128.228/instance/instance-manage/api/instance/shutdown
+[2021-10-09 13:51:31,038] INFO  com.eden.cases.Base 参数：{"instanceId":"i-0a4fe5cc55d6c9a8e"}
+[2021-10-09 13:51:31,038] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"6113b885dae690093eeb7ebd205107d1","requestId":"52ec1ead9e1f4de0a6bd53a64577c79e","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758691038"},"Content-Type":"application/json"}
+[2021-10-09 13:51:32,497] INFO  com.eden.cases.Base 返回结果：{"requestId":"52ec1ead9e1f4de0a6bd53a64577c79e","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:51:32,497] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:51:32,498] INFO  com.eden.cases.Test <<<<<<<测试通过(shutdown实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/shutdown
+[2021-10-09 13:51:32,498] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-0a4fe5cc55d6c9a8e, accesskey={"signature":"6113b885dae690093eeb7ebd205107d1","requestId":"52ec1ead9e1f4de0a6bd53a64577c79e","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758691038"}, publicIp=54.84.58.22, imageType=CloudR}
+[2021-10-09 13:51:32,498] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:51:32,499] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:52:14,450] INFO  com.eden.cases.Test >>>>>>>>开始测试API(创建aws实例)：http://10.12.128.228/instance/instance-manage/api/instance/create
+[2021-10-09 13:52:14,451] INFO  com.eden.cases.Base 参数：{"imageVersion":"","shellPlaceholder":"","configId":"","latitude":"","origin":"","instanceType":"","requestIp":"","region":"us-east-1","type":"Region","imageType":"CloudR","longitude":""}
+[2021-10-09 13:52:14,455] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"221fbd0bd63171fe1008372834ff7b83","requestId":"d21dac9756f04a67b7ad28673870d86e","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758734451"},"Content-Type":"application/json"}
+[2021-10-09 13:52:19,675] INFO  com.eden.cases.Base 返回结果：{"result":{"elasticSuccess":false,"privateIp":"172.31.86.191","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-01a45ff11f83e122b","lock":0,"id":"a53fbe534990436c8b95afc22db8a196","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"34.227.114.238","callerIp":"10.12.128.202","launchTime":1633758739666,"region":"us-east-1","status":"starting"},"requestId":"d21dac9756f04a67b7ad28673870d86e","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:52:19,675] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:52:19,675] INFO  com.eden.cases.Base 验证通过！返回结果包含："status":"starting"
+[2021-10-09 13:52:19,676] INFO  com.eden.cases.Base 验证通过！返回结果包含："region":"us-east-1"
+[2021-10-09 13:52:19,676] INFO  com.eden.cases.Base 验证通过！返回结果包含："imageType":"CloudR"
+[2021-10-09 13:52:19,676] INFO  com.eden.cases.Test <<<<<<<测试通过(创建aws实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/create
+[2021-10-09 13:52:19,676] INFO  com.eden.cases.Test 已经临时储存的key：{instanceId=i-01a45ff11f83e122b, accesskey={"signature":"221fbd0bd63171fe1008372834ff7b83","requestId":"d21dac9756f04a67b7ad28673870d86e","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758734451"}, publicIp=34.227.114.238, imageType=CloudR}
+[2021-10-09 13:52:19,676] INFO  com.eden.cases.Base 线程等待10秒后将测试下一个API
+[2021-10-09 13:52:19,676] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:52:29,686] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询正在运行的实例)：http://10.12.128.228/instance/instance-manage/api/instance/listAllIds
+[2021-10-09 13:52:29,686] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 13:52:29,686] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"f6b1c5d0e6a82ba2f46b71f5dfa74753","requestId":"e4e7218c14534f8ab39d99b573d22c3d","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758749686"},"Content-Type":"application/json"}
+[2021-10-09 13:52:29,700] INFO  com.eden.cases.Base 返回结果：{"result":["i-01a45ff11f83e122b"],"requestId":"e4e7218c14534f8ab39d99b573d22c3d","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:52:29,700] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:52:29,700] INFO  com.eden.cases.Base 验证通过！返回结果包含：i-01a45ff11f83e122b
+[2021-10-09 13:52:29,700] INFO  com.eden.cases.Test <<<<<<<测试通过(查询正在运行的实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/listAllIds
+[2021-10-09 13:52:29,700] INFO  com.eden.cases.Test 已经临时储存的key：{instanceId=i-01a45ff11f83e122b, accesskey={"signature":"f6b1c5d0e6a82ba2f46b71f5dfa74753","requestId":"e4e7218c14534f8ab39d99b573d22c3d","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758749686"}, publicIp=34.227.114.238, imageType=CloudR}
+[2021-10-09 13:52:29,700] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:52:29,700] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:52:30,702] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据instanceId查询实例)：http://10.12.128.228/instance/instance-manage/api/instance/getInstance
+[2021-10-09 13:52:30,703] INFO  com.eden.cases.Base 参数：{"instanceId":"i-01a45ff11f83e122b"}
+[2021-10-09 13:52:30,705] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"7307133e61186c75b8f0737ce61a34ec","requestId":"fc520bb347a84afd811521ee0deba5db","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758750704"},"Content-Type":"application/json"}
+[2021-10-09 13:52:30,723] INFO  com.eden.cases.Base 返回结果：{"result":{"privateIp":"172.31.86.191","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-01a45ff11f83e122b","lock":0,"id":"a53fbe534990436c8b95afc22db8a196","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"34.227.114.238","callerIp":"10.12.128.202","launchTime":1633758739666,"region":"us-east-1","status":"running"},"requestId":"fc520bb347a84afd811521ee0deba5db","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:52:30,723] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:52:30,724] INFO  com.eden.cases.Base 验证通过！返回结果包含：i-01a45ff11f83e122b
+[2021-10-09 13:52:30,724] INFO  com.eden.cases.Test <<<<<<<测试通过(根据instanceId查询实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/getInstance
+[2021-10-09 13:52:30,724] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-01a45ff11f83e122b, accesskey={"signature":"7307133e61186c75b8f0737ce61a34ec","requestId":"fc520bb347a84afd811521ee0deba5db","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758750704"}, publicIp=34.227.114.238, imageType=CloudR}
+[2021-10-09 13:52:30,724] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:52:30,724] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:52:31,735] INFO  com.eden.cases.Test >>>>>>>>开始测试API(分页查询实例)：http://10.12.128.228/instance/instance-manage/api/instance/pageInstance
+[2021-10-09 13:52:31,736] INFO  com.eden.cases.Base 参数：{"instanceId":"","privateIp":"","pageSize":100,"publicIp":"","region":"","imageType":"","pageNum":100,"platform":"","callerIp":"","status":"Running"}
+[2021-10-09 13:52:31,738] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"01a29226c8d0d672586fb6b44a2c7954","requestId":"6e962bf7d4414571a758ddbbb8b7eabb","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758751737"},"Content-Type":"application/json"}
+[2021-10-09 13:52:31,758] INFO  com.eden.cases.Base 返回结果：{"result":{"startRow":1,"navigatepageNums":[1],"lastPage":1,"prePage":0,"hasNextPage":false,"nextPage":0,"pageSize":100,"endRow":1,"list":[{"privateIp":"172.31.86.191","latitude":37.939333,"platform":2,"securityGroupId":"sg-b55902c1","instanceId":"i-01a45ff11f83e122b","lock":0,"id":"a53fbe534990436c8b95afc22db8a196","imageType":"CloudR","longitude":-77.703511,"imageVersion":"20210607","imageId":"ami-0cf9b4ac648973084","instanceType":"c5.large","globalRegion":"美国东部（弗吉尼亚北部）","publicIp":"34.227.114.238","callerIp":"10.12.128.202","launchTime":1633758739666,"region":"us-east-1","status":"running"}],"pageNum":1,"navigatePages":8,"total":1,"navigateFirstPage":1,"pages":1,"size":1,"firstPage":1,"isLastPage":true,"hasPreviousPage":false,"navigateLastPage":1,"isFirstPage":true},"requestId":"6e962bf7d4414571a758ddbbb8b7eabb","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:52:31,759] INFO  com.eden.cases.Base 验证通过！返回结果包含：i-01a45ff11f83e122b
+[2021-10-09 13:52:31,759] INFO  com.eden.cases.Test <<<<<<<测试通过(分页查询实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/pageInstance
+[2021-10-09 13:52:31,759] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-01a45ff11f83e122b, accesskey={"signature":"01a29226c8d0d672586fb6b44a2c7954","requestId":"6e962bf7d4414571a758ddbbb8b7eabb","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758751737"}, publicIp=34.227.114.238, imageType=CloudR}
+[2021-10-09 13:52:31,759] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:52:31,759] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:52:32,765] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询当前可用的Region)：http://10.12.128.228/instance/instance-manage/api/region/listActiveRegion
+[2021-10-09 13:52:32,766] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 13:52:32,767] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"7c0b9e914f580ff059778ef1fc32dd45","requestId":"29ef089062cb4723a7301efcb90df275","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758752766"},"Content-Type":"application/json"}
+[2021-10-09 13:52:32,782] INFO  com.eden.cases.Base 返回结果：{"result":["us-east-1","ap-northeast-2"],"requestId":"29ef089062cb4723a7301efcb90df275","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:52:32,783] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:52:32,783] INFO  com.eden.cases.Test <<<<<<<测试通过(查询当前可用的Region)--API:http://10.12.128.228/instance/instance-manage/api/region/listActiveRegion
+[2021-10-09 13:52:32,783] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-01a45ff11f83e122b, accesskey={"signature":"7c0b9e914f580ff059778ef1fc32dd45","requestId":"29ef089062cb4723a7301efcb90df275","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758752766"}, publicIp=34.227.114.238, imageType=CloudR}
+[2021-10-09 13:52:32,783] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:52:32,783] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:52:33,798] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询最优的Region)：http://10.12.128.228/instance/instance-manage/api/region/chooseRegion
+[2021-10-09 13:52:33,798] INFO  com.eden.cases.Base 参数：{"requestIp":"34.227.114.238","type":"IP","imageType":"CloudR"}
+[2021-10-09 13:52:33,799] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"5199df1335ad12de34e4db7a678b1529","requestId":"5ee7007c7c384939ad2747e309730a1a","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758753798"},"Content-Type":"application/json"}
+[2021-10-09 13:52:34,556] INFO  com.eden.cases.Base 返回结果：{"result":"us-east-1","requestId":"5ee7007c7c384939ad2747e309730a1a","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:52:34,556] INFO  com.eden.cases.Base 验证通过！返回结果包含："result":"us-east-1"
+[2021-10-09 13:52:34,557] INFO  com.eden.cases.Test <<<<<<<测试通过(查询最优的Region)--API:http://10.12.128.228/instance/instance-manage/api/region/chooseRegion
+[2021-10-09 13:52:34,557] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-01a45ff11f83e122b, accesskey={"signature":"5199df1335ad12de34e4db7a678b1529","requestId":"5ee7007c7c384939ad2747e309730a1a","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758753798"}, publicIp=34.227.114.238, imageType=CloudR}
+[2021-10-09 13:52:34,557] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:52:34,558] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:52:35,566] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据距离排序所有可用region)：http://10.12.128.228/instance/instance-manage/api/region/sortRegion
+[2021-10-09 13:52:35,567] INFO  com.eden.cases.Base 参数：{"requestIp":"34.227.114.238","type":"IP","imageType":"CloudR"}
+[2021-10-09 13:52:35,568] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"4f859791f2d3e2345cee7a514042ca95","requestId":"7d829f7b99364c0a840ed0149b61ff06","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758755567"},"Content-Type":"application/json"}
+[2021-10-09 13:52:35,593] INFO  com.eden.cases.Base 返回结果：{"result":["us-east-1","ap-northeast-2"],"requestId":"7d829f7b99364c0a840ed0149b61ff06","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:52:35,593] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:52:35,594] INFO  com.eden.cases.Base 验证通过！返回结果包含：ap-northeast-2
+[2021-10-09 13:52:35,594] INFO  com.eden.cases.Test <<<<<<<测试通过(根据距离排序所有可用region)--API:http://10.12.128.228/instance/instance-manage/api/region/sortRegion
+[2021-10-09 13:52:35,594] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-01a45ff11f83e122b, accesskey={"signature":"4f859791f2d3e2345cee7a514042ca95","requestId":"7d829f7b99364c0a840ed0149b61ff06","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758755567"}, publicIp=34.227.114.238, imageType=CloudR}
+[2021-10-09 13:52:35,594] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:52:35,594] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:52:36,598] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询当前可用的RegionWithRemark)：http://10.12.128.228/instance/instance-manage/api/region/listActiveRegionWithRemark
+[2021-10-09 13:52:36,599] INFO  com.eden.cases.Base 参数：{"imageType":"CloudR"}
+[2021-10-09 13:52:36,600] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"bf5138698aaf56c7b13cfa0141034388","requestId":"d06848005b724a1687f3e98791354d2f","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758756599"},"Content-Type":"application/json"}
+[2021-10-09 13:52:36,617] INFO  com.eden.cases.Base 返回结果：{"result":[{"remark":"US East (N. Virginia)","region":"us-east-1"},{"remark":"Asia Pacific (Seoul)","region":"ap-northeast-2"}],"requestId":"d06848005b724a1687f3e98791354d2f","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:52:36,618] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:52:36,618] INFO  com.eden.cases.Base 验证通过！返回结果包含：ap-northeast-2
+[2021-10-09 13:52:36,618] INFO  com.eden.cases.Test <<<<<<<测试通过(查询当前可用的RegionWithRemark)--API:http://10.12.128.228/instance/instance-manage/api/region/listActiveRegionWithRemark
+[2021-10-09 13:52:36,618] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-01a45ff11f83e122b, accesskey={"signature":"bf5138698aaf56c7b13cfa0141034388","requestId":"d06848005b724a1687f3e98791354d2f","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758756599"}, publicIp=34.227.114.238, imageType=CloudR}
+[2021-10-09 13:52:36,618] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:52:36,618] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:52:37,629] INFO  com.eden.cases.Test >>>>>>>>开始测试API(查询最优的RegionWithRemark)：http://10.12.128.228/instance/instance-manage/api/region/chooseRegionWithRemark
+[2021-10-09 13:52:37,630] INFO  com.eden.cases.Base 参数：{"requestIp":"34.227.114.238","type":"IP","imageType":"CloudR"}
+[2021-10-09 13:52:37,631] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"d32244eca5de3501651d1ca2b2a1ea81","requestId":"19685126fa034234bbb6a8300aa63999","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758757630"},"Content-Type":"application/json"}
+[2021-10-09 13:52:37,659] INFO  com.eden.cases.Base 返回结果：{"result":{"remark":"US East (N. Virginia)","region":"us-east-1"},"requestId":"19685126fa034234bbb6a8300aa63999","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:52:37,660] INFO  com.eden.cases.Base 验证通过！返回结果包含：us-east-1
+[2021-10-09 13:52:37,660] INFO  com.eden.cases.Test <<<<<<<测试通过(查询最优的RegionWithRemark)--API:http://10.12.128.228/instance/instance-manage/api/region/chooseRegionWithRemark
+[2021-10-09 13:52:37,660] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-01a45ff11f83e122b, accesskey={"signature":"d32244eca5de3501651d1ca2b2a1ea81","requestId":"19685126fa034234bbb6a8300aa63999","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758757630"}, publicIp=34.227.114.238, imageType=CloudR}
+[2021-10-09 13:52:37,660] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:52:37,661] INFO  com.eden.cases.Base =========================================================
+[2021-10-09 13:52:38,674] INFO  com.eden.cases.Test >>>>>>>>开始测试API(根据 Instance 创建镜像)：http://10.12.128.228/instance/instance-manage/api/image/upgradeImage
+[2021-10-09 13:52:38,675] INFO  com.eden.cases.Base 参数：{"instanceId":"i-01a45ff11f83e122b","version":"20210607"}
+[2021-10-09 13:52:38,676] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"e89e06f00ec50e28437dbae81449bb7a","requestId":"062ebc7d8ef14a20b4b2e8d7c8a1c5c4","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758758675"},"Content-Type":"application/json"}
+[2021-10-09 13:52:38,695] INFO  com.eden.cases.Base 返回结果：{"requestId":"062ebc7d8ef14a20b4b2e8d7c8a1c5c4","errorCode":"81202802","errorInfo":"This image version already exist"}
+[2021-10-09 13:52:38,695] ERROR com.eden.cases.Base 验证失败！期望返回的值："errorInfo":"Success",实际结果：{"requestId":"062ebc7d8ef14a20b4b2e8d7c8a1c5c4","errorCode":"81202802","errorInfo":"This image version already exist"}
+[2021-10-09 13:52:38,695] ERROR com.eden.cases.Test <<<<<<<<测试失败(根据 Instance 创建镜像)--API:http://10.12.128.228/instance/instance-manage/api/image/upgradeImage
+[2021-10-09 13:52:38,695] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-01a45ff11f83e122b, accesskey={"signature":"e89e06f00ec50e28437dbae81449bb7a","requestId":"062ebc7d8ef14a20b4b2e8d7c8a1c5c4","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758758675"}, publicIp=34.227.114.238, imageType=CloudR}
+[2021-10-09 13:52:38,695] INFO  com.eden.cases.Test =========================================================
+[2021-10-09 13:52:38,695] INFO  com.eden.cases.Test >>>>>>>>开始测试API(shutdown实例)：http://10.12.128.228/instance/instance-manage/api/instance/shutdown
+[2021-10-09 13:52:38,695] INFO  com.eden.cases.Base 参数：{"instanceId":"i-01a45ff11f83e122b"}
+[2021-10-09 13:52:38,695] INFO  com.eden.cases.Base 请求头：{"AccessKey":{"signature":"e8b6cbd92e9623a3c6daf96136e95236","requestId":"29b3551f94cd4823baa231a806593745","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758758695"},"Content-Type":"application/json"}
+[2021-10-09 13:52:41,460] INFO  com.eden.cases.Base 返回结果：{"requestId":"29b3551f94cd4823baa231a806593745","errorCode":"0x0","errorInfo":"Success"}
+[2021-10-09 13:52:41,461] INFO  com.eden.cases.Base 验证通过！返回结果包含："errorInfo":"Success"
+[2021-10-09 13:52:41,462] INFO  com.eden.cases.Test <<<<<<<测试通过(shutdown实例)--API:http://10.12.128.228/instance/instance-manage/api/instance/shutdown
+[2021-10-09 13:52:41,462] INFO  com.eden.cases.Test 已经临时储存的key：{imageVersion=20210607, instanceId=i-01a45ff11f83e122b, accesskey={"signature":"e8b6cbd92e9623a3c6daf96136e95236","requestId":"29b3551f94cd4823baa231a806593745","appkey":"d8e8560b4df405f1e7580262b4652008","timestamp":"1633758758695"}, publicIp=34.227.114.238, imageType=CloudR}
+[2021-10-09 13:52:41,462] INFO  com.eden.cases.Base 线程等待1秒后将测试下一个API
+[2021-10-09 13:52:41,462] INFO  com.eden.cases.Base =========================================================
