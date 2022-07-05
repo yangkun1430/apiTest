@@ -10,8 +10,8 @@ import java.util.Locale;
 
 public class DataBaseUtil {
     static String Database = "jdbc:mysql://10.12.128.243:3306/api_test?useUnicode=true&characterEncoding=UTF-8";
-    static String Database_name = "root";
-    static String Database_password = "123456";
+    static String Database_name = "";
+    static String Database_password = "";
     static Connection con;
 
     //获取数据库连接
